@@ -1,0 +1,91 @@
+
+pre, p{
+    display: block;
+    line-height: 25px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+    }
+.pisac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+.telo-kartice{
+    height: 345px;
+    margin:0px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.naslov{
+    margin:0px;
+    padding:0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kartica{
+    margin-bottom: 20px;
+}
+.pesma{
+    margin: 0px;
+    padding: 0px;
+    height: 225px;
+}
+.vreme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.prikazi-vise{
+    width: 70%;
+    margin:10px;
+}
+.komentari {
+    display: none;
+}
+.srce{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-size: 10px;
+    position: absolute;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.srce img{
+    width: 50%;
+    height: 50%;
+}
+.jos{
+    border:3px solid var(--plava);
+    background: white;
+    color: var(--plava);
+    font-size: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+.jos, jos:hover, jos:active, .jos:focus{
+    outline: 0;
+}

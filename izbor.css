@@ -1,0 +1,37 @@
+.kontejner{
+        width:calc(100% - 40px);
+        margin: 20px;
+        height:50px;
+        box-sizing:border-box;
+        padding:0px;
+        display:flex;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: #fafafa;
+        border: 1px solid black;
+        box-sizing: content-box;
+}
+    .odabir{
+        width:50%;
+        margin:0px;
+        padding:0px;
+        height: 50px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        cursor: pointer;
+        transition: all 1s;
+    }
+.odabir img{
+    width: 40px;
+    height: 40px;
+}
+.odabrano{
+    background: #cccccc;
+}
+@media only screen and (max-width: 600px){
+    .kontejner{
+        display: none;
+    }
+}

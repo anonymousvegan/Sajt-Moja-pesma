@@ -1,0 +1,180 @@
+:root{
+    --plava: #007bff;
+}
+form{
+    background-color: white;
+}
+#unos{
+    display: flex;
+    position: fixed;
+    left:0;
+    top:0;
+    background-color: #000000aa;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%); 
+    transition: all 0.5s ease-in;
+    overflow: hidden;
+
+}
+#unos.prikazi-unos{
+    transform: translateY(0%); 
+}
+button:not(.jos){
+    color: white !important;
+    height: 40px !important;
+}
+
+.form-group{
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    border-bottom: 1px solid black;
+    pointer-events: none;
+}
+input[type="email"],
+input[type="number"],
+input[type="text"],
+input[type="password"]
+{
+    width: 100%;
+    height: 100%;
+    border:0 !important;
+    outline: 0 !important;
+    font-size: 14px !important;
+    border-radius:0px !important;
+    box-shadow: none !important;
+    font-family: sans-serif ;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+label::after  {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left:0px;
+    bottom: -1px;
+    border-bottom: 3px solid  var(--plava) ;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+}
+.label-tekst{
+    position: absolute;
+    bottom: 5px;
+    left: 11px;
+    transition: all 0.3s ease;
+}
+.form-group input:focus + label .label-tekst, 
+.form-group input:valid + label .label-tekst,
+input:not(:placeholder-shown) + label .label-tekst{
+transform: translateY(-100%);
+color: var(--plava);
+font-size: 14px;
+}
+.pomeri{
+transform: translateY(-100%);
+color: var(--plava);
+font-size: 14px;
+}
+.form-group input:focus + label::after, 
+.form-group input:valid + label::after,
+input:not(:placeholder-shown) + label::after
+{
+    transform: translateX(0px) !important;
+}
+.pomeri-border::after{
+    transform: translateX(0px) !important;
+}
+.sve{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+textarea{
+    width: 400px;
+    height: 250px;
+    overflow: auto;
+    padding-left: 10px;
+}
+textarea:focus{
+    border-bottom: 1px solid var(--plava);
+    outline:0;
+}
+select{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0px;
+    outline:0;
+    background: #ccc;
+}
+option{
+     background: white;
+}
+.select:hover, .select:focus{
+    outline:0;
+    border:2px solid var(--plava);
+}
+.pogodnost {
+    width: 100%;
+    height: 50px;
+    background: white;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    position: relative;
+    display: flex;
+}
+.pogodnost-tekst{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pogodnost-odabir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 250px);
+}
+select[name="pogodna"]{
+    outline: 0;
+    color: var(--plava); 
+    background-color: #ccc; 
+    padding-left: 10px; 
+}
+.x{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    font-size: 30px;
+    color: red;
+    transition: all 0.5s;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.x:hover{
+    font-size: 40px;
+}
+input, textarea, select{
+    border:0;
+}
+input, select{
+    border-bottom: 1px solid black;
+}

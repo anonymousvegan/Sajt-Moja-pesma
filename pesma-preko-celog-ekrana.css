@@ -1,0 +1,48 @@
+.pesma-preko-celog-ekrana{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #000000aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+.prikazi-pesmu-na-ceo-ekran{
+    transform: scale(1);
+}
+.okvir-za-pesmu, .okvir-za-komentare{
+    width: 40%;
+    background: white;
+    height: 500px;
+}
+.okvir-za-pesmu{
+    border-right: 2px solid #888888;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+}
+.okvir-za-pesmu h1{
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    text-align: center;
+}
+.okvir-za-pesmu .pisac{
+    width: 100%;
+    background-color: #ddd;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.okvir-za-pesmu p{
+width: 100%;
+text-align: center;
+overflow-y: auto;
+height: 400px;
+}
