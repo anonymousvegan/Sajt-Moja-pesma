@@ -1,6 +1,6 @@
 <?php
 $servername="localhost";
-$dBUsername="root";
+$dBUsername="nikola";
 $dBPassword="SHkola.debLinux20.04";
 $dBName="login";
 
