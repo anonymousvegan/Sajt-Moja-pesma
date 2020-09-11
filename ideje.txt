@@ -1,0 +1,12 @@
+ideje
+1. vatrice
+2. misije, login
+3. oznake, romantik, patriota
+4. više podataka na profilu, slike
+5. filter glupih reči
+6. lajkovi /komentari
+7. zapamti me
+8. izbor boje i fonta
+9. učitaj još na skrol
+10. pretraga pesama/profila/tekstova
+11. like/unlike
