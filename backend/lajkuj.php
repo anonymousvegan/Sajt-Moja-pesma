@@ -4,10 +4,12 @@ if(isset($_SESSION["ime"])){
 require "pozadinske/vezasabazom.php";
 $id = $_POST["id"];
 $profil= $_POST["profil"];
+$ime = $_SESSION["ime"]; 
+if($profil==$ime){
 $sql = "SELECT * FROM pesme WHERE id=". $id;
 $rezultat= mysqli_query($conn, $sql);
 $red=mysqli_fetch_assoc($rezultat);
-$broj_lajkova= $red["lajkova"];
+$broj_lajkova=$red["lajkova"];
 $novi_broj_lajkova=$broj_lajkova+1;
 $sql = "SELECT * FROM pesme WHERE id=". $id;
     $rezultat= mysqli_query($conn, $sql);
@@ -55,7 +57,7 @@ $sql = "SELECT * FROM pesme WHERE id=". $id;
             $red=mysqli_fetch_assoc($rezultat);
             $broj_lajkova=$red["lajkova"];
             echo $broj_lajkova;
-}}}}
+}}}}}
 else{
     echo "ulogujte se";
 }
