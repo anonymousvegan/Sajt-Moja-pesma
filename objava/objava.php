@@ -38,7 +38,7 @@ echo '<button onclick="prikazivise('.$red["id"].')" class="btn btn-primary prika
 echo '</div>
 <div class="card-footer text-muted vreme">';
 if($ovlascenje=="nelogovan"){
-  echo '<div onclick="lajkujnelogovan()"  class="srce"><img src="fajlovi/heart-solid.svg">'. $red["lajkova"] .'</div><div class="vreme-tekst">' . $vreme .'</div>';
+  echo '<div onclick="lajkujnelogovan()"  class="srce"><img src="fajlovi/srce-puno.svg">'. $red["lajkova"] .'</div><div class="vreme-tekst">' . $vreme .'</div>';
 }
 else{
 echo '<div onclick="lajkuj('.$red["id"].","."'".$_SESSION["ime"]."')".'"'. ' class="srce"><img src="fajlovi/srce-puno.svg"><span id="' .$red["id"] . 'brojlajkova">' . $red["lajkova"] .'</div><div class="vreme-tekst">' . $vreme .'</div>';

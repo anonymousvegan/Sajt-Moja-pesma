@@ -35,12 +35,26 @@ $sql = "SELECT * FROM pesme WHERE id=". $id;
     else{
     $niz=json_decode($lajkovao);
     if(in_array($_SESSION["ime"], $niz)){
-        $sql = "SELECT * FROM pesme WHERE id=". $id;
-        $rezultat= mysqli_query($conn, $sql);
-        $red=mysqli_fetch_assoc($rezultat);
-        $broj_lajkova=$red["lajkova"];
-        echo $broj_lajkova;
-        exit();
+    $novi_broj_lajkova=$broj_lajkova -1;
+    $index = array_search($_SESSION["ime"],$niz);
+        if($index !== FALSE){
+        unset($niz[$index]);
+        }
+        $jsonniz=json_encode($niz);
+        $sql = "UPDATE pesme set lajkova=?, lajkovao=? WHERE id=?";
+        $stmt= mysqli_stmt_init($conn); 
+        if(!mysqli_stmt_prepare($stmt, $sql)){
+            echo "greška 1";
+            exit();
+        }else{
+            mysqli_stmt_bind_param($stmt, "sss", $novi_broj_lajkova, $jsonniz,  $id);
+            mysqli_stmt_execute($stmt);
+            $sql = "SELECT * FROM pesme WHERE id=". $id;
+            $rezultat= mysqli_query($conn, $sql);
+            $red=mysqli_fetch_assoc($rezultat);
+            $broj_lajkova=$red["lajkova"];
+            echo $broj_lajkova;
+        }  
     }else{
         array_push($niz, $_SESSION["ime"]);
         $jsonniz=json_encode($niz);
