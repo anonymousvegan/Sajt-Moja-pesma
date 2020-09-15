@@ -68,12 +68,29 @@ display: none;
     animation-fill-mode: forwards;
     animation-timing-function: easy;
 }
+.animirajsrcedva{
+    animation-name: animirajsrcedva;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: easy;
+}
 @keyframes animirajsrce{
     0%{
         transform: scale(1) ;
     }
     50%{
         transform: scale(2) ;
+    }
+    100%{
+        transform: scale(1) ;
+    }
+}
+@keyframes animirajsrcedva{
+    0%{
+        transform: scale(1) ;
+    }
+    50%{
+        transform: scale(0) ;
     }
     100%{
         transform: scale(1) ;

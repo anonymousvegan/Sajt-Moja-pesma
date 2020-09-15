@@ -25,9 +25,20 @@ function zatvori_pesmu_preko_celog_ekrana(){
 }
 function lajkuj(id, profil){
     document.getElementById(id).querySelector("img").classList.remove("animirajsrce");
+    var trenuta=document.getElementById(id).querySelector("img").getAttribute("src");
     setTimeout(
         function(){
-            document.getElementById(id).querySelector("img").classList.add("animirajsrce");
+            if(trenuta=="fajlovi/srce-prazno.svg"){
+                document.getElementById(id).querySelector("img").src="fajlovi/srce-puno.svg";
+                document.getElementById(id).querySelector("img").classList.remove("animirajsrcedva");
+                document.getElementById(id).querySelector("img").classList.add("animirajsrce");
+    
+            }
+            if(trenuta=="fajlovi/srce-puno.svg"){
+                document.getElementById(id).querySelector("img").src="fajlovi/srce-prazno.svg";
+                document.getElementById(id).querySelector("img").classList.remove("animirajsrce");
+                document.getElementById(id).querySelector("img").classList.add("animirajsrcedva");
+            }
         }, 100
     )
     trenutnibrojelement=document.getElementById(id+"brojlajkova"); 
@@ -69,7 +80,6 @@ xhttp.send("broj="+broj);
 }
 $(window).scroll(function() {
 if($(window).scrollTop() + window.innerHeight >= $(document).height()-100) {
-    console.log($(window).scrollTop() , window.innerHeight ,$(document).height())
     prikazi_jos()
 }
 });

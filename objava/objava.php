@@ -38,12 +38,18 @@ echo '<button onclick="prikazivise('.$red["id"].')" class="btn btn-primary prika
 echo '</div>
 <div class="card-footer text-muted vreme">';
 if($ovlascenje=="nelogovan"){
-  echo '<div onclick="lajkujnelogovan()"  class="srce"><img src="fajlovi/srce-puno.svg">'. $red["lajkova"] .'</div><div class="vreme-tekst">' . $vreme .'</div>';
+  echo '<div onclick="lajkujnelogovan()"  class="srce"><img src="fajlovi/srce-prazno.svg">'. $red["lajkova"] .'</div><div class="vreme-tekst">' . $vreme .'</div>';
 }
 else{
-echo '<div onclick="lajkuj('.$red["id"].","."'".$_SESSION["ime"]."')".'"'. ' class="srce"><img src="fajlovi/srce-puno.svg"><span id="' .$red["id"] . 'brojlajkova">' . $red["lajkova"] .'</div><div class="vreme-tekst">' . $vreme .'</div>';
+  $lajkovao=$red["lajkovao"];
+  $niz=json_decode($lajkovao);
+  if(in_array($_SESSION["ime"], $niz)){
+    echo '<div onclick="lajkuj('.$red["id"].","."'".$_SESSION["ime"]."')".'"'. ' class="srce"><img src="fajlovi/srce-puno.svg"><span id="' .$red["id"] . 'brojlajkova">' . $red["lajkova"] .'</div><div class="vreme-tekst">' . $vreme .'</div>';
+  }
+  else{
+    echo '<div onclick="lajkuj('.$red["id"].","."'".$_SESSION["ime"]."')".'"'. ' class="srce"><img src="fajlovi/srce-prazno.svg"><span id="' .$red["id"] . 'brojlajkova">' . $red["lajkova"] .'</div><div class="vreme-tekst">' . $vreme .'</div>';
+  }
 }
 echo '</div></div>';
 }
-echo "<button class='jos' onclick='prikazi_jos()'>+</button>";
 ?>

@@ -69,4 +69,3 @@ echo '<div onclick="lajkuj('.$red["id"].","."'".$_SESSION["ime"]."')".'"'. ' cla
 }
 echo '</div></div>';
 }
-echo "<button class='jos' onclick='prikazi_jos()'>+</button>";
