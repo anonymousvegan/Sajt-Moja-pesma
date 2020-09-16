@@ -1,12 +1,10 @@
-ideje
-1. vatrice
-2. misije, login
-3. oznake, romantik, patriota
-4. više podataka na profilu, slike
-5. filter glupih reči
-6. lajkovi /komentari
-7. zapamti me
-8. izbor boje i fonta
-9. učitaj još na skrol
-10. pretraga pesama/profila/tekstova
-11. ucitati broj kartica u prvom redu u odnosu na rezoluciju (ako staje u prvi red 3 onda ucitaj 3 kartice, ako stanu 4 ucitaj 4...), ispod reda dodadi opciju za prikazi jos
+-ideje
+*vatrice
+*misije, login
+*oznake, romantik, patriota
+*više podataka na profilu, slike
+*komentari
+*zapamti me
+*izbor boje i fonta
+*pretraga pesama/profila/tekstova
+*ucitati broj kartica u prvom redu u odnosu na rezoluciju (ako staje u prvi red 3 onda ucitaj 3 kartice, ako stanu 4 ucitaj 4...), ispod reda dodadi opciju za prikazi jos
