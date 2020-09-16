@@ -9,4 +9,4 @@ ideje
 8. izbor boje i fonta
 9. učitaj još na skrol
 10. pretraga pesama/profila/tekstova
-11. like/unlike // uradjeno 
+11. ucitati broj kartica u prvom redu u odnosu na rezoluciju (ako staje u prvi red 3 onda ucitaj 3 kartice, ako stanu 4 ucitaj 4...), ispod reda dodadi opciju za prikazi jos
