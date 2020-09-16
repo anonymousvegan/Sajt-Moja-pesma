@@ -29,12 +29,12 @@ function lajkuj(id, profil){
     setTimeout(
         function(){
             if(trenuta=="fajlovi/srce-prazno.svg"){
-                document.getElementById(id).querySelector("img").src="fajlovi/srce-puno.svg";
+                document.getElementById(id).querySelector("img").src="fajlovi/srce-puno.png";
                 document.getElementById(id).querySelector("img").classList.remove("animirajsrcedva");
                 document.getElementById(id).querySelector("img").classList.add("animirajsrce");
     
             }
-            if(trenuta=="fajlovi/srce-puno.svg"){
+            if(trenuta=="fajlovi/srce-puno.png"){
                 document.getElementById(id).querySelector("img").src="fajlovi/srce-prazno.svg";
                 document.getElementById(id).querySelector("img").classList.remove("animirajsrce");
                 document.getElementById(id).querySelector("img").classList.add("animirajsrcedva");
