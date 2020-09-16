@@ -9,4 +9,4 @@ ideje
 8. izbor boje i fonta
 9. učitaj još na skrol
 10. pretraga pesama/profila/tekstova
-11. like/unlike
+11. like/unlike // uradjeno 
