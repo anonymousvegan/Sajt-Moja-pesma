@@ -6,7 +6,7 @@
         padding:0px;
         display:flex;
         position: sticky;
-        top: 0;
+        top: 56px;
         z-index: 1;
         background: #fafafa;
         border: 1px solid black;
