@@ -24,7 +24,7 @@
             <div class="pogodnost">
                 <div class="pogodnost-tekst">Ova pesma je pogodna za sve?</div>
                 <div class="pogodnost-odabir">
-                    <select name="pogodna">
+                    <select name="pogodna" id="pogodna">
                         <option value="jeste">Da</option>
                         <option value="nije">Ne</option>
                 </select>

@@ -96,7 +96,8 @@ var reči = ["jeb",
 "kokain",
 "heroin",
 "marihuana",
-"prostitut"
+"prostitut",
+"alko"
 ]
 function proveri(s){
     var naslov, pesma;
@@ -109,11 +110,13 @@ function proveri(s){
         proveri_string(pesma);
     }
     function proveri_string(string) {
-        if  (string.search("jeb")!=-1) {
-            console.log("sram te bilo")
+        for(i=0; i<reči.length; i++){
+        if(string.search(reči[i])!=-1) {
+            document.getElementById("pogodna").value="nije";
+            break;
         }
-        else{
-            console.log("ok")
+        else{   
+            document.getElementById("pogodna").value="jeste";
         }
-    }
+    }}
 }
