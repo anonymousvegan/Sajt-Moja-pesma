@@ -83,3 +83,37 @@ if($(window).scrollTop() + window.innerHeight >= $(document).height()-100) {
     prikazi_jos()
 }
 });
+// funkciaj za proveru da li ima psovki
+var reči = ["jeb", 
+"kura",
+"sranj",
+"govn",
+"ped",
+"dupe", 
+"sise",
+"pičk",
+"pick",
+"kokain",
+"heroin",
+"marihuana",
+"prostitut"
+]
+function proveri(s){
+    var naslov, pesma;
+    naslov=document.getElementById("naslov").value;
+    pesma = document.getElementById("unospesme").value;
+    if(s=="n"){
+        proveri_string(naslov)
+    }
+    else if(s=="p"){
+        proveri_string(pesma);
+    }
+    function proveri_string(string) {
+        if  (string.search("jeb")!=-1) {
+            console.log("sram te bilo")
+        }
+        else{
+            console.log("ok")
+        }
+    }
+}

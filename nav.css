@@ -18,7 +18,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 2;
   width: 100%;
 }
 
@@ -178,4 +178,7 @@ nav a:hover {
     transform: scale(1,1);
   }
 
+}
+*{
+  text-decoration:  none !important;
 }

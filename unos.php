@@ -3,12 +3,12 @@
 <form class="form-container" autocomplete="off" method="post" action="backend/pozadinske/unospesme.php">
 <input type="hidden" name="pisac" value="<?php echo $_SESSION['ime'];?>">
 <div class="form-group">
-                <input type="text"  placeholder=" " class="form-control" name="naslov" id="naslov" aria-describedby="emailHelp" autocomplete="off" required >
+                <input onkeyup="proveri('n')" type="text"  placeholder=" " class="form-control" name="naslov" id="naslov" aria-describedby="emailHelp" autocomplete="off" required >
                 <label for="naslov" id="lnaslov">
                 <span class="label-tekst" id="username-label-tekst">naslov</span></label>
             </div>
             <div class="okvir-za-unos-pesme">
-                <textarea name="pesma" placeholder="Tekst pesme"></textarea>
+                <textarea  onkeyup="proveri('p')" id="unospesme" name="pesma" placeholder="Tekst pesme"></textarea>
             </div>
             <div class="form-group">
             <select name="kategorija" id="kategorija">
