@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
-:root {
-  --background: rgba(52, 235, 229, .85);
+:root{
+  --plava: #007bff;
 }
 
 *, *::before, *::after {
@@ -11,9 +9,9 @@
 /* navigation styles start here */
 
 header {
-  font-family: 'Work Sans', sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
-  background: var(--background);
+  background: var(--plava);
   text-align: center;
   position: sticky;
   top: 0;
@@ -74,7 +72,7 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--background);
+  background: var(--plava);
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -103,6 +101,7 @@ nav a {
 
 nav a:hover {
   color: #000;
+  text-decoration: none;
 }
 
 .nav-toggle:checked ~ nav {
@@ -126,6 +125,7 @@ nav a:hover {
   
   .logo {
     grid-column: 1 / 2;
+    margin: 0;
   }
   
   nav {
@@ -178,7 +178,4 @@ nav a:hover {
     transform: scale(1,1);
   }
 
-}
-*{
-  text-decoration:  none !important;
 }
