@@ -35,10 +35,6 @@ width: 100%;
 .lista .sadrzaj{
     border-right: 2px solid #ccc;
 }
-/*.lista .kartica{
-    max-height: 100vh;
-}
-*/
 .lista p{
     height: auto;
     overflow-y: auto;
