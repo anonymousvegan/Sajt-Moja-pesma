@@ -104,10 +104,10 @@ function proveri(s){
     naslov=document.getElementById("naslov").value;
     pesma = document.getElementById("unospesme").value;
     if(s=="n"){
-        proveri_string(naslov)
+        proveri_string(naslov.toLowerCase())
     }
     else if(s=="p"){
-        proveri_string(pesma);
+        proveri_string(pesma.toLowerCase());
     }
     function proveri_string(string) {
         for(i=0; i<reči.length; i++){
