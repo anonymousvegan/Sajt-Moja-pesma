@@ -1,6 +1,6 @@
 <div class="kontejner">
 <div class="pretraga">
-        <form class="form-container" autocomplete="off" method="post" action="pretraga.php">
+        <form class="form-container" autocomplete="off" method="get" action="pretraga.php">
             <div class="form-group">
                 <input type="text"  placeholder=" " class="form-control" name="pretraga" id="pretraga" aria-describedby="emailHelp" autocomplete="off" required >
                 <label for="pretraga" id="lpretraga">
