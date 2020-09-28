@@ -27,8 +27,14 @@
   background: #cccccc;
 }
 @media only screen and (max-width: 600px) {
-  .kontejner {
+  .odabir {
     display: none;
+  }
+  .pretraga, .kontejner {
+    width: 100%;
+  }
+  .pretraga form {
+    width: 100%;
   }
 }
 .pretraga {
