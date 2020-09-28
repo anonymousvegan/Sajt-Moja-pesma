@@ -33,7 +33,7 @@ button:not(.jos){
     height: 50px;
     overflow: hidden;
 }
-label{
+#unos label, .pretraga label{
     position: absolute;
     bottom: 0px;
     left: 0px;
