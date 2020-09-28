@@ -22,8 +22,9 @@ session_start();
 <body>
 <?php include "nav.php" ?>
 <?php
-if(isset($_GET["profil"])){
-    $profil=$_GET["profil"];
+if(isset($_GET["pretraga"])){
+    $profil="pretraga_stranica_prikazi_rezultate";
+    $pretraga=$_GET["pretraga"];
     if(isset($_SESSION["ime"])){
         if($_SESSION["ovlascenje"]=="admin"){
             $ispis="sve";
