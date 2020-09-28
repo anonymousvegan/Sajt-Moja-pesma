@@ -26,26 +26,37 @@
 .odabrano {
   background: #cccccc;
 }
-@media only screen and (max-width: 600px) {
-  .odabir {
-    display: none;
-  }
-  .pretraga, .kontejner {
-    width: 100%;
-  }
-  .pretraga form {
-    width: 100%;
-  }
-}
 .pretraga {
   width: 40%;
   max-width: 300px;
   height: 48px;
   box-sizing: border-box;
   margin-right: auto;
+  position: relative;
 }
 .pretraga .form-group {
   height: 48px !important;
   margin: 0;
   padding: 0;
+}
+@media only screen and (max-width: 600px) {
+  .odabir {
+    display: none;
+  }
+  .pretraga{
+    width: 100%;
+    max-width: unset;
+  }
+  .pretraga form{
+    width: 100%;
+    max-width: unset;
+  }
+}
+.pretraga img {
+  position: absolute;
+  bottom:0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  z-index: 3;
 }

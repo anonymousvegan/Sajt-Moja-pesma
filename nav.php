@@ -1,6 +1,6 @@
 
     <header>
-        <h1 class="logo">Anonimna reč</h1>
+        <h1 class="logo">Moja pesma</h1>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
           <ul>
