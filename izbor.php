@@ -3,7 +3,7 @@
         <form class="form-container" autocomplete="off" method="post" action="backend/pozadinske/pretrazi.php">
             <div class="form-group">
                 <input type="text"  placeholder=" " class="form-control" name="pretraga" id="pretraga" aria-describedby="emailHelp" autocomplete="off" required >
-                <label for="pretraga" id="lpetraga">
+                <label for="pretraga" id="lpretraga">
                 <span class="label-tekst" id="pretraga-label-tekst">Pretraži...</span></label>
                 <img src="fajlovi/pretraga.webp" alt="">
             </div>  
