@@ -1,45 +1,45 @@
-.kontejner{
-        width:calc(100% - 40px);
-        margin: 20px;
-        height:50px;
-        display:flex;
-        top: 48px;
-        z-index: 1;
-        background-color: white;
+.kontejner {
+  width: calc(100% - 40px);
+  margin: 20px;
+  height: 50px;
+  display: flex;
+  top: 48px;
+  z-index: 1;
+  background-color: white;
 }
-    .odabir{
-        justify-self: flex-end;
-        width:10%;
-        margin:0px;
-        padding:0px;
-        height: 50px;
-        display: flex;
-        justify-content:center;
-        align-items:center;
-        cursor: pointer;
-        transition: all 1s;
-    }
-.odabir img{
-    width: 40px;
-    height: 40px;
+.odabir {
+  justify-self: flex-end;
+  width: 10%;
+  margin: 0px;
+  padding: 0px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s;
 }
-.odabrano{
-    background: #cccccc;
+.odabir img {
+  width: 40px;
+  height: 40px;
 }
-@media only screen and (max-width: 600px){
-    .kontejner{
-        display: none;
-    }
+.odabrano {
+  background: #cccccc;
 }
-.pretraga{
-    width: 40%;
-    max-width: 300px;
-    height: 48px;
-    box-sizing: border-box;
-    margin-right: auto;
+@media only screen and (max-width: 600px) {
+  .kontejner {
+    display: none;
   }
-  .pretraga .form-group{
-    height: 48px !important;
-    margin: 0;
-    padding: 0;
-  }
+}
+.pretraga {
+  width: 40%;
+  max-width: 300px;
+  height: 48px;
+  box-sizing: border-box;
+  margin-right: auto;
+}
+.pretraga .form-group {
+  height: 48px !important;
+  margin: 0;
+  padding: 0;
+}
