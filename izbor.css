@@ -68,3 +68,7 @@
   opacity: 0; 
   transform: translateX(-300px);
 }
+#pretraga-dugme{
+  display: none;
+  position: absolute;
+}
