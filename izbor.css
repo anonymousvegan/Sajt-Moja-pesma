@@ -60,3 +60,16 @@
   height: 25px;
 }
 
+.pretraga .form-group input:focus ~ img, 
+.pretraga .form-group input:valid ~ img,
+.pretraga input:not(:placeholder-shown) ~ img{
+  animation: 500ms forwards ease-in nestajanje;
+}
+
+@keyframes nestajanje{
+  from { opacity: 1; }
+  to {
+    opacity: 0; 
+    transform: translateX(-300px);
+  }
+}
