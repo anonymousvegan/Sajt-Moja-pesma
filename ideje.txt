@@ -9,3 +9,4 @@
 *pretraga pesama/profila/tekstova
 *ucitati broj kartica u prvom redu u odnosu na rezoluciju (ako staje u prvi red 3 onda ucitaj 3 kartice, ako stanu 4 ucitaj 4...), ispod reda dodadi opciju za prikazi jos
 * pretraga - radim
+* slika na profilu desno u navbar
