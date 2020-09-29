@@ -13,6 +13,10 @@ header {
   z-index: 999;
 }
 
+h1 {
+  margin: 0;
+}
+
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
@@ -123,6 +127,54 @@ nav a:hover {
 .arrow {
   height: 30px;
   width: 30px;
+  padding-top: 5px;
+}
+
+.arrow-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.dropdown-container {
+  background: var(--plava);
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 175px;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+.dropdown-container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.dropdown-container a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.dropdown-container li {
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.arrow-toggle:checked ~ div {
+  transform: scale(1, 1);
+}
+
+.arrow-toggle:checked ~ div a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
 }
 
 @media screen and (min-width: 800px) {
@@ -190,6 +242,8 @@ nav a:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
+    height: 50px;
   }
 
   .profile-icon {
@@ -202,5 +256,8 @@ nav a:hover {
     padding-right: 16px;
     height: 50px;
     width: 50px;
+  }
+  .dropdown-container {
+    top: 50px;
   }
 }

@@ -60,7 +60,7 @@ input[type="password"]
     padding-top:20px;
     box-sizing: border-box;
 }
-label::after  {
+#unos label::after  {
     content: "";
     position: absolute;
     height: 100%;
