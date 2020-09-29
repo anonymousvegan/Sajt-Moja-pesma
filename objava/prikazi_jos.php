@@ -1,7 +1,12 @@
 <?php
 session_start();
 require "../backend/pozadinske/vezasabazom.php";
-$profil="index_stranica_prikazi_sve";
+if(isset($_POST["profil"])){
+$profil=$_POST["profil"];
+}
+else{
+  $profil="index_stranica_prikazi_sve";
+}
 if(isset($_SESSION["ime"])){
     if($_SESSION["ovlascenje"]=="admin"){
         $ispis="sve";
@@ -34,16 +39,17 @@ if($profil=="index_stranica_prikazi_sve"){
     else if($ispis=="filter"){
       $sql= "SELECT * FROM pesme WHERE pogodna='jeste' ORDER BY vreme DESC LIMIT ".$broj.";";
     }
-}}else{
+}}
+else{
   if ($ovlascenje=="admin"){
-    $sql= "SELECT * FROM pesme WHERE pisac='".$profil . "' ORDER BY vreme DESC LIMIT  ".$broj.";";
+    $sql= "SELECT * FROM pesme WHERE pisac='".$profil . "' ORDER BY vreme DESC LIMIT ".$broj.";";
   }
   else{
     if($ispis=="sve"){
-      $sql= "SELECT * FROM pesme WHERE pisac='". $profil . "' ORDER BY vreme DESC LIMIT  ".$broj.";";
+    $sql= "SELECT * FROM pesme WHERE pisac='". $profil . "' ORDER BY vreme DESC LIMIT ".$broj.";";
     }
     else if($ispis=="filter"){
-      $sql= "SELECT * FROM pesme WHERE pogodna='jeste' AND pisac='". $profil . "'ORDER BY vreme DESC LIMIT  ".$broj.";";
+      $sql= "SELECT * FROM pesme WHERE pogodna='jeste' AND pisac='". $profil . "'ORDER BY vreme DESC LIMIT ".$broj.";";
     } 
 }}
 require "ispis.php";

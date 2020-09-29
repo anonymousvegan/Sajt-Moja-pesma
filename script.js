@@ -64,25 +64,8 @@ document.addEventListener('keydown', function(event){
         zatvori_pesmu_preko_celog_ekrana();
 	}
 });
-//prikaži još na scroll
-broj=5
-function prikazi_jos(){
-    broj+=5;
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("pesme").innerHTML = this.responseText;
-}
-};
-xhttp.open("POST", "objava/prikazi_jos.php", false);
-xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xhttp.send("broj="+broj);
-}
-$(window).scroll(function() {
-if($(window).scrollTop() + window.innerHeight >= $(document).height()-100) {
-    prikazi_jos()
-}
-});
+//prikaži još na scroll je premešten u index.html i  profil.php jer zavisi...
+
 // funkciaj za proveru da li ima psovki
 var reči = ["jeb", 
 "kura",
