@@ -8,6 +8,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  height: 50px;
   width: 100%;
   z-index: 999;
 }
@@ -105,6 +106,25 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+.profile-container {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.arrow {
+  height: 30px;
+  width: 30px;
+}
+
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
@@ -112,7 +132,7 @@ nav a:hover {
 
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.25fr;
   }
   
   .logo {
@@ -162,5 +182,25 @@ nav a:hover {
   
   nav a:hover::before {
     transform: scale(1,1);
+  }
+
+  .profile-container {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .profile-icon {
+    height: 50px;
+    width: 50px;
+    padding: 5px 0;
+  }
+  
+  .arrow {
+    padding-right: 16px;
+    height: 50px;
+    width: 50px;
   }
 }
