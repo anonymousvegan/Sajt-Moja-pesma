@@ -47,5 +47,25 @@ $profil="index_stranica_prikazi_sve";
     ?>
 <?php include "main.php" ?>
 <?php include "foother.php" ?>
+<script>
+broj=5
+function prikazi_jos(){
+    broj+=5;
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("pesme").innerHTML = this.responseText;
+}
+};
+xhttp.open("POST", "objava/prikazi_jos.php", false);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("broj="+broj);
+}
+$(window).scroll(function() {
+if($(window).scrollTop() + window.innerHeight >= $(document).height()-100) {
+    prikazi_jos()
+}
+});
+</script>
 </body>
 </html>
