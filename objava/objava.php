@@ -13,13 +13,13 @@ if($profil=="index_stranica_prikazi_sve"){
 }}
 else if($profil=="pretraga_stranica_prikazi_rezultate"){
   if ($ovlascenje=="admin"){
-    $sql= "SELECT * FROM pesme WHERE  pesma like '%".$pretraga . "%' ORDER BY vreme DESC LIMIT 5;";
+    $sql= "SELECT * FROM pesme WHERE  pesma like '%".$pretraga . "%' OR naslov like '%".$pretraga . "%' ORDER BY vreme DESC LIMIT 5;";
   }else{
     if($ispis=="sve"){
-      $sql= "SELECT * FROM pesme WHERE  pesma like '%".$pretraga . "%' ORDER BY vreme DESC LIMIT 5;";
+      $sql= "SELECT * FROM pesme WHERE  pesma like '%".$pretraga . "%' OR naslov like '%".$pretraga . "%' ORDER BY vreme DESC LIMIT 5;";
     }
     else if($ispis=="filter"){
-      $sql= "SELECT * FROM pesme WHERE pesma like '%".$pretraga . "%' AND pogodna='jeste' ORDER BY vreme DESC LIMIT 5;";
+      $sql= "SELECT * FROM pesme WHERE pesma like '%".$pretraga . "%' OR naslov like '%".$pretraga . "%' AND pogodna='jeste' ORDER BY vreme DESC LIMIT 5;";
     }
   }
 }

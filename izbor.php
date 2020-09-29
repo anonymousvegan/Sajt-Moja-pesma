@@ -7,7 +7,7 @@
                 <span class="label-tekst" id="pretraga-label-tekst">Pretraži...</span></label>
                 <img src="fajlovi/pretraga.webp" alt="pretraga">
             </div> 
-            <button type="submit" id="pretraga-dugme" name="pretragadugme">
+            <button type="submit" id="pretraga-dugme">
         </form>
     </div>
     <div class="odabir odabrano " id="grid" onclick="grid()">
