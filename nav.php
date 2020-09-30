@@ -1,5 +1,7 @@
-
-    <header>
+<?php
+session_start();
+?>
+  <header>
         <h1 class="logo">Moja pesma</h1>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
@@ -16,8 +18,13 @@
           </label>
           <div class="dropdown-container">
           <ul>
-            <li><a href="#">UREDI PROFIL</a></li>
-            <li><a href="#">TVOJE PESME</a></li>
+            <?php
+            if(isset($_SESSION["ime"])){
+              echo '<li><a href="#">UREDI PROFIL</a></li> <li><a href="#">TVOJE PESME</a></li>';}
+            else{
+              echo '<li><a href="forme/prijava.php">PRIJAVI SE</a></li> <li><a href="forme/registracija.php">REGISTRUJ SE</a></li>';
+            }
+            ?>
           </ul>
           </div>
         </div>
