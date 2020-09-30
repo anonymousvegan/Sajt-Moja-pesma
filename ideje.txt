@@ -6,9 +6,7 @@
 *komentari
 *zapamti me
 *izbor boje i fonta
-*pretraga pesama/profila/tekstova
+*pretraga profila
 *ucitati broj kartica u prvom redu u odnosu na rezoluciju (ako staje u prvi red 3 onda ucitaj 3 kartice, ako stanu 4 ucitaj 4...), ispod reda dodadi opciju za prikazi jos
-* pretraga - radim
-*dropdown label preko profilne, bordura itd itd, u php izmeniti sta pise u dropdown
 *logo - promeniti pozadinu u alfa kanal da bude transparentno
 *dodati ikonicu za komentar
