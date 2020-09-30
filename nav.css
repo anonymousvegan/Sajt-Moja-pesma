@@ -139,6 +139,7 @@ nav a:hover {
   height: 30px;
   width: 30px;
   padding-top: 5px;
+  transition: transform 400ms ease-in-out;
 }
 
 .arrow-toggle {
@@ -186,6 +187,10 @@ nav a:hover {
 .arrow-toggle:checked ~ div a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
+}
+
+.arrow-toggle:checked ~ label > img {
+  transform: translateY(5px);
 }
 
 @media screen and (min-width: 800px) {
