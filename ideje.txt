@@ -11,3 +11,4 @@
 * pretraga - radim
 *dropdown label preko profilne, bordura itd itd, u php izmeniti sta pise u dropdown
 *logo - promeniti pozadinu u alfa kanal da bude transparentno
+*dodati ikonicu za komentar
