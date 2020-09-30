@@ -173,6 +173,28 @@ nav a:hover {
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
+  position: relative;
+}
+
+.dropdown-container a:hover {
+  color: black;
+}
+
+.dropdown-container a::after {
+  content: '';
+  display: block;
+  height: 5px;
+  position: absolute;
+  background: black;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 250ms;
+  right: 0;
+  left: 0;
+  bottom: -.5rem;
+}
+
+.dropdown-container a:hover::after {
+  transform: scale(1,1);
 }
 
 .dropdown-container li {
@@ -278,5 +300,29 @@ nav a:hover {
   }
   .dropdown-container {
     top: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  
+  nav a {
+    position: relative;
+  }
+
+  nav a::after {
+    content: '';
+    display: block;
+    height: 5px;
+    position: absolute;
+    background: black;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+    right: 0;
+    left: 0;
+    bottom: -.5rem;
+  }
+  
+  nav a:hover::after {
+    transform: scale(1,1);
   }
 }
