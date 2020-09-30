@@ -17,6 +17,17 @@ h1 {
   margin: 0;
 }
 
+.logo-slika {
+  height: 50px;
+  width: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
@@ -190,8 +201,11 @@ nav a:hover {
   .logo {
     grid-column: 1 / 2;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
   }
-  
+
   nav {
     position: relative;
     text-align: left;

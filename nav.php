@@ -2,7 +2,10 @@
 session_start();
 ?>
   <header>
-        <h1 class="logo">Moja pesma</h1>
+        <div class="logo">
+          <img class="logo-slika" src="fajlovi/logo.jpg" alt="logo">
+          <h1 class="logo-naziv">Moja pesma</h1>
+        </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
           <ul>
