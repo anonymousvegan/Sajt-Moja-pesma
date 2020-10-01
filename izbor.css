@@ -58,7 +58,7 @@
   right: 0;
   width: 25px;
   height: 25px;
-  transition: all 500ms;
+  transition: 750ms;
   transform: translateX(0px);
 }
 
@@ -71,4 +71,17 @@
 #pretraga-dugme{
   display: none;
   position: absolute;
+}
+
+@media (max-width: 590px) {
+  .pretraga .form-group input:focus ~ img, 
+  .pretraga .form-group input:valid ~ img,
+  .pretraga input:not(:placeholder-shown) ~ img {
+    opacity: 0; 
+    transform: translateX(-600px);
+  }
+  
+  .pretraga img {
+    transition: 1s;
+  }
 }
