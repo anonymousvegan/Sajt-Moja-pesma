@@ -1,5 +1,10 @@
 <?php
-if(isset($_POST["unosdugme"])){ 
+session_start();
+if(isset($_POST["unosdugme"])){
+    if(isset($_SESSION["ime"])==0){
+        header("location: ../../index.php?greska=neulogovan");
+        exit();
+    }
     require "vezasabazom.php";
     $pisac = $_POST["pisac"];
     $naslov = $_POST["naslov"];

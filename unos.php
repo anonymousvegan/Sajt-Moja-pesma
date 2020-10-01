@@ -1,6 +1,6 @@
 <div id="unos">
 <span class="x" onclick="zatvori()">X</span>
-<form class="form-container" autocomplete="off" method="post" action="backend/pozadinske/unospesme.php">
+<form onsubmit="proveriUnos()" class="form-container" autocomplete="off" method="post" action="backend/pozadinske/unospesme.php">
 <input type="hidden" name="pisac" value="<?php echo $_SESSION['ime'];?>">
 <div class="form-group">
                 <input onkeyup="proveri('n')" type="text"  placeholder=" " class="form-control" name="naslov" id="naslov" aria-describedby="emailHelp" autocomplete="off" required >

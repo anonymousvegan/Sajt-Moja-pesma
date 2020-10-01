@@ -103,3 +103,8 @@ function proveri(s){
         }
     }}
 }
+//proveri unos na submit
+function proveriUnos(){
+    proveri("n");
+    proveri("p");
+}
