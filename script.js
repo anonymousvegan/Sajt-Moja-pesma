@@ -107,4 +107,5 @@ function proveri(s){
 function proveriUnos(){
     proveri("n");
     proveri("p");
+    var pesma
 }

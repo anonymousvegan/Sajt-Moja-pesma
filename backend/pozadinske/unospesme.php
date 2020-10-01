@@ -7,11 +7,18 @@ if(isset($_POST["unosdugme"])){
     }
     require "vezasabazom.php";
     $pisac = $_POST["pisac"];
+    if($pisac!=$_SESSION["ime"]){
+        if(isset($_SESSION["ime"])==0){
+            header("location: ../../index.php?greska=greskasasesijom");
+            exit();
+        } 
+    }
     $naslov = $_POST["naslov"];
     $pesma= $_POST["pesma"];
     $vreme = date("U");
     $kategorija = $_POST["kategorija"];
     $pogodna= $_POST["pogodna"];
+
     $sql = "INSERT INTO pesme (pisac, naslov, pesma, pogodna, vreme, kategorija) VALUES (?, ?, ?, ?, ?, ?);";
     $stmt= mysqli_stmt_init($conn); 
     if(!mysqli_stmt_prepare($stmt, $sql)){
