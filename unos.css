@@ -167,6 +167,7 @@ select[name="pogodna"]{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    z-index: 5;
 }
 .x:hover{
     font-size: 40px;
