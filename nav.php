@@ -23,7 +23,10 @@ session_start();
           <ul>
             <?php
             if(isset($_SESSION["ime"])){
-              echo '<li><a href="#">UREDI PROFIL</a></li> <li><a href="#">TVOJE PESME</a></li>';}
+              echo '<li><a href="#">UREDI PROFIL</a></li> <li><a href="#">TVOJE PESME</a></li>
+              <form id="izloguj_se">
+              <li><span class="dropdownlink">ODJAVI SE</span><li>
+              ';}
             else{
               echo '<li><a href="forme/prijava.php">PRIJAVI SE</a></li> <li><a href="forme/registracija.php">REGISTRUJ SE</a></li>';
             }

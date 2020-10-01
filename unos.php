@@ -1,6 +1,6 @@
 <div id="unos">
 <span class="x" onclick="zatvori()">X</span>
-<form onsubmit="proveriUnos()" class="form-container" autocomplete="off" method="post" action="backend/pozadinske/unospesme.php">
+<form onsubmit="return proveriUnos()" class="form-container" autocomplete="off" method="post" action="backend/pozadinske/unospesme.php">
 <input type="hidden" name="pisac" value="<?php echo $_SESSION['ime'];?>">
 <div class="form-group">
                 <input onkeyup="proveri('n')" type="text"  placeholder=" " class="form-control" name="naslov" id="naslov" aria-describedby="emailHelp" autocomplete="off" required >
@@ -8,7 +8,7 @@
                 <span class="label-tekst" id="username-label-tekst">naslov</span></label>
             </div>
             <div class="okvir-za-unos-pesme">
-                <textarea  onkeyup="proveri('p')" id="unospesme" name="pesma" placeholder="Tekst pesme"></textarea>
+                <textarea require minlength="30" onkeyup="proveri('p')" id="unospesme" name="pesma" placeholder="Tekst pesme"></textarea>
             </div>
             <div class="form-group">
             <select name="kategorija" id="kategorija">

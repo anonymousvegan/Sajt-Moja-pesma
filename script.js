@@ -107,5 +107,22 @@ function proveri(s){
 function proveriUnos(){
     proveri("n");
     proveri("p");
-    var pesma
+    var naslov=document.getElementById("naslov");
+    var pesma=document.getElementById("unospesme");
+    var kategorija=document.getElementById("kategorija");
+    if  (naslov.value.length<2){
+        return false;
+    }
+    else if(pesma.value.length<30){
+        console.log(pesma.value.length)
+        return false;
+    }
+    else if(kategorija.value=="neodredjeno"){
+        return false;
+    }
+}
+// log out
+function  izloguj_se(){
+    form=document.getElementById("izlogujse");
+    form.submit();
 }

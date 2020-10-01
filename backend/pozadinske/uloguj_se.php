@@ -30,7 +30,7 @@ if(isset($_POST["login"])){
                     $_SESSION["ime"]=$row["ime"];
                     $_SESSION["godine"]=$row["godine"];
                     $_SESSION["ovlascenje"]=$row["ovlascenje"];
-                    header("location: ../../index.php?prijava=uspela");
+                    header("location: ../../index.php?uspeh=prijavauspela");
                     exit();
                 }
                 else{
