@@ -3,7 +3,7 @@ session_start();
 ?>
   <header>
         <div class="logo">
-          <img class="logo-slika" src="fajlovi/logo.jpg" alt="logo">
+          <img class="logo-slika" src="fajlovi/logo.png" alt="logo">
           <h1 class="logo-naziv">Moja pesma</h1>
         </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
