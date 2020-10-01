@@ -99,3 +99,6 @@ pre, p{
     width: 40px;
     height: 40px;
 }
+div.srce, .ikonicazakomentar{
+    cursor: pointer;
+}
