@@ -107,7 +107,7 @@ nav a, nav span{
   transition: opacity 150ms ease-in-out;
 }
 
-nav a:hover, nav span:hover {
+nav a:hover {
   color: #000;
   text-decoration: none;
 }

@@ -24,9 +24,7 @@ session_start();
             <?php
             if(isset($_SESSION["ime"])){
               echo '<li><a href="#">UREDI PROFIL</a></li> <li><a href="#">TVOJE PESME</a></li>
-              <form id="izloguj_se">
-              <li><span class="dropdownlink">ODJAVI SE</span><li>
-              ';}
+              <form id="izlogujse" method="post" action="backend/pozadinske/izloguj_se.php"><li><a onclick="izloguj_se()" href="#" class="dropdownlink">ODJAVI SE</a><li></form>';}
             else{
               echo '<li><a href="forme/prijava.php">PRIJAVI SE</a></li> <li><a href="forme/registracija.php">REGISTRUJ SE</a></li>';
             }
