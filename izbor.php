@@ -1,4 +1,4 @@
-<div class="kontejner">
+<div id="izbor">
 <div class="pretraga">
         <form class="form-container" autocomplete="off" method="get" action="pretraga.php">
             <div class="form-group">

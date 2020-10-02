@@ -1,5 +1,7 @@
-
-pre, p{
+.kartica{
+    margin-bottom: 20px;
+}
+.kartica pre, p{
     display: block;
     line-height: 25px;
     word-spacing: 2px;
@@ -9,7 +11,7 @@ pre, p{
     white-space: pre-wrap;
     word-wrap: break-word; 
     }
-.pisac{
+.kartica .pisac{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,14 +19,14 @@ pre, p{
     margin: 0;
     padding: 0;
 }
-.telo-kartice{
+.kartica .telo-kartice{
     height: 345px;
     margin:0px;
     padding-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
 }
-.naslov{
+.kartica .naslov{
     margin:0px;
     padding:0px;
     height: 50px;
@@ -32,44 +34,10 @@ pre, p{
     align-items: center;
     justify-content: center;
 }
-.kartica{
-    margin-bottom: 20px;
-}
 .pesma{
     margin: 0px;
     padding: 0px;
     height: 225px;
-}
-.vreme{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-.prikazi-vise{
-    width: 70%;
-    margin:10px;
-}
-.komentari {
-    display: none;
-}
-.srce{
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    font-size: 10px;
-    position: absolute;
-    left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.srce img{
-    width: 50%;
-    height: 50%;
 }
 .jos{
     border:3px solid var(--plava);
@@ -86,10 +54,42 @@ pre, p{
     margin: 0;
     outline: 0;
 }
+.prikazi-vise{
+    width: 70%;
+    margin:10px;
+}
+.vreme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.komentari {
+    display: none;
+}
+.srce img{
+    width: 50%;
+    height: 50%;
+}
+
 .jos, jos:hover, jos:active, .jos:focus{
     outline: 0;
 }
-
+.srce{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-size: 10px;
+    position: absolute;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .ikonicazakomentarkontejner {
     position: absolute;
     right: 20px;
@@ -101,4 +101,38 @@ pre, p{
 }
 div.srce, .ikonicazakomentar{
     cursor: pointer;
+}
+.animirajsrce{
+    animation-name: animirajsrce;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: easy;
+}
+.animirajsrcedva{
+    animation-name: animirajsrcedva;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: easy;
+}
+@keyframes animirajsrce{
+    0%{
+        transform: scale(1) ;
+    }
+    50%{
+        transform: scale(2) ;
+    }
+    100%{
+        transform: scale(1) ;
+    }
+}
+@keyframes animirajsrcedva{
+    0%{
+        transform: scale(1) ;
+    }
+    50%{
+        transform: scale(0) ;
+    }
+    100%{
+        transform: scale(1) ;
+    }
 }

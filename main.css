@@ -1,6 +1,5 @@
 :root{
     --plava: #007bff;
-    --narandzasta: #e74c3c;
 }
 main{
     margin-top: 20px;
@@ -44,7 +43,6 @@ width: 100%;
         grid-template-columns: 30% 30% 30%;
     }
 }
-
 @media only screen and (max-width: 1000px) {
     .pesme:not(.lista){
         grid-template-columns: 47% 47%;
@@ -53,42 +51,5 @@ width: 100%;
 @media only screen and (max-width: 600px) {
     .pesme:not(.lista){
         grid-template-columns: 95%;
-    }
-}
-#unos{
-display: none;
-}
-.animirajsrce{
-    animation-name: animirajsrce;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: easy;
-}
-.animirajsrcedva{
-    animation-name: animirajsrcedva;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: easy;
-}
-@keyframes animirajsrce{
-    0%{
-        transform: scale(1) ;
-    }
-    50%{
-        transform: scale(2) ;
-    }
-    100%{
-        transform: scale(1) ;
-    }
-}
-@keyframes animirajsrcedva{
-    0%{
-        transform: scale(1) ;
-    }
-    50%{
-        transform: scale(0) ;
-    }
-    100%{
-        transform: scale(1) ;
     }
 }

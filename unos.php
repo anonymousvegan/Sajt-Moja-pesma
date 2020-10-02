@@ -11,7 +11,7 @@ anonymousvegan</a>
 <div class="form-group">
                 <input onkeyup="proveri('n')" type="text"  placeholder=" " class="form-control" name="naslov" id="naslov" aria-describedby="emailHelp" autocomplete="off" required >
                 <label for="naslov" id="lnaslov">
-                <span class="label-tekst" id="username-label-tekst">Naslov</span></label>
+                <span class="label-tekst" id="username-label-tekst">Naslov...</span></label>
             </div>
             <div class="okvir-za-unos-pesme">
                 <textarea require minlength="30" onkeyup="proveri('p')" id="unospesme" name="pesma" placeholder="Tekst pesme"></textarea>

@@ -1,7 +1,6 @@
 <?php
-$id = $_POST["idpesme"]; 
+$id = $_POST["idpesme"];
 echo $id;
-
 require "pozadinske/vezasabazom.php";
 $sql ="DELETE FROM pesme WHERE id=?;";
     $stmt=mysqli_stmt_init($conn);
