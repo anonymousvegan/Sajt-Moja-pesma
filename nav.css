@@ -222,7 +222,7 @@ nav a:hover {
 
   header {
     display: grid;
-    grid-template-columns: 1fr 1.5fr 0.25fr;
+    grid-template-columns: 1fr minmax(1fr 1.5fr) 0.25fr;
   }
   
   .logo {
