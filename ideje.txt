@@ -8,3 +8,6 @@
 *izbor boje i fonta
 *pretraga profila
 *ucitati broj kartica u prvom redu u odnosu na rezoluciju (ako staje u prvi red 3 onda ucitaj 3 kartice, ako stanu 4 ucitaj 4...), ispod reda dodadi opciju za prikazi jos
+!!! NE RADI ANIMACIJA LABELE NA PRETRAZI!!!!!!!!!!!!11
+#ispravi centriranje za naslov u dodaj tekst- neka label bude na centru a ne na početku!
+#fali da ubacim pogodna u ovu novu konstrukciju
