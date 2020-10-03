@@ -1,5 +1,6 @@
 :root{
     --plava: #007bff;
+    --pozadina: #000000c0;
 }
 main{
     margin-top: 20px;

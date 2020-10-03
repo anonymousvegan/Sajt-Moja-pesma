@@ -1,5 +1,5 @@
 <div id="unos">
-<span class="x" onclick="zatvori()">X</span>
+<span class="x" onclick="zatvori()">&times;</span>
 <div class="card text-center kartica" >
 <div class="card-header pisac">
 <a href="profil.php?profil=anonymousvegan">

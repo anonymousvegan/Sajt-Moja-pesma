@@ -5,5 +5,5 @@
     <p id="tekst-pesme-preko-celog-ekrana"></p>
     </div>
     <div class="okvir-za-komentare"></div>
-    <div class="x" onclick="zatvori_pesmu_preko_celog_ekrana()">X</div>
+    <div class="x" onclick="zatvori_pesmu_preko_celog_ekrana()">&times;</div>
 </div>
