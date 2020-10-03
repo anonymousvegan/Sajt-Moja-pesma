@@ -19,7 +19,7 @@
     margin: 0;
     padding: 0;
 }
-.kartica .telo-kartice{
+.kartica .telo-kartice:not(.lista .kartica .telo-kartice){
     height: 345px;
     margin:0px;
     padding-top: 0px;

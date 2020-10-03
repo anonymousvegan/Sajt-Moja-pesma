@@ -25,7 +25,7 @@ width: 100%;
     width: 50%;
     margin: 0;
 }
-.lista .telo-kartice{
+.lista .kartica .telo-kartice{
     display: flex;
 }
 .lista .komentari{
