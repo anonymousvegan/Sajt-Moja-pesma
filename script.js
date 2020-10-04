@@ -82,17 +82,15 @@ var reči = ["jeb",
 "prostitut",
 "alko"
 ]
-function proveri(s){
+function proveri(){
+    console.log("radi");
     var naslov, pesma;
     naslov=document.getElementById("naslov").value;
     pesma = document.getElementById("unospesme").value;
-    if(s=="n"){
-        proveri_string(naslov.toLowerCase())
-    }
-    else if(s=="p"){
-        proveri_string(pesma.toLowerCase());
-    }
-    function proveri_string(string) {
+    tekst_za_proveru= naslov+pesma;
+    console.log(tekst_za_proveru)
+        proveri_string(tekst_za_proveru);
+        function proveri_string(string){
         for(i=0; i<reči.length; i++){
         if(string.search(reči[i])!=-1) {
             document.getElementById("pogodna").value="nije";
@@ -101,12 +99,9 @@ function proveri(s){
         else{   
             document.getElementById("pogodna").value="jeste";
         }
-    }}
-}
-//proveri unos na submit
+    }}}
 function proveriUnos(){
-    proveri("n");
-    proveri("p");
+    proveri()
     var naslov=document.getElementById("naslov");
     var pesma=document.getElementById("unospesme");
     var kategorija=document.getElementById("kategorija");
@@ -115,6 +110,7 @@ function proveriUnos(){
     }
     else if(pesma.value.length<30){
         console.log(pesma.value.length)
+        alert("Pesma mora imati najmanje 30 slova")
         return false;
     }
     else if(kategorija.value=="neodredjeno"){
