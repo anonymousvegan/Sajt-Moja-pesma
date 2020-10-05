@@ -23,14 +23,15 @@ if(isset($_POST["unosdugme"])){
     $vreme = date("U");
     $kategorija = $_POST["kategorija"];
     $pogodna= $_POST["pogodna"];
-    $sql = "INSERT INTO pesme (pisac, naslov, pesma, pogodna, vreme, kategorija) VALUES (?, ?, ?, ?, ?, ?);";
+    $boja = $_POST["boja"];
+    $sql = "INSERT INTO pesme (pisac, naslov, pesma, pogodna, vreme, kategorija, boja) VALUES (?, ?, ?, ?, ?, ?, ?);";
     $stmt= mysqli_stmt_init($conn); 
     if(!mysqli_stmt_prepare($stmt, $sql)){
         echo "greška 1";
         exit();
     }   
     else{
-        mysqli_stmt_bind_param($stmt, "ssssss", $pisac, $naslov, $pesma, $pogodna, $vreme, $kategorija);
+        mysqli_stmt_bind_param($stmt, "sssssss", $pisac, $naslov, $pesma, $pogodna, $vreme, $kategorija, $boja);
         mysqli_stmt_execute($stmt);
         header("location: ../../index.php?uspeh=pesmaobjavljena");
     } 

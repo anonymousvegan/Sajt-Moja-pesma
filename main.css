@@ -2,6 +2,9 @@
     --plava: #007bff;
     --pozadina: #000000c0;
 }
+html.dark{
+    filter: invert(1) hue-rotate(180deg); 
+}
 main{
     margin-top: 20px;
 }

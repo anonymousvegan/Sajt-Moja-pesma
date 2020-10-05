@@ -3,7 +3,7 @@ $rezultat= mysqli_query($conn, $sql);
 $brojrezulta=mysqli_num_rows($rezultat);
 while($red=mysqli_fetch_assoc($rezultat)){
 require "vreme.php";
-echo '<div class="card text-center kartica" id="'.$red["id"].'">';
+echo '<div class="card text-center kartica '.$red["boja"].'" id="'.$red["id"].'">';
 echo '<div class="card-header pisac">';
 echo '<a href="profil.php?profil='.$red["pisac"].'">'. $red["pisac"] . '</a>';
 echo '</div><div class="card-body telo-kartice">';

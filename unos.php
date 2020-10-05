@@ -13,9 +13,10 @@
                 </div></div>
 </div><div class="card-body telo-kartice">
 <div class="sadrzaj">
+<input type="hidden" id="bojainput" name="boja" value="bela">
 <input type="hidden" name="pisac" value="<?php echo $_SESSION['ime'];?>">
 <div class="form-group">
-                <input onkeyup="proveri()" type="text"  placeholder=" " class="form-control" name="naslov" id="naslov" aria-describedby="emailHelp" autocomplete="off" required >
+                <input onkeyup="proveri()" type="text"  placeholder=" " name="naslov" id="naslov" aria-describedby="emailHelp" autocomplete="off" required >
                 <label for="naslov" id="lnaslov">
                 <span class="label-tekst" id="username-label-tekst">Naslov</span></label>
             </div>
@@ -36,19 +37,19 @@
         </div>
     </div>
 <div class="card-footer text-muted vreme">
-<div onclick="promeni_boju()" class="boja"><div class="boje">
-    <div id="bela" class="aktivna bojaizbor"></div>
-    <div id="crvena" class="bojaizbor"></div>
-    <div id="narandzasta" class="bojaizbor"></div>
-    <div id="zuta" class="bojaizbor"></div>
-    <div id="zelena" class="bojaizbor"></div>
-    <div id="plavozelena" class="bojaizbor"></div>
-    <div id="svetloplava" class="bojaizbor"></div>
-    <div id="tamnoplava" class="bojaizbor"></div>
-    <div id="ljubicasta"class="bojaizbor"></div>
-    <div id="roze" class="bojaizbor"></div>
-    <div id="braon" class="bojaizbor"></div>
-    <div id="dark"class="bojaizbor"></div>
+<div class="boja"><div class="boje">
+    <div onclick="promeni_boju('bela', 0)" id="bela"  class="aktivna bojaizbor"></div>
+    <div onclick="promeni_boju('crvena', 1)" id="crvena" class="bojaizbor"></div>
+    <div onclick="promeni_boju('narandzasta', 2)" id="narandzasta" class="bojaizbor"></div>
+    <div onclick="promeni_boju('zuta', 3)" id="zuta" class="bojaizbor"></div>
+    <div onclick="promeni_boju('zelena', 4)" id="zelena" class="bojaizbor"></div>
+    <div onclick="promeni_boju('plavozelena', 5)" id="plavozelena" class="bojaizbor"></div>
+    <div onclick="promeni_boju('svetloplava', 6)" id="svetloplava" class="bojaizbor"></div>
+    <div onclick="promeni_boju('tamnoplava', 7)" id="tamnoplava" class="bojaizbor"></div>
+    <div onclick="promeni_boju('ljubicasta', 8)" id="ljubicasta"class="bojaizbor"></div>
+    <div onclick="promeni_boju('roze', 9)" id="roze" class="bojaizbor"></div>
+    <div onclick="promeni_boju('braon', 10)" id="braon" class="bojaizbor"></div>
+    <div onclick="promeni_boju('dark', 11)" id="dark"class="bojaizbor"></div>
 </div><img src="fajlovi/boja.svg"></div>
 <div class="vreme-tekst">
 <button type="submit" name="unosdugme" class="btn btn-primary">Objavite</button>
