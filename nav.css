@@ -22,6 +22,13 @@ h1 {
   width: 50px;
 }
 
+.logo-naziv{
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -325,7 +332,4 @@ nav a:hover {
   nav a:hover::after, nav a:hover::after{
     transform: scale(1,1);
   }
-}
-.logo-naziv{
-  color: white;
 }
