@@ -188,7 +188,7 @@ ekomentar.addEventListener('keyup', function (e) {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("okvirzakomentare").innerHTML = this.responseText;
+                    document.getElementById("komentari").innerHTML = this.responseText;
                 }
             };
             xhttp.open("POST", "backend/pozadinske/dodajkomentar.php", false);

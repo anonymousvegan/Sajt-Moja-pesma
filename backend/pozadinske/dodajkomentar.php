@@ -13,7 +13,6 @@ if(isset($_SESSION["ime"])){
         $red=mysqli_fetch_assoc($rezultat);
         $trenutni_komentari=$red["komentari"];
         if($trenutni_komentari==null){
-            echo "trenutno ima 0 komentara";
             $zaunos = new stdClass();
             $zaunos->autor=$autor;
             $zaunos->komentar=$komentar;
@@ -27,15 +26,17 @@ if(isset($_SESSION["ime"])){
             }else{
                 mysqli_stmt_bind_param($stmt, "ss", $jsonunos, $id);
                 mysqli_stmt_execute($stmt);
-                echo "prokomentarisano";
+                $sql="SELECT komentari FROM pesme WHERE id=".$id;
+                $rezultat= mysqli_query($conn, $sql);
+                $brojrezulta=mysqli_num_rows($rezultat);
+                while($red=mysqli_fetch_assoc($rezultat)){
+                    echo $red["komentari"];
+                }
             } 
         }else{
-            echo "ima više od 0 komentara";
             $stari=json_decode($trenutni_komentari);
             $type = gettype($stari);
-            echo "type od starih je ".$type;
             if ($type=="object"){
-                echo "radim deo koda za type=object";
                 $novi = new stdClass();
                 $novi->autor=$autor;
                 $novi->komentar=$komentar;
@@ -50,7 +51,12 @@ if(isset($_SESSION["ime"])){
                 }else{
                     mysqli_stmt_bind_param($stmt, "ss", $jsonunos, $id);
                     mysqli_stmt_execute($stmt);
-                    echo "prokomentarisano";
+                    $sql="SELECT komentari FROM pesme WHERE id=".$id;
+                    $rezultat= mysqli_query($conn, $sql);
+                    $brojrezulta=mysqli_num_rows($rezultat);
+                    while($red=mysqli_fetch_assoc($rezultat)){
+                        echo $red["komentari"];
+                    }
                 } 
             }else if($type=="array"){
                 $novi = new stdClass();
@@ -67,12 +73,18 @@ if(isset($_SESSION["ime"])){
                 }else{
                     mysqli_stmt_bind_param($stmt, "ss", $jsonunos, $id);
                     mysqli_stmt_execute($stmt);
-                    echo "prokomentarisano";
+                    $sql="SELECT komentari FROM pesme WHERE id=".$id;
+                    $rezultat= mysqli_query($conn, $sql);
+                    $brojrezulta=mysqli_num_rows($rezultat);
+                    while($red=mysqli_fetch_assoc($rezultat)){
+                        echo $red["komentari"];
+                    }
                 }
             }
         }
     }
 }
 else{
-     echo "ulogujte se";
+     echo "ulogujte se, greška 4";
 }
+?>

@@ -7,10 +7,10 @@
         <p id="tekst-pesme-preko-celog-ekrana"></p>
     </div>
     <div id="okvirzakomentare" class="okvir-za-komentare">
-    <!--sakriveni -->
         <input id="autorkomentara" type="hidden" name="autor" value="<?php echo $_SESSION['ime']?>">
         <input id="id-pesme-za-komentarisanje" type="hidden" name="idpesme">
-    <!--kraj skrivenih -->
+        <div id="komentari">
+        </div>
         <input type="text" name="komentar" id="unoskomentara" placeholder=" " autocomplete="off"/>
         <label for="komentar" id="lkomentar">
             <span class="label-tekst" id="komentar-label-tekst">Unesi komentar...</span>
