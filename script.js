@@ -170,9 +170,9 @@ function promeni_boju(boja, rednibroj){
 function promeni_tekst_pogodnosti(){
     var pogodnost_tekst= document.getElementById("pogodnost-tekst");
     if(screen.width<=400){
-        pogodnost_tekst.textContent="za sve uzraste?";
+        pogodnost_tekst.textContent="Za sve uzraste?";
     }else{
-        pogodnost_tekst.textContent="ova pesma je pogodna za sve?";
+        pogodnost_tekst.textContent="Ova pesma je pogodna za sve?";
     }
 }
 promeni_tekst_pogodnosti();
