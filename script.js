@@ -30,7 +30,6 @@ function prikazivise(id){
     }
     klasenakartici=kartica.classList;
     nizklasanakartici=[...klasenakartici];
-    console.log(nizklasanakartici);
     for (i=0; i<boje.length; i++){
         if(nizklasanakartici.indexOf(boje[i])!=-1){
             okvirzapesmu.classList.add(boje[i]);
@@ -114,7 +113,6 @@ function proveri(){
     naslov=document.getElementById("naslov").value;
     pesma = document.getElementById("unospesme").value;
     tekst_za_proveru= naslov+pesma;
-    console.log(tekst_za_proveru)
         proveri_string(tekst_za_proveru);
         function proveri_string(string){
         for(i=0; i<reči.length; i++){
@@ -135,7 +133,6 @@ function proveriUnos(){
         return false;
     }
     else if(pesma.value.length<30){
-        console.log(pesma.value.length)
         alert("Pesma mora imati najmanje 30 slova")
         return false;
     }
@@ -177,12 +174,9 @@ function promeni_tekst_pogodnosti(){
     }
 }
 promeni_tekst_pogodnosti();
-window.addEventListener("resize", promeni_tekst_pogodnosti)
-//unos komentara
-// const komentar = document.getElementById("unos-komentara");
-// vrednostkomentara=komentar.value;
-// komentar.addEventListener("keyup", function(event) {
-//     if (event.key === "Enter") {
-//         console.log(vrednostkomentara);
-//     }
-// });
+window.addEventListener("resize", promeni_tekst_pogodnosti);
+//komentarisanje
+var komentar = document.getElementById("unos-komentara");
+komentar.addEventListener('keyup', function (e) {
+    console.log(e);
+  });
