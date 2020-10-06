@@ -7,7 +7,7 @@
     <div class="okvir-za-komentare">
     <form method="post" action="dodajkomentar.php">
     <input type="text" name="komentar">
-    <button type="submit">
+    <button type="submit">komentarisi</button>
     </form>
     </div>
     <div class="x" onclick="zatvori_pesmu_preko_celog_ekrana()">&times;</div>
