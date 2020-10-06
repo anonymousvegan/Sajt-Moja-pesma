@@ -24,9 +24,6 @@ h1 {
 
 .logo-naziv{
   color: white;
-  font-weight: 400;
-  font-size: 2rem;
-  margin-right: 1.5rem;
 }
 
 .logo {
@@ -311,11 +308,9 @@ nav a:hover {
 }
 
 @media screen and (max-width: 800px) {
-  
   nav a, nav span {
     position: relative;
   }
-
   nav a::after, nav span::after {
     content: '';
     display: block;
@@ -331,8 +326,8 @@ nav a:hover {
   
   nav a:hover::after, nav a:hover::after{
     transform: scale(1,1);
-  }
-}
+  }}
+
 @media screen and  (max-width: 290px){
   h1.logo-naziv{
     font-size: 14px !important;
@@ -367,5 +362,11 @@ nav a:hover {
   }
   .profile-container{
     margin-right: 5px;
+  }
+  .logo-naziv{
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-right: 1.5rem;
   }
 }

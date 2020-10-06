@@ -273,7 +273,7 @@ border-color: black transparent transparent transparent;
     border: 3px solid black
 }
 #bela{
-    background-color: var(--bela)
+    background-color: var(--bela);
     border: 3px solid black;
 }
 #crvena{
