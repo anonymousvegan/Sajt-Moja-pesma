@@ -79,24 +79,24 @@ height: auto;
     border-radius: 2px;
 }
 
-.okvir-za-komentare button {
+.form-komentar button {
     display: none;
 }
 .okvir-za-komentare{
     position: relative;
 }
-.okvir-za-komentare label{
+.form-komentar label{
     position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: 50px;
     box-sizing: border-box;
     margin: 0px;
     border-bottom: 1px solid black;
     pointer-events: none;
 }
-.okvir-za-komentare input[type="text"] {
+.form-komentar input[type="text"] {
     width: 100%;
     border:0;
     outline: 0 ;
@@ -110,7 +110,7 @@ height: auto;
     bottom: 0;
     left: 0;
 }
-.okvir-za-komentare label::after{
+.form-komentar label::after{
     content: "";
     position: absolute;
     height: 100%;
@@ -121,15 +121,15 @@ height: auto;
     transform: translateX(-100%);
     transition: all 0.3s;
 }
-.okvir-za-komentare .label-tekst{
+.form-komentar .label-tekst{
     position: absolute;
     bottom: 5px;
     transform: translate(-0%, 0);
     transition: all 0.3s ease;
 }
-.okvir-za-komentare input:focus + label .label-tekst, 
-.okvir-za-komentare input:valid + label .label-tekst,
-.okvir-za-komentare input:not(:placeholder-shown) + label .label-tekst{
+.form-komentar input:focus + label .label-tekst, 
+.form-komentar input:valid + label .label-tekst,
+.form-komentar input:not(:placeholder-shown) + label .label-tekst{
 transform: translate(-0%, -100%);
 font-size: 14px;
 color: var(--plava);
@@ -139,16 +139,16 @@ transform: translateY(-100%);
 color: var(--plava);
 font-size: 14px;
 }
-.okvir-za-komentare input:focus + label::after, 
-.okvir-za-komentare input:valid + label::after,
-.okvir-za-komentare input:not(:placeholder-shown) + label::after
+.form-komentar input:focus + label::after, 
+.form-komentar input:valid + label::after,
+.form-komentar input:not(:placeholder-shown) + label::after
 {
     transform: translateX(0%);
 }
 .pomeri-border::after{
     transform: translateX(0px) ;
 }
-.okvir-za-komentare textarea{
+.form-komentar textarea{
     border: 0;
     outline: 0;
     width: 100%;
@@ -157,7 +157,7 @@ font-size: 14px;
     text-align: center;
     resize: none;
 }
-.okvir-za-komentare textarea:focus, .okvir-za-komentare textarea:active{
+.form-komentar textarea:focus, .form-komentar textarea:active{
     border: 0;
     outline: 0;
 }

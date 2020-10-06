@@ -8,9 +8,9 @@
     </div>
     <div class="okvir-za-komentare">
         <form method="post" action="dodajkomentar.php" class="form-komentar">
-            <input type="text" name="komentar" id="komentar"/>
+            <input type="text" name="komentar" id="komentar" placeholder=" " autocomplete="off"/>
             <label for="komentar" id="lkomentar">
-                <span class="label-tekst" id="username-label-tekst">Unesi komentar...</span>
+                <span class="label-tekst" id="komentar-label-tekst">Unesi komentar...</span>
             </label>
             <button type="submit">komentarisi</button>
         </form>
