@@ -176,7 +176,24 @@ function promeni_tekst_pogodnosti(){
 promeni_tekst_pogodnosti();
 window.addEventListener("resize", promeni_tekst_pogodnosti);
 //komentarisanje
-var komentar = document.getElementById("unos-komentara");
-komentar.addEventListener('keyup', function (e) {
-    console.log(e);
+var ekomentar = document.getElementById("unoskomentara");
+ekomentar.addEventListener('keyup', function (e) {
+    if(e.key=="Enter"){
+        komentar=ekomentar.value;
+        autor=document.getElementById("autorkomentara").value;
+        pesma=document.getElementById("id-pesme-za-komentarisanje").value;
+        if(autor==""){
+            alert("Morate se ulogovati da bi ste komentarisali.")
+        }else if(komentar!=""){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("okvirzakomentare").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("POST", "backend/pozadinske/dodajkomentar.php", false);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("komentar="+komentar+"&autor="+autor+"&pesma="+pesma);
+        }
+    }
   });
