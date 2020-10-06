@@ -218,7 +218,7 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-.arrow-toggle:checked ~ label > img {
+.arrow-toggle:checked ~ label > .arrow {
   transform: translateY(5px);
 }
 
@@ -331,5 +331,41 @@ nav a:hover {
   
   nav a:hover::after, nav a:hover::after{
     transform: scale(1,1);
+  }
+}
+@media screen and  (max-width: 290px){
+  h1.logo-naziv{
+    font-size: 14px !important;
+  }
+  .arrow{
+    display: none;
+  }
+  .profile-container{
+    margin-right: 5px;
+  }
+  .logo-slika{
+    visibility: hidden;
+  }
+}
+@media screen and  (max-width: 300px){
+  h1.logo-naziv{
+    font-size: 20px !important;
+  }
+  .arrow{
+    display: none;
+  }
+  .profile-container{
+    margin-right: 5px;
+  }
+}
+@media screen and  (max-width: 350px){
+  h1.logo-naziv{
+    font-size: 25px !important;
+  }
+  .arrow{
+    display: none;
+  }
+  .profile-container{
+    margin-right: 5px;
   }
 }

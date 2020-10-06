@@ -1,18 +1,16 @@
 <div id="unos">
 <form onsubmit="return proveriUnos()" class="form-container" autocomplete="off" method="post" action="backend/pozadinske/unospesme.php">
-    <span class="x" onclick="zatvori()">&times;</span>
     <div class="card text-center kartica">
     <div class="card-header pisac">
     <div class="pogodnost">
-                <div class="pogodnost-tekst">Ova pesma je pogodna za sve?</div>
+                <div id="pogodnost-tekst" class="pogodnost-tekst">Ova pesma je pogodna za sve?</div>
                 <div class="pogodnost-odabir">
                     <select class="btn btn-primary" name="pogodna" id="pogodna">
                         <option value="jeste">Da</option>
                         <option value="nije">Ne</option>
                     </select>
-                </div></div>
+                </div></div>    <span class="x" onclick="zatvori()">&times;</span>
 </div><div class="card-body telo-kartice">
-<div class="sadrzaj">
 <input type="hidden" id="bojainput" name="boja" value="bela">
 <input type="hidden" name="pisac" value="<?php echo $_SESSION['ime'];?>">
 <div class="form-group">
@@ -23,7 +21,6 @@
             <div class="okvir-za-unos-pesme">
                 <textarea require minlength="30" onkeyup="proveri()" id="unospesme" name="pesma" placeholder="Tekst pesme"></textarea>
             </div>
-            <div class="form-group">
             <select class="btn btn-primary" name="kategorija" id="kategorija">
                 <option value="neodredjeno">Odaberite Kategodiju</option>
                 <option value="ljubavne">Ljubavne</option>
@@ -33,8 +30,6 @@
                 <option value="rodoljubive-i-religijske">Rodoljubive/Religijske</option>
                 <option value="ostale">Ostale</option>
             </select>
-            </div>
-        </div>
     </div>
 <div class="card-footer text-muted vreme">
 <div class="boja"><div class="boje">

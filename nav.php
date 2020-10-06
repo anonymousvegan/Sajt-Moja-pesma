@@ -14,10 +14,10 @@ session_start();
           </ul>  
         </nav>
         <div class="profile-container">
+        <input type="checkbox" id="arrow-toggle" class="arrow-toggle">
+        <label for="arrow-toggle" class="arrow-toggle-label">
           <img class="profile-icon" src="./fajlovi/profile-icon.svg" alt="profile-icon">
-          <input type="checkbox" id="arrow-toggle" class="arrow-toggle">
-          <label for="arrow-toggle" class="arrow-toggle-label">
-            <img class="arrow" src="./fajlovi/arrow.svg" alt="arrow"> 
+          <img class="arrow" src="./fajlovi/arrow.svg" alt="arrow"> 
           </label>
           <div class="dropdown-container">
           <ul>

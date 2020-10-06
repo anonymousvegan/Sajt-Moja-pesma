@@ -5,12 +5,15 @@ function zatvori(){
     document.getElementById("unos").classList.remove("prikazi-unos");
 }
 function prikazivise(id){
+    if(screen.width>=600){
     const kartica = document.getElementById(id);
     let naslov= kartica.querySelector(".naslov").textContent;
     let pisac = kartica.querySelector("a").textContent;
     let pesma=kartica.querySelector("p").textContent;
     let vreme= kartica.querySelector(".vreme").textContent;
     const kontejner = document.querySelector(".pesma-preko-celog-ekrana");
+    const okvirzapesmu= kontejner.querySelector(".okvir-za-pesmu");
+    const okvirzakomentare=kontejner.querySelector(".okvir-za-komentare")
     let pisac_ceo_ekran= kontejner.querySelector("#pisac-preko-celog-ekrana");
     let naslov_ceo_ekran= kontejner.querySelector("#naslov-preko-celog-ekrana");
     let pesma_ceo_ekran = kontejner.querySelector("#tekst-pesme-preko-celog-ekrana");
@@ -18,7 +21,29 @@ function prikazivise(id){
     pisac_ceo_ekran.href="profil.php?profil="+pisac;
     pesma_ceo_ekran.textContent=pesma;
     naslov_ceo_ekran.textContent=naslov;
-    kontejner.classList.add("prikazi-pesmu-na-ceo-ekran");
+    var boje=["bela","crvena", "narandzasta", "zuta", "zelena", "plavozelena","svetloplava","tamnoplava","ljubicasta","roze","braon","dark"];
+    for (i=0; i<boje.length; i++){
+        okvirzapesmu.classList.remove(boje[i]);
+        okvirzakomentare.classList.remove(boje[i])
+    }
+    klasenakartici=kartica.classList;
+    nizklasanakartici=[...klasenakartici];
+    console.log(nizklasanakartici);
+    for (i=0; i<boje.length; i++){
+        if(nizklasanakartici.indexOf(boje[i])!=-1){
+            okvirzapesmu.classList.add(boje[i]);
+            okvirzakomentare.classList.add(boje[i])
+        }
+    }
+    kontejner.classList.add("prikazi-pesmu-na-ceo-ekran")
+}else{
+    const kartica = document.getElementById(id);
+    kartica.style.height="auto";
+    const p = kartica.querySelector("p");
+    p.style.height="auto";
+    location.href = "#"+id;
+    kartica.querySelector("button").style.display="none"
+}
 }
 function zatvori_pesmu_preko_celog_ekrana(){
     document.querySelector(".pesma-preko-celog-ekrana").classList.remove("prikazi-pesmu-na-ceo-ekran");
@@ -141,3 +166,14 @@ function promeni_boju(boja, rednibroj){
     bojainput=document.getElementById("bojainput");
     bojainput.value=boja;
 }
+//responsiv kada se završi učitavanje
+function promeni_tekst_pogodnosti(){
+    var pogodnost_tekst= document.getElementById("pogodnost-tekst");
+    if(screen.width<=400){
+        pogodnost_tekst.textContent="za sve uzraste?";
+    }else{
+        pogodnost_tekst.textContent="ova pesma je pogodna za sve?";
+    }
+}
+promeni_tekst_pogodnosti();
+window.addEventListener("resize", promeni_tekst_pogodnosti)
