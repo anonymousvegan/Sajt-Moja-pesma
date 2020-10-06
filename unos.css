@@ -364,11 +364,16 @@ border-color: black transparent transparent transparent;
     #unos .pisac{
         position: relative;
     }
-    .x{
+    #unos .x{
+        background-color: transparent;
         top:3px;
         right:0;
-        color:darkred;
-        border: 3px solid black;
+        color: var(--plava);
+        font-size:40px;
+    }
+    #unos.x:hover, #unos .x:active{
+        transform: scale(1,1);
+        color: var(--plava);
     }
     }
 @media screen and  (max-width: 400px){
@@ -406,8 +411,7 @@ border-color: black transparent transparent transparent;
     .x{
         top:3px;
         right:0;
-        color:darkred;
-        border: 3px solid black;
+        color:var(--plava);
     }
     .pogodnost-tekst{width: auto;}
     .pogodnost{

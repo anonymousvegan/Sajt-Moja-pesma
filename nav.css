@@ -108,7 +108,7 @@ nav a, nav span{
   font-size: 1.2rem;
   text-transform: uppercase;
   opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 nav a:hover {
@@ -145,7 +145,9 @@ nav a:hover {
   padding-top: 5px;
   transition: transform 400ms ease-in-out;
 }
-
+ .profile-icon:hover, .arrow:hover{
+  cursor: pointer;
+}
 .arrow-toggle {
   position: absolute !important;
   top: -9999px !important;
