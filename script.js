@@ -21,6 +21,8 @@ function prikazivise(id){
     pisac_ceo_ekran.href="profil.php?profil="+pisac;
     pesma_ceo_ekran.textContent=pesma;
     naslov_ceo_ekran.textContent=naslov;
+    var pesmazakomentarisanje=document.getElementById("id-pesme-za-komentarisanje");
+    pesmazakomentarisanje.setAttribute("value",id)
     var boje=["bela","crvena", "narandzasta", "zuta", "zelena", "plavozelena","svetloplava","tamnoplava","ljubicasta","roze","braon","dark"];
     for (i=0; i<boje.length; i++){
         okvirzapesmu.classList.remove(boje[i]);
@@ -108,7 +110,6 @@ var reči = ["jeb",
 "alko"
 ]
 function proveri(){
-    console.log("radi");
     var naslov, pesma;
     naslov=document.getElementById("naslov").value;
     pesma = document.getElementById("unospesme").value;
@@ -177,3 +178,11 @@ function promeni_tekst_pogodnosti(){
 }
 promeni_tekst_pogodnosti();
 window.addEventListener("resize", promeni_tekst_pogodnosti)
+//unos komentara
+// const komentar = document.getElementById("unos-komentara");
+// vrednostkomentara=komentar.value;
+// komentar.addEventListener("keyup", function(event) {
+//     if (event.key === "Enter") {
+//         console.log(vrednostkomentara);
+//     }
+// });

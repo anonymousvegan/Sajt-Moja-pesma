@@ -7,6 +7,11 @@
         <p id="tekst-pesme-preko-celog-ekrana"></p>
     </div>
     <div class="okvir-za-komentare">
+    <form method="post" action="backend/pozadinske/dodajkomentar.php">
+    <input type="hidden" name="autor" value="<?php echo $_SESSION['ime']?>">
+    <input id="id-pesme-za-komentarisanje" type="hidden" name="idpesme">
+    <input  value="help pls" id="unos-komentara" type="text" name="komentar">
+    <button type="submit">unesikomet</button>
         <form method="post" action="dodajkomentar.php" class="form-komentar">
             <input type="text" name="komentar" id="komentar" placeholder=" " autocomplete="off"/>
             <label for="komentar" id="lkomentar">
