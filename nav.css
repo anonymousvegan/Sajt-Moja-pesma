@@ -236,7 +236,9 @@ nav a:hover {
     align-items: center;
     justify-content: center;
   }
-
+  .arrow-toggle-label {
+    margin-bottom: 0;
+  }
   nav {
     position: relative;
     text-align: left;
