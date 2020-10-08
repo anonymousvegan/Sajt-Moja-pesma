@@ -26,12 +26,7 @@ if(isset($_SESSION["ime"])){
             }else{
                 mysqli_stmt_bind_param($stmt, "ss", $jsonunos, $id);
                 mysqli_stmt_execute($stmt);
-                $sql="SELECT komentari FROM pesme WHERE id=".$id;
-                $rezultat= mysqli_query($conn, $sql);
-                $brojrezulta=mysqli_num_rows($rezultat);
-                while($red=mysqli_fetch_assoc($rezultat)){
-                    echo $red["komentari"];
-                }
+                require "../../ispiskomentara.php";
             } 
         }else{
             $stari=json_decode($trenutni_komentari);
@@ -51,12 +46,7 @@ if(isset($_SESSION["ime"])){
                 }else{
                     mysqli_stmt_bind_param($stmt, "ss", $jsonunos, $id);
                     mysqli_stmt_execute($stmt);
-                    $sql="SELECT komentari FROM pesme WHERE id=".$id;
-                    $rezultat= mysqli_query($conn, $sql);
-                    $brojrezulta=mysqli_num_rows($rezultat);
-                    while($red=mysqli_fetch_assoc($rezultat)){
-                        echo $red["komentari"];
-                    }
+                    require "../../ispiskomentara.php";
                 } 
             }else if($type=="array"){
                 $novi = new stdClass();
@@ -73,12 +63,7 @@ if(isset($_SESSION["ime"])){
                 }else{
                     mysqli_stmt_bind_param($stmt, "ss", $jsonunos, $id);
                     mysqli_stmt_execute($stmt);
-                    $sql="SELECT komentari FROM pesme WHERE id=".$id;
-                    $rezultat= mysqli_query($conn, $sql);
-                    $brojrezulta=mysqli_num_rows($rezultat);
-                    while($red=mysqli_fetch_assoc($rezultat)){
-                        echo $red["komentari"];
-                    }
+                    require "../../ispiskomentara.php";
                 }
             }
         }

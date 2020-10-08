@@ -10,6 +10,7 @@
         <input id="autorkomentara" type="hidden" name="autor" value="<?php echo $_SESSION['ime']?>">
         <input id="id-pesme-za-komentarisanje" type="hidden" name="idpesme">
         <div id="komentari">
+        <?php require "ispiskomentara.php"; ?>
         </div>
         <input type="text" name="komentar" id="unoskomentara" placeholder=" " autocomplete="off"/>
         <label for="komentar" id="lkomentar">

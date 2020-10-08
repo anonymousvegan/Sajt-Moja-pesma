@@ -37,6 +37,15 @@ function prikazivise(id){
         }
     }
     kontejner.classList.add("prikazi-pesmu-na-ceo-ekran")
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("komentari").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("POST", "ispiskomentara.php", false);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("id="+id);
 }else{
     const kartica = document.getElementById(id);
     kartica.style.height="auto";
@@ -180,6 +189,7 @@ var ekomentar = document.getElementById("unoskomentara");
 ekomentar.addEventListener('keyup', function (e) {
     if(e.key=="Enter"){
         komentar=ekomentar.value;
+        ekomentar.value="";
         autor=document.getElementById("autorkomentara").value;
         pesma=document.getElementById("id-pesme-za-komentarisanje").value;
         if(autor==""){
