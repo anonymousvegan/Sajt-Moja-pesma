@@ -10,17 +10,28 @@ function prikazivise(id){
     let naslov= kartica.querySelector(".naslov").textContent;
     let pisac = kartica.querySelector("a").textContent;
     let pesma=kartica.querySelector("p").textContent;
-    let vreme= kartica.querySelector(".vreme").textContent;
+    let vreme= kartica.querySelector(".vreme-tekst").textContent;
+    let lajk= kartica.querySelector(".srce");
+    let slikalajka= kartica.querySelector(".srce img");
+    let brojlajkova= kartica.querySelector("span").textContent;
     const kontejner = document.querySelector(".pesma-preko-celog-ekrana");
     const okvirzapesmu= kontejner.querySelector(".okvir-za-pesmu");
     const okvirzakomentare=kontejner.querySelector(".okvir-za-komentare")
     let pisac_ceo_ekran= kontejner.querySelector("#pisac-preko-celog-ekrana");
     let naslov_ceo_ekran= kontejner.querySelector("#naslov-preko-celog-ekrana");
     let pesma_ceo_ekran = kontejner.querySelector("#tekst-pesme-preko-celog-ekrana");
+    let vreme_ceo_ekran = kontejner.querySelector("#vreme-preko-celog-ekrana");
+    let lajk_ceo_ekran=kontejner.querySelector("#lajkuj-preko-celog-ekrana");
+    let brojlajkovaceoekran = kontejner.querySelector("#brojlajkovaceoekran");
+    let slikalajkaceoekran = kontejner.querySelector("#lajkuj-preko-celog-ekrana img");
+    slikalajkaceoekran.setAttribute("src", slikalajka.getAttribute("src"))
     pisac_ceo_ekran.textContent=pisac;
     pisac_ceo_ekran.href="profil.php?profil="+pisac;
     pesma_ceo_ekran.textContent=pesma;
     naslov_ceo_ekran.textContent=naslov;
+    vreme_ceo_ekran.textContent=vreme;
+    brojlajkovaceoekran.textContent=brojlajkova;
+    lajk_ceo_ekran.setAttribute("onclick", (lajk.getAttribute("onclick")));
     var pesmazakomentarisanje=document.getElementById("id-pesme-za-komentarisanje");
     pesmazakomentarisanje.setAttribute("value",id)
     var boje=["bela","crvena", "narandzasta", "zuta", "zelena", "plavozelena","svetloplava","tamnoplava","ljubicasta","roze","braon","dark"];
@@ -46,6 +57,8 @@ function prikazivise(id){
     xhttp.open("POST", "ispiskomentara.php", false);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send("id="+id);
+    komentari=document.getElementById("komentari");
+    komentari.scrollTop=komentari.scrollHeight;
 }else{
     const kartica = document.getElementById(id);
     kartica.style.height="auto";
@@ -60,19 +73,39 @@ function zatvori_pesmu_preko_celog_ekrana(){
 }
 function lajkuj(id, profil){
     document.getElementById(id).querySelector("img").classList.remove("animirajsrce");
+    document.getElementById("lajkuj-preko-celog-ekrana").querySelector("img").classList.remove("animirajsrce");
     var trenuta=document.getElementById(id).querySelector("img").getAttribute("src");
     setTimeout(
         function(){
             if(trenuta=="fajlovi/srce-prazno.svg"){
+                var ceoekran=document.getElementById("lajkuj-preko-celog-ekrana").querySelector("img");
+                var ceoekran=document.getElementById("lajkuj-preko-celog-ekrana").querySelector("img");
                 document.getElementById(id).querySelector("img").src="fajlovi/srce-puno.png";
+                ceoekran.src="fajlovi/srce-puno.png";
                 document.getElementById(id).querySelector("img").classList.remove("animirajsrcedva");
+                ceoekran.classList.remove("animirajsrcedva");
                 document.getElementById(id).querySelector("img").classList.add("animirajsrce");
-    
+                ceoekran.classList.add("animirajsrce");
+                var ispislajkova=document.querySelector("#lajkuj-preko-celog-ekrana span");
+                var trenutanBroj=parseInt(ispislajkova.textContent);
+                var novi=trenutanBroj+1;
+                ispislajkova.textContent=novi;
             }
             if(trenuta=="fajlovi/srce-puno.png"){
+                var ceoekran=document.getElementById("lajkuj-preko-celog-ekrana").querySelector("img");
                 document.getElementById(id).querySelector("img").src="fajlovi/srce-prazno.svg";
+                ceoekran.src="fajlovi/srce-prazno.svg";
                 document.getElementById(id).querySelector("img").classList.remove("animirajsrce");
+                ceoekran.classList.remove("animirajsrce");
                 document.getElementById(id).querySelector("img").classList.add("animirajsrcedva");
+                ceoekran.classList.add("animirajsrcedva");
+                var ispislajkova=document.querySelector("#lajkuj-preko-celog-ekrana span");
+                console.log(ispislajkova);
+                var trenutanBroj=parseInt(ispislajkova.textContent);
+                console.log(trenutanBroj)
+                var novi=trenutanBroj-1;
+                console.log(novi);
+                ispislajkova.textContent=novi;
             }
         }, 100
     )
