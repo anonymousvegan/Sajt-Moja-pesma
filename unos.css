@@ -117,6 +117,8 @@ font-size: 14px;
     overflow: auto;
     text-align: center;
     resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 #unos textarea:focus, #unos textarea:active{
     border: 0;

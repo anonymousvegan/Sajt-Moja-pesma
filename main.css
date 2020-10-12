@@ -2,6 +2,13 @@
     --plava: #007bff;
     --pozadina: #000000c0;
 }
+@font-face{
+    font-family: prvifont;
+    src: url(fajlovi/prvifont.ttf);
+}
+
+
+
 html.dark{
     filter: invert(1) hue-rotate(180deg); 
 }

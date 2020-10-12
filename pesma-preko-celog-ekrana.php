@@ -1,4 +1,6 @@
 <div class="pesma-preko-celog-ekrana">
+    <div onclick="prethodna()" id="leva-strelica" class="strelica">&#x2039;</div>
+    <div onclick="sledeca()" id="desna-strelica" class="strelica">&#x203A;</div>
     <div class="okvir-za-pesmu">
         <div class="pisac">
             <a href="profil.php?profil=anonymousvegan" id="pisac-preko-celog-ekrana">anonymousvegan</a>

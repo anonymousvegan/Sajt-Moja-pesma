@@ -4,7 +4,9 @@ function dodaj(){
 function zatvori(){
     document.getElementById("unos").classList.remove("prikazi-unos");
 }
+var trenutnoaktivna=0;
 function prikazivise(id){
+    trenutnoaktivna=id;
     if(screen.width>=600){
     const kartica = document.getElementById(id);
     let naslov= kartica.querySelector(".naslov").textContent;
@@ -232,6 +234,8 @@ ekomentar.addEventListener('keyup', function (e) {
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("komentari").innerHTML = this.responseText;
+                    komentari=document.getElementById("komentari");
+                    komentari.scrollTop=komentari.scrollHeight;
                 }
             };
             xhttp.open("POST", "backend/pozadinske/dodajkomentar.php", false);
@@ -240,3 +244,37 @@ ekomentar.addEventListener('keyup', function (e) {
         }
     }
   });
+//prethodna i sledeća na strelice
+function prethodna(){
+    var kartice=document.querySelectorAll("#pesme .kartica");
+    var idevi=[];
+    for (i=0; i<kartice.length; i++){
+        idevi.push(parseInt(kartice[i].getAttribute("id")));
+    }
+    console.log(idevi)
+    console.log(trenutnoaktivna);
+    var index=idevi.indexOf(trenutnoaktivna);
+    if(index>=1){
+    var indexprehodne=index-1;
+    var idprethodne=idevi[indexprehodne];
+    console.log(idprethodne);
+    prikazivise(idprethodne);
+    }
+}
+function sledeca(){
+    var kartice=document.querySelectorAll("#pesme .kartica");
+    var idevi=[];
+    for (i=0; i<kartice.length; i++){
+        idevi.push(parseInt(kartice[i].getAttribute("id")));
+    }
+    console.log(idevi)
+    console.log(trenutnoaktivna);
+    var index=idevi.indexOf(trenutnoaktivna);
+    if(index%5==0){
+        prikazi_jos();
+    }
+    var indexsledece=index+1;
+    var idsledece=idevi[indexsledece];
+    console.log(idsledece);
+    prikazivise(idsledece);
+}

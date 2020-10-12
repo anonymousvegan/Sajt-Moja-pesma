@@ -21,6 +21,7 @@
     height: 500px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+    transition: all .3s;
 }
 .okvir-za-pesmu{
     border-right: 2px solid #888888;
@@ -52,6 +53,7 @@
 width: 100%;
 text-align: center;
 height: auto;
+transition: all .5s;
 }
 .okvir-za-pesmu{
     overflow: auto;
@@ -223,4 +225,36 @@ unos komentara  i smor kod ....
 .okvir-za-komentare input:not(:placeholder-shown) + label::after
 {
     transform: translateX(0%);
+}
+/* strelice za napred i nazad */
+.strelica{
+    color: rgba(200, 200, 200, .9);
+    font-size: 100px; 
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+    transition: all .3s ease;
+}
+.strelica:hover {
+    color: var(--plava);
+}
+#desna-strelica{
+    right: 10px;
+    justify-content: flex-end;
+    transform: translateX(-0px);
+}
+#desna-strelica:hover{
+    transform: translateX(-20px);
+}
+#leva-strelica{
+    left: 10px;
+    transform: translateX(0px);
+    justify-content: flex-start;
+}
+#leva-strelica:hover{
+    transform: translateX(20px);
 }
