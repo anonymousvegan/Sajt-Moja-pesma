@@ -29,7 +29,7 @@
     border-bottom-left-radius: 5px;
     position: relative;
 }
-.okvir-za-pesmu h1{
+.okvir-za-pesmu h5{
     width: 100%;
     height: 50px;
     margin: 0;
@@ -37,6 +37,11 @@
     position: sticky;
     top: 50px;
     background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 30px;
 }
 .okvir-za-pesmu .pisac{
     width: 100%;
@@ -180,6 +185,7 @@ unos komentara  i smor kod ....
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 20px;
     padding-top: 5px;
+    padding-right: 35px;
 }
 .okvir-za-komentare .form-group label{
     position: absolute;
@@ -230,6 +236,7 @@ unos komentara  i smor kod ....
 .strelica{
     color: rgba(200, 200, 200, .9);
     font-size: 100px; 
+    opacity: .6;
     width: 100px;
     height: 100%;
     position: absolute;
@@ -241,6 +248,7 @@ unos komentara  i smor kod ....
 }
 .strelica:hover {
     color: var(--plava);
+    opacity: 1;
 }
 #desna-strelica{
     right: 10px;
@@ -257,4 +265,22 @@ unos komentara  i smor kod ....
 }
 #leva-strelica:hover{
     transform: translateX(20px);
+}
+#posaljikomentarikonica{
+    display: block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+/*mobilni prikaz komentara */
+.mobilni .okvir-za-komentare{
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+}
+.mobilni .okvir-za-pesmu{
+    display: none;
 }

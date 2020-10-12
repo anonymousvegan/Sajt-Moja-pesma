@@ -3,10 +3,7 @@
 *misije, login
 *oznake, romantik, patriota
 *više podataka na profilu, slike
-*komentari
 *zapamti me
-*izbor boje i fonta
-*pretraga profila
-*ucitati broj kartica u prvom redu u odnosu na rezoluciju (ako staje u prvi red 3 onda ucitaj 3 kartice, ako stanu 4 ucitaj 4...), ispod reda dodadi opciju za prikazi jos
+*izbor fonta
 *Korisnik dobija više tokena na populariti   ako želi da pogleda reklamu...
-#fali da ubacim pogodna u ovu novu konstrukciju
+*kategorije

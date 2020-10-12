@@ -5,7 +5,7 @@
         <div class="pisac">
             <a href="profil.php?profil=anonymousvegan" id="pisac-preko-celog-ekrana">anonymousvegan</a>
         </div>
-        <h1 id="naslov-preko-celog-ekrana">Krvava bajka</h1>
+        <h5 id="naslov-preko-celog-ekrana">Krvava bajka</h5>
         <p id="tekst-pesme-preko-celog-ekrana"></p>
     </div>
     <div id="okvirzakomentare" class="okvir-za-komentare">
@@ -24,6 +24,7 @@
         <label for="unoskomentara" id="lkomentar">
             <span class="label-tekst" id="komentar-label-tekst">Unesi komentar...</span>
         </label>
+        <img onclick="komentarisimobilni()" src="fajlovi/posalji.svg" id="posaljikomentarikonica">
         </div>
     </div>
 </div>

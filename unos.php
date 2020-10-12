@@ -14,7 +14,7 @@
 <input type="hidden" id="bojainput" name="boja" value="bela">
 <input type="hidden" name="pisac" value="<?php echo $_SESSION['ime'];?>">
 <div class="form-group">
-                <input onkeyup="proveri()" type="text"  placeholder=" " name="naslov" id="naslov" aria-describedby="emailHelp" autocomplete="off" required >
+                <input minlength="2" maxlength="20" onkeyup="proveri()" type="text"  placeholder=" " name="naslov" id="naslov" aria-describedby="emailHelp" autocomplete="off" required >
                 <label for="naslov" id="lnaslov">
                 <span class="label-tekst" id="username-label-tekst">Naslov</span></label>
             </div>
