@@ -5,5 +5,4 @@
 *više podataka na profilu, slike
 *zapamti me
 *izbor fonta
-*Korisnik dobija više tokena na populariti   ako želi da pogleda reklamu...
 *kategorije

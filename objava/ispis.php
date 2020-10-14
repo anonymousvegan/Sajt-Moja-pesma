@@ -15,7 +15,7 @@ echo '<button onclick="prikazivise('.$red["id"].')" class="btn btn-primary prika
 echo '</div>
 <div class="card-footer text-muted vreme">';
 if($ovlascenje=="nelogovan"){
-  echo '<div onclick="lajkujnelogovan()"  class="srce"><img src="fajlovi/srce-puno.png"><span id="' .$red["id"] . 'brojlajkova">' . $red["lajkova"] .'</div><div class="vreme-tekst">' . $vreme . '</div> <div onclick="prikazikomentare('.$red["id"].')" class="ikonicazakomentarkontejner"><img class="ikonicazakomentar" src="fajlovi/komentar.svg" /> </div>';
+  echo '<div onclick="lajkujnelogovan()"  class="srce"><img src="fajlovi/srce-prazno.svg"><span id="' .$red["id"] . 'brojlajkova">' . $red["lajkova"] .'</div><div class="vreme-tekst">' . $vreme . '</div> <div onclick="prikazikomentare('.$red["id"].')" class="ikonicazakomentarkontejner"><img class="ikonicazakomentar" src="fajlovi/komentar.svg" /> </div>';
 }
 else{
   $lajkovao=$red["lajkovao"];

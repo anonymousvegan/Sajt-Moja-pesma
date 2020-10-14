@@ -25,6 +25,8 @@ if(isset($_POST["login"])){
                     exit();  
                 }
                 else if($tacnasifra==true){
+                    ini_set('session.gc_maxlifetime', 3600);
+                    session_set_cookie_params(3600);
                     session_start();
                     $_SESSION["id"]=$row["id"];
                     $_SESSION["ime"]=$row["ime"];

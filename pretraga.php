@@ -53,6 +53,14 @@ if(isset($_GET["pretraga"])){
 <?php include "foother.php" ?>
 <script>
 broj=5
+//deo koda za izbor kategorije
+var kategorija="sve";
+function  promenikategoriju(k){
+    kategorija=k;
+    broj=5
+    prikazi_jos();
+}
+//ostatak koda 
 function prikazi_jos(){
     broj+=5;
     var xhttp = new XMLHttpRequest();
@@ -63,7 +71,7 @@ function prikazi_jos(){
 };
 xhttp.open("POST", "objava/prikazi_jos.php", false);
 xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xhttp.send("broj="+broj+"&pretraga=<?php echo $pretraga ?>");
+xhttp.send("broj="+broj+"&pretraga=<?php echo $pretraga ?>"+"&kategorija="+kategorija);
 }
 $(window).scroll(function() {
 if($(window).scrollTop() + window.innerHeight >= $(document).height()-100) {

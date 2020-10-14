@@ -10,7 +10,21 @@ session_start();
         <nav>
           <ul>
             <li><a href="index.php">Početna</a></li>
-            <li  onclick="dodaj()"><a href="#">Dodaj tekst</a></li>
+            <li onclick="dodaj()"><a href="#">Dodaj tekst</a></li>
+            <li>
+            <div class="dropdown">
+              <button >KATEGORIJE</button>
+              <div class="dropdown-content">
+                <div onclick="promenikategoriju('sve')">Sve</div>
+                <div onclick="promenikategoriju('ljubavne')">Ljubavne</div>
+                <div onclick="promenikategoriju('decije')">Dečije</div>
+                <div onclick="promenikategoriju('porodicne')">Porodične</div>
+                <div onclick="promenikategoriju('zivotinje-i-priroda')">Životinje/priroda</div>
+                <div onclick="promenikategoriju('rodoljubive-i-religijske')">Rodoljubive/religijske</div>
+                <div onclick="promenikategoriju('ostale')">ostale</div>
+              </div>
+            </div>
+            </li>
           </ul>  
         </nav>
         <div class="profile-container">
@@ -36,3 +50,17 @@ session_start();
           <span></span>
         </label>
     </header>
+    <script>
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
