@@ -21,7 +21,7 @@ session_start();
                 <div onclick="promenikategoriju('porodicne')">Porodične</div>
                 <div onclick="promenikategoriju('zivotinje-i-priroda')">Životinje/priroda</div>
                 <div onclick="promenikategoriju('rodoljubive-i-religijske')">Rodoljubive/religijske</div>
-                <div onclick="promenikategoriju('ostale')">ostale</div>
+                <div onclick="promenikategoriju('ostale')">Ostalo</div>
               </div>
             </div>
             </li>

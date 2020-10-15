@@ -34,7 +34,7 @@
     overflow: hidden;
 }
 #unos.prikazi-unos{
-    transform: translateY(0%); 
+    animation: gravity-effect forwards 1.5s ease-in-out;
 }
 #unos .telo-kartice{
     position: relative;
