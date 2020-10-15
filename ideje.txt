@@ -5,4 +5,3 @@
 *više podataka na profilu, slike
 *zapamti me
 *izbor fonta
-*kategorije
