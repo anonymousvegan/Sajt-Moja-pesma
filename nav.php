@@ -12,18 +12,20 @@ session_start();
             <li><a href="index.php">Početna</a></li>
             <li onclick="dodaj()"><a href="#">Dodaj tekst</a></li>
             <li>
-            <div class="dropdown">
-              <button >KATEGORIJE</button>
-              <div class="dropdown-content">
-                <div onclick="promenikategoriju('sve')">Sve</div>
-                <div onclick="promenikategoriju('ljubavne')">Ljubavne</div>
-                <div onclick="promenikategoriju('decije')">Dečije</div>
-                <div onclick="promenikategoriju('porodicne')">Porodične</div>
-                <div onclick="promenikategoriju('zivotinje-i-priroda')">Životinje/priroda</div>
-                <div onclick="promenikategoriju('rodoljubive-i-religijske')">Rodoljubive/religijske</div>
-                <div onclick="promenikategoriju('ostale')">Ostalo</div>
+              <div class="kategorije-container">
+                <a href="#">Kategorije</a>        
+                <div class="kategorije-dropdown">
+                  <ul>
+                    <li onclick="promenikategoriju('sve')"><a class="kda" href="#">Sve</a></li>
+                    <li onclick="promenikategoriju('ljubavne')"><a class="kda" href="#">Ljubavne</a></li>
+                    <li onclick="promenikategoriju('decije')"><a class="kda" href="#">Dečije<a/></li>
+                    <li onclick="promenikategoriju('porodicne')"><a class="kda" href="#">Porodične<a/></li>
+                    <li onclick="promenikategoriju('zivotinje-i-priroda')"><a class="kda" href="#">Životinje/priroda</a></li>
+                    <li onclick="promenikategoriju('rodoljubive-i-religijske')"><a class="kda" href="#">Rodoljubive/religijske</a></li>
+                    <li onclick="promenikategoriju('ostale')"><a class="kda" href="#">Ostalo</a></li>
+                  </ul>
+                </div>
               </div>
-            </div>
             </li>
           </ul>  
         </nav>
@@ -50,17 +52,3 @@ session_start();
           <span></span>
         </label>
     </header>
-    <script>
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>

@@ -156,7 +156,7 @@ nav a:hover {
   left: -9999px !important;
 }
 
-.dropdown-container {
+.dropdown-container, .kategorije-dropdown {
   background: var(--plava);
   position: absolute;
   top: 45px;
@@ -167,14 +167,30 @@ nav a:hover {
   transition: transform 400ms ease-in-out;
 }
 
-.dropdown-container ul {
+.kategorije-container {
+  position: relative;
+}
+
+.kategorije-dropdown {
+  width: 275px;
+  left: 0;
+  top: 35px;
+}
+
+.dropdown-container ul, .kategorije-dropdown ul {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: right;
+  display: block;
 }
 
-.dropdown-container a {
+.kategorije-dropdown ul {
+  text-align: left;
+  width: 400px;
+}
+
+.dropdown-container a, .kategorije-dropdown a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
@@ -184,11 +200,11 @@ nav a:hover {
   position: relative;
 }
 
-.dropdown-container a:hover {
+.dropdown-container a:hover, .kategorije-dropdown a:hover {
   color: black;
 }
 
-.dropdown-container a::after {
+.dropdown-container a::after, .kategorije-dropdown a::after {
   content: '';
   display: block;
   height: 5px;
@@ -201,13 +217,22 @@ nav a:hover {
   bottom: -.5rem;
 }
 
-.dropdown-container a:hover::after {
+.dropdown-container a:hover::after, .kategorije-dropdown a:hover::after {
   transform: scale(1,1);
 }
 
-.dropdown-container li {
+.dropdown-container li, .kategorije-dropdown li {
   margin-bottom: 1em;
   margin-right: 1em;
+}
+
+.kategorije-container:hover .kategorije-dropdown {
+  transform: scale(1, 1);
+}
+
+.kategorije-container:hover .kategorije-dropdown a {
+  opacity: 1;
+  transition: all 300ms ease-out;
 }
 
 .arrow-toggle:checked ~ .dropdown-container {
@@ -267,7 +292,7 @@ nav a:hover {
     position: relative;
   }
   
-  nav a::before, nav span::before {
+  nav a:not(.kda)::before, nav span:not(.kda)::before {
     content: '';
     display: block;
     height: 5px;
@@ -307,7 +332,7 @@ nav a:hover {
   }
   .dropdown-container {
     top: 50px;
-  }
+  }  
 }
 
 @media screen and (max-width: 800px) {
@@ -378,39 +403,3 @@ nav a:hover {
     font-size: 25px !important;
   }
 }
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown button{
-  color: white;
-  margin: 0;
-  padding: 0;
-  border:0;
-  outline: 0;
-  text-align: center;
-  background-color: transparent;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content div {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  cursor: pointer;
-}
-
-.dropdown-content div:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
