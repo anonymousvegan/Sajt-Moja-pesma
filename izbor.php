@@ -1,5 +1,5 @@
 <div id="izbor">
-<div class="pretraga">
+    <div class="pretraga">
         <form class="form-container" autocomplete="off" method="get" action="pretraga.php">
             <div class="form-group">
                 <input type="text"  placeholder=" " class="form-control" name="pretraga" id="pretraga" aria-describedby="emailHelp" autocomplete="off" required >
@@ -18,14 +18,14 @@
     </div>
 </div>
 <script>
-function lista(){
-    document.getElementById('pesme').classList.add('lista');
-    document.getElementById('grid').classList.remove("odabrano");
-    document.getElementById('lista').classList.add("odabrano");
-}    
-function grid(){
-    document.getElementById('pesme').classList.remove('lista');
-    document.getElementById('grid').classList.add("odabrano");
-    document.getElementById('lista').classList.remove("odabrano");
-}   
+    function lista(){
+        document.getElementById('pesme').classList.add('lista');
+        document.getElementById('grid').classList.remove("odabrano");
+        document.getElementById('lista').classList.add("odabrano");
+    }    
+    function grid(){
+        document.getElementById('pesme').classList.remove('lista');
+        document.getElementById('grid').classList.add("odabrano");
+        document.getElementById('lista').classList.remove("odabrano");
+    }   
 </script>

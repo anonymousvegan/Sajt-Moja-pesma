@@ -53,7 +53,8 @@ if($profil=="index_stranica_prikazi_sve"){
     else if($ispis=="filter"){
       $sql= "SELECT * FROM pesme WHERE pogodna='jeste'" .$deosqlazaktegorijusaand. "ORDER BY vreme DESC LIMIT ".$broj.";";
     }
-}}
+  }
+}
 else if($profil=="pretraga_stranica_prikazi_rezultate"){
   $pretraga=$_POST["pretraga"];
   if ($ovlascenje=="admin"){
@@ -78,6 +79,7 @@ else{
     else if($ispis=="filter"){
       $sql= "SELECT * FROM pesme WHERE pogodna='jeste' AND pisac='". $profil . "' ".$deosqlazaktegorijusaand. " ORDER BY vreme DESC LIMIT ".$broj.";";
     } 
-}}
+  }
+}
 require "ispis.php";
 ?>

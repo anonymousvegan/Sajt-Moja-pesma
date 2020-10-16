@@ -12,7 +12,8 @@ if($pre_koliko<60){
     $rec_s = " sekundi ";
   }
   $vreme = "pre ". $pre_koliko . $rec_s;
-}else if($pre_koliko<3600){
+}
+else if($pre_koliko<3600){
   $minuta = floor($pre_koliko / 60);
   if($minuta==1 || $minuta == 21 || $minuta==31 || $minuta==41 || $minuta==51){
     $rec_m=" minut ";
@@ -30,11 +31,13 @@ if($pre_koliko<60){
     $rec_s = " sekundi ";
   }
   $vreme = "pre " . $minuta . $rec_m . $sekundi . $rec_s;
-}else if($pre_koliko<86400){
+}
+else if($pre_koliko<86400){
   $sati=floor($pre_koliko/3600);
   if($sati==1 || $sati==21 || $sati==31 || $sati==41 || $sati==51){
     $rec_h=" sat ";
-  } else if($sati ==2 || $sati ==3 || $sati ==4 || $sati ==22 || $sati ==23 || $sati ==24 || $sati ==32 || $sati ==33 || $sati ==34 || $sati ==42 || $sati ==43 || $sati ==44 || $sati ==52 || $sati ==53 || $sati ==54){
+  }
+  else if($sati ==2 || $sati ==3 || $sati ==4 || $sati ==22 || $sati ==23 || $sati ==24 || $sati ==32 || $sati ==33 || $sati ==34 || $sati ==42 || $sati ==43 || $sati ==44 || $sati ==52 || $sati ==53 || $sati ==54){
     $rec_h=" sata ";
   }
   else{
@@ -47,7 +50,8 @@ if($pre_koliko<60){
     $rec_m = " minuta ";
   }
   $vreme = "pre " . $sati . $rec_h . $minuta. $rec_m;
-}else if($pre_koliko<2592000){
+}
+else if($pre_koliko<2592000){
   $dana = floor($pre_koliko/86400);
   if($dana==1 ||$dana==21 || $dana==31 ||$dana==41 ||$dana==51){
     $rec_d=" dan ";

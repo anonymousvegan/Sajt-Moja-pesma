@@ -1,18 +1,18 @@
 <?php
-session_start();
-if(isset($_SESSION["ime"])){
+session_start();  
+if(isset($_SESSION["ime"])){ #zaštita da ne komentariše neulogovan
     require "vezasabazom.php";
     $id = $_POST["pesma"];
     $autor= $_POST["autor"];
     $komentar = $_POST["komentar"];
     $ime= $_SESSION["ime"];
     $vreme=date("U");
-    if($autor==$ime&&$komentar!=null){
+    if($autor==$ime&&$komentar!=null){ #zaštita od menjanja koda u frontu
         $sql = "SELECT * FROM pesme WHERE id=". $id;
         $rezultat= mysqli_query($conn, $sql);
         $red=mysqli_fetch_assoc($rezultat);
         $trenutni_komentari=$red["komentari"];
-        if($trenutni_komentari==null){
+        if($trenutni_komentari==null){ #kod ukoliko je ovo prvi komentar na toj pesmi.
             $zaunos = new stdClass();
             $zaunos->autor=$autor;
             $zaunos->komentar=$komentar;
@@ -28,9 +28,9 @@ if(isset($_SESSION["ime"])){
                 mysqli_stmt_execute($stmt);
                 require "../../ispiskomentara.php";
             } 
-        }else{
+        }else{ #kod ukoliko već ima komentara 
             $stari=json_decode($trenutni_komentari);
-            $type = gettype($stari);
+            $type = gettype($stari); # tip će biti  array ili object u zavisnosti da li ima 1 ili više komentara
             if ($type=="object"){
                 $novi = new stdClass();
                 $novi->autor=$autor;
@@ -70,6 +70,6 @@ if(isset($_SESSION["ime"])){
     }
 }
 else{
-     echo "ulogujte se, greška 4";
+     echo "ulogujte se, greška u komentarisanju 4";
 }
 ?>

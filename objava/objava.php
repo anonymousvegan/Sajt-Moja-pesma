@@ -1,13 +1,15 @@
 <?php
 if(isset($_POST["kategorija"])){
   $kategorija= $_POST["kategorija"];
-}else{
+}
+else{
   $kategorija="sve";
 }
 if($kategorija=="sve"){
-$deosqlazaktegoriju=" ";
-$deosqlazaktegorijusaand=" ";
-}else{
+  $deosqlazaktegoriju=" ";
+  $deosqlazaktegorijusaand=" ";
+}
+else{
   $deosqlazaktegoriju= " where kategorija='". $kategorija. "'";
   $deosqlazaktegorijusaand=" AND kategorija='". $kategorija. "'";
 }

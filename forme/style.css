@@ -1,27 +1,26 @@
-:root{
+:root {
     --plava: #007bff;
 }
-body{
+body {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('siri-ekran.jpg');
+    background-image: url("siri-ekran.jpg");
     background-size: 100vw 100vh;
     padding-bottom: 10vh;
-    
 }
-#kolona{
+#kolona {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.form-container{
+.form-container {
     padding: 50px 60px;
-    -webkit-box-shadow: -8px 13px 17px 3px rgba(0,0,0,0.75);
-    -moz-box-shadow: -8px 13px 17px 3px rgba(0,0,0,0.75);
-    box-shadow: -8px 13px 17px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -8px 13px 17px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px 13px 17px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px 13px 17px 3px rgba(0, 0, 0, 0.75);
     border-radius: 25px 25px 25px 25px;
     -moz-border-radius: 25px 25px 25px 25px;
     -webkit-border-radius: 25px 25px 25px 25px;
@@ -30,16 +29,16 @@ body{
     width: 100%;
     background-color: white;
 }
-button:not(.jos){
-    color: white ;
-    height: 40px ;
+button:not(.jos) {
+    color: white;
+    height: 40px;
 }
-.form-group{
+.form-group {
     position: relative;
     height: 50px;
     overflow: hidden;
 }
-form label{
+form label {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -56,60 +55,59 @@ input[type="text"],
 input[type="password"] {
     width: 100%;
     height: 100%;
-    border:0 !important;
+    border: 0 !important;
     outline: 0 !important;
     font-size: 14px !important;
-    border-radius:0px !important;
+    border-radius: 0px !important;
     box-shadow: none !important;
-    font-family: sans-serif ;
-    padding-top:20px;
+    font-family: sans-serif;
+    padding-top: 20px;
     box-sizing: border-box;
 }
-label::after  {
+label::after {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    left:0px;
+    left: 0px;
     bottom: -1px;
-    border-bottom: 3px solid  var(--plava) ;
+    border-bottom: 3px solid var(--plava);
     transform: translateX(-100%);
     transition: all 0.3s;
 }
-.label-tekst{
+.label-tekst {
     position: absolute;
     bottom: 5px;
     left: 11px;
     transition: all 0.3s ease;
 }
-.form-group input:focus + label .label-tekst, 
-input:not(:placeholder-shown) + label .label-tekst{
-transform: translateY(-100%);
-color: var(--plava);
-font-size: 14px;
+.form-group input:focus + label .label-tekst,
+input:not(:placeholder-shown) + label .label-tekst {
+    transform: translateY(-100%);
+    color: var(--plava);
+    font-size: 14px;
 }
-.pomeri{
-transform: translateY(-100%);
-color: var(--plava);
-font-size: 14px;
+.pomeri {
+    transform: translateY(-100%);
+    color: var(--plava);
+    font-size: 14px;
 }
-.form-group input:focus + label::after, 
+.form-group input:focus + label::after,
 .form-group input:valid + label::after,
-input:not(:placeholder-shown) + label::after
-{
+input:not(:placeholder-shown) + label::after {
     transform: translateX(0px) !important;
 }
-.pomeri-border::after{
+.pomeri-border::after {
     transform: translateX(0px) !important;
 }
-.sve{
+.sve {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.greska{
+.greska {
     opacity: 0;
-    padding:3px;
+    padding: 3px;
     padding-left: 8px;
     width: 100%;
     background-color: #f44336;
@@ -121,35 +119,36 @@ input:not(:placeholder-shown) + label::after
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
-@keyframes povecanje{
-    from{
+@keyframes povecanje {
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
 }
-a:not(.ne){
+a:not(.ne) {
     text-decoration: none;
-    color : var(--blue);
+    color: var(--blue);
     font-size: 18px;
-    font-weight: normal;  
+    font-weight: normal;
     margin-top: 5px;
     margin-bottom: 10px;
     padding: 5px;
-    transition: all .3s;
+    transition: all 0.3s;
     text-align: center;
     cursor: pointer;
-
 }
-a:not(.ne):hover{
+a:not(.ne):hover {
     cursor: pointer;
     color: var(--plava);
     text-decoration: none;
 }
-a{cursor: pointer;}
+a {
+    cursor: pointer;
+}
 @media (max-width: 600px) {
     body {
-        background-image: url('uzi-ekran.jpg');
+        background-image: url("uzi-ekran.jpg");
     }
 }

@@ -1,5 +1,4 @@
 @keyframes gravity-effect {
-
     50% {
         transform: translateY(0%);
     }
@@ -13,7 +12,7 @@
     }
 }
 
-.pesma-preko-celog-ekrana{
+.pesma-preko-celog-ekrana {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,26 +23,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-100%); 
+    transform: translateY(-100%);
     transition: all 0.5s ease-in;
 }
-.prikazi-pesmu-na-ceo-ekran{
+.prikazi-pesmu-na-ceo-ekran {
     animation: gravity-effect forwards 1.5s ease-in-out;
 }
-.okvir-za-pesmu, .okvir-za-komentare{
+.okvir-za-pesmu,
+.okvir-za-komentare {
     width: 40%;
     height: 500px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
-.okvir-za-pesmu{
+.okvir-za-pesmu {
     border-right: 2px solid #888888;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     position: relative;
 }
-.okvir-za-pesmu h5{
+.okvir-za-pesmu h5 {
     width: 100%;
     height: 50px;
     margin: 0;
@@ -57,7 +57,7 @@
     font-weight: 200;
     font-size: 30px;
 }
-.okvir-za-pesmu .pisac{
+.okvir-za-pesmu .pisac {
     width: 100%;
     top: 0;
     left: 0;
@@ -68,16 +68,16 @@
     justify-content: center;
     position: sticky;
 }
-.okvir-za-pesmu p{
-width: 100%;
-text-align: center;
-height: auto;
-transition: all .5s;
+.okvir-za-pesmu p {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    transition: all 0.5s;
 }
-.okvir-za-pesmu{
+.okvir-za-pesmu {
     overflow: auto;
 }
-.pesma-preko-celog-ekrana a{
+.pesma-preko-celog-ekrana a {
     font-size: 16px;
     text-decoration: none;
     display: flex;
@@ -85,17 +85,17 @@ transition: all .5s;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color:  rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.05);
 }
-.pesma-preko-celog-ekrana .kartica{
+.pesma-preko-celog-ekrana .kartica {
     position: relative;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     background-color: grey;
     width: 4px;
     border-radius: 0%;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: var(--plava);
     border-radius: 2px;
 }
@@ -103,16 +103,16 @@ transition: all .5s;
 .okvir-za-komentare button {
     display: none;
 }
-.okvir-za-komentare{
+.okvir-za-komentare {
     position: relative;
 }
-#komentari{
-    width:100%;
+#komentari {
+    width: 100%;
     height: calc(100% - 100px);
     overflow: auto;
     box-sizing: border-box;
 }
-#okvir-za-vreme-preko-celog-ekrana{
+#okvir-za-vreme-preko-celog-ekrana {
     width: 100%;
     height: 50px;
     display: flex;
@@ -120,7 +120,7 @@ transition: all .5s;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.05);
 }
-.komentar{
+.komentar {
     width: 100%;
     height: auto;
     display: flex;
@@ -131,7 +131,7 @@ transition: all .5s;
     min-height: 70px;
     position: relative;
 }
-.komentar a{
+.komentar a {
     background-color: transparent;
     text-align: left;
     display: inline;
@@ -139,7 +139,7 @@ transition: all .5s;
     display: inline;
     width: auto;
 }
-.pesma-preko-celog-ekrana .x{
+.pesma-preko-celog-ekrana .x {
     position: relative;
     margin-right: 10px;
     left: 0;
@@ -149,13 +149,13 @@ transition: all .5s;
     background-color: rgba(244, 244, 244, 1);
     color: var(--plava);
 }
-.komentariprofilna{
+.komentariprofilna {
     width: 50px;
     height: 50px;
     border: 1px solid #888;
     border-radius: 50%;
 }
-.grupa{
+.grupa {
     background-color: #88888845;
     width: 100%;
     margin: 10px;
@@ -163,14 +163,14 @@ transition: all .5s;
     border-radius: 5px;
     position: relative;
 }
-#lajkuj-preko-celog-ekrana{
+#lajkuj-preko-celog-ekrana {
     position: relative;
 }
-.autorivreme{
+.autorivreme {
     display: flex;
     justify-content: space-between;
 }
-.vremekomentara{
+.vremekomentara {
     display: flex;
     align-items: center;
     font-size: 80%;
@@ -179,14 +179,14 @@ transition: all .5s;
 /*
 unos komentara  i smor kod ....
 */
-.okvir-za-komentare .form-group{
+.okvir-za-komentare .form-group {
     position: relative;
     height: 50px;
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
-.okvir-za-komentare .form-group input{
+.okvir-za-komentare .form-group input {
     width: 100%;
     height: 100%;
     background-color: white;
@@ -201,7 +201,7 @@ unos komentara  i smor kod ....
     padding-top: 15px;
     padding-right: 35px;
 }
-.okvir-za-komentare .form-group label{
+.okvir-za-komentare .form-group label {
     position: absolute;
     top: 0;
     left: 0;
@@ -211,76 +211,75 @@ unos komentara  i smor kod ....
     height: 100%;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    border-bottom: 1px solid rgb(50, 50 , 50);
+    border-bottom: 1px solid rgb(50, 50, 50);
     display: flex;
     align-items: center;
     font-size: 17px;
     border-bottom: 1px solid black;
 }
-.okvir-za-komentare .label-tekst{
+.okvir-za-komentare .label-tekst {
     position: absolute;
     transform: translateY(0);
-    transition: all .4s ease;
+    transition: all 0.4s ease;
     padding-left: 20px;
     bottom: 6px;
 }
 .okvir-za-komentare .form-group input:focus + label .label-tekst,
-.okvir-za-komentare input:not(:placeholder-shown) + label .label-tekst{
+.okvir-za-komentare input:not(:placeholder-shown) + label .label-tekst {
     transform: translateY(-100%);
     font-size: 14px;
     color: var(--plava);
 }
-.okvir-za-komentare label::after{
+.okvir-za-komentare label::after {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    left:0px;
+    left: 0px;
     bottom: -1px;
-    border-bottom: 3px solid  var(--plava) ;
+    border-bottom: 3px solid var(--plava);
     transform: translateX(-100%);
     transition: all 0.3s;
 }
-.okvir-za-komentare .form-group input:focus + label::after, 
-.okvir-za-komentare input:not(:placeholder-shown) + label::after
-{
+.okvir-za-komentare .form-group input:focus + label::after,
+.okvir-za-komentare input:not(:placeholder-shown) + label::after {
     transform: translateX(0%);
 }
 /* strelice za napred i nazad */
-.strelica{
-    color: rgba(200, 200, 200, .9);
-    font-size: 100px; 
-    opacity: .6;
+.strelica {
+    color: rgba(200, 200, 200, 0.9);
+    font-size: 100px;
+    opacity: 0.6;
     width: 100px;
     height: 100%;
     position: absolute;
     top: 0;
     display: flex;
     align-items: center;
-    cursor:pointer;
-    transition: all .3s ease;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 .strelica:hover {
     color: var(--plava);
     opacity: 1;
 }
-#desna-strelica{
+#desna-strelica {
     right: 10px;
     justify-content: flex-end;
     transform: translateX(-0px);
 }
-#desna-strelica:hover{
+#desna-strelica:hover {
     transform: translateX(-20px);
 }
-#leva-strelica{
+#leva-strelica {
     left: 10px;
     transform: translateX(0px);
     justify-content: flex-start;
 }
-#leva-strelica:hover{
+#leva-strelica:hover {
     transform: translateX(20px);
 }
-#posaljikomentarikonica{
+#posaljikomentarikonica {
     display: block;
     position: absolute;
     height: 25px;
@@ -290,11 +289,11 @@ unos komentara  i smor kod ....
     cursor: pointer;
 }
 /*mobilni prikaz komentara */
-.mobilni .okvir-za-komentare{
+.mobilni .okvir-za-komentare {
     width: 100vw;
     height: 100vh;
     z-index: 4;
 }
-.mobilni .okvir-za-pesmu{
+.mobilni .okvir-za-pesmu {
     display: none;
 }
