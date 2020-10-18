@@ -13,7 +13,8 @@
     <div class="odabir odabrano " id="grid" onclick="grid()">
         <img src="fajlovi/grid.png" alt="grid">
     </div>
-    <div class="odabir"  id="lista" onclick="lista()" >
+<!-- ovo je bilo nekad za listu, sada želim prikaz   <div class="odabir"  id="lista" onclick="lista()" > -->
+    <div class="odabir"  id="lista" onclick="prikazi_vise_ceo_ekran()" >
         <img src="fajlovi/lista.svg" alt="lista">
     </div>
 </div>

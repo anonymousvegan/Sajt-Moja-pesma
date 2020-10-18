@@ -345,3 +345,8 @@ function prikazikomentare(id){
         document.querySelector(".pesma-preko-celog-ekrana").classList.remove("mobilni");
     }
 }
+function  prikazi_vise_ceo_ekran(){
+    var kartica=document.querySelector("#pesme .kartica");
+    id=kartica.getAttribute("id")
+    prikazivise(id);
+}
