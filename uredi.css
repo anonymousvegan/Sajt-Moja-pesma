@@ -1,0 +1,58 @@
+#okvir-za-uredjivanje {
+    display: flex;
+    width: 80%;
+    height: 600px;
+    margin: 20px 10%;
+    border: 1px solid gray;
+}
+#za_profilnu {
+    height: 100%;
+    width: 250px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+#profilna {
+    margin-top: 50px;
+    height: 150px;
+    width: 150px;
+    box-sizing: content-box;
+    position: relative;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#za_profilnu #slika {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    border-color: #aaa;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+#fajl{
+    display: none;
+}
+#forma_za_sliku{
+    margin-top: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+#lfajl{
+    width: 94%;
+}
+#otkazi, #submitdugme{
+    width: 45%;
+}
+#grupadugmadi{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}

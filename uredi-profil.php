@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="objava/objava.css">
+        <link rel="stylesheet" href="uredi.css">
         <link rel="stylesheet" href="unos.css">
         <script src="script.js" defer></script>
         <script src="script-za-uredi.js" defer></script>
