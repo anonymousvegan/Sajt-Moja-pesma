@@ -146,6 +146,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-right: 5px;
 }
 .profile-icon img {
     width: 100%;

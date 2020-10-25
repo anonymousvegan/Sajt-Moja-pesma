@@ -14,11 +14,36 @@
     }
 .kartica .pisac{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     height: 50px;
     margin: 0;
     padding: 0;
+}
+.kartica .profilna-pisca {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+}
+.kartica .tacke{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.kartica .tacke img{
+    width: 100%;
+    height: auto;
+}
+.kartica .profilna-pisca img{
+    width: 100%;
+    height: auto;
 }
 .kartica .telo-kartice:not(.lista .kartica .telo-kartice){
     height: 345px;
