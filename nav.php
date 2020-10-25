@@ -32,7 +32,9 @@ session_start();
         </nav>
         <div class="profile-container">
           <input type="checkbox" id="arrow-toggle" class="arrow-toggle">
-          <label for="arrow-toggle" class="arrow-toggle-label">              <img class="profile-icon" src="<?php
+          <label for="arrow-toggle" class="arrow-toggle-label">    
+          <div  class="profile-icon">
+            <img src="<?php
             if(isset($_SESSION["id"])){
                 require "backend/pozadinske/vezasabazom.php";
                 $sql = "SELECT * FROM korisnici WHERE id=".$_SESSION["id"];
@@ -52,6 +54,7 @@ session_start();
                 }
             ?>
               " alt="profile-icon">
+              </div>
               <img class="arrow" src="./fajlovi/arrow.svg" alt="arrow"> 
           </label>
         <div class="dropdown-container">

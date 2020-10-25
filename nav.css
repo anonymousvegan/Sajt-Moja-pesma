@@ -142,8 +142,14 @@ nav a:hover {
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
-
+.profile-icon img {
+    width: 100%;
+}
 .arrow {
     height: 30px;
     width: 30px;
@@ -155,11 +161,18 @@ nav a:hover {
     cursor: pointer;
 }
 .arrow-toggle {
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important;
-}
+    position: absolute ;
+    top:  0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+#arrow-toggle{
+    display: none;
+}
 .dropdown-container,
 .kategorije-dropdown {
     background: var(--plava);
@@ -277,6 +290,9 @@ nav a:hover {
     }
     .arrow-toggle-label {
         margin-bottom: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
     }
     nav {
         position: relative;
@@ -334,10 +350,19 @@ nav a:hover {
     }
 
     .profile-icon {
-        height: 50px;
-        width: 50px;
-        padding: 5px 0;
+        height: 40px;
+        width: 40px;
+        padding: 0;
+        display: inline-block;
+        border-radius: 50% 50%;
+        overflow: hidden;
     }
+    .profile-icon img {
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
 
     .arrow {
         padding-right: 16px;

@@ -86,9 +86,22 @@
     else{
       $vreme = date("d/m/Y H:i", $red["vreme"]);
     }
+    require "backend/pozadinske/vezasabazom.php";
+    $sql =  "SELECT * FROM korisnici WHERE ime='". $autor ."';";
+    $rezultat= mysqli_query($conn, $sql);
+    $brojrezulta=mysqli_num_rows($rezultat);
+    while ($red=mysqli_fetch_assoc($rezultat)){
+      $tip= gettype($red["profilna"]);
+            if($tip=="null" || $tip=="NULL" || $tip==null){
+              $profilna="fajlovi/profile-icon.svg";
+            }
+            else if($tip=="string"){
+              $profilna=$red["profilna"];
+            }
+          }
     echo '
     <div class="komentar">
-        <a href="profil.php?profil='.$autor.'    " class="autorkomentara"><img class="komentariprofilna" src="fajlovi/profile-icon.svg"></a>
+        <a href="profil.php?profil='.$autor.'    " class="autorkomentara"><img class="komentariprofilna" src="'.$profilna.'"></a>
         <div class="grupa">
             <input type="hidden" name="idpesme"  value="    '.$id.'    ">
             <input type="hidden" name="broj"  value="    '.$i.'    ">
@@ -172,9 +185,22 @@
           else{
           $vreme = date("d/m/Y H:i", $red["vreme"]);
           }
+          require "backend/pozadinske/vezasabazom.php";
+          $sql =  "SELECT * FROM korisnici WHERE ime='". $autor ."';";
+          $rezultat= mysqli_query($conn, $sql);
+          $brojrezulta=mysqli_num_rows($rezultat);
+          while ($red=mysqli_fetch_assoc($rezultat)){
+            $tip= gettype($red["profilna"]);
+                  if($tip=="null" || $tip=="NULL" || $tip==null){
+                    $profilna="fajlovi/profile-icon.svg";
+                  }
+                  else if($tip=="string"){
+                    $profilna=$red["profilna"];
+                  }
+                }
       echo'
         <div class="komentar">
-            <a href="profil.php?profil='.$autor.'    " class="autorkomentara"><img class="komentariprofilna" src="fajlovi/profile-icon.svg"></a>
+            <a href="profil.php?profil='.$autor.'    " class="autorkomentara"><img class="komentariprofilna" src="'.$profilna.'"></a>
             <div class="grupa">
                 <input type="hidden" name="idpesme"  value="    '.$id.'    ">
                 <input type="hidden" name="broj"  value="    '.$i.'    ">

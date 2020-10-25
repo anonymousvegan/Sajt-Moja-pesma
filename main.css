@@ -45,6 +45,7 @@ main {
     border-right: 2px solid #ccc;
 }
 .lista p {
+    transition: all .5s;
     height: auto;
     overflow-y: auto;
 }
