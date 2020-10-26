@@ -11,15 +11,16 @@
                 while($red=mysqli_fetch_assoc($rezultat)){
                     $tip= gettype($red["profilna"]);
                     if($tip=="null" || $tip=="NULL" || $tip==null){
-                    echo "fajlovi/profilna.png";
+                        echo "fajlovi/profilna.png";
                     }
                     else if($tip=="string"){
-                    echo  $red["profilna"];
-                  }
-                }}
-                else{
-                    echo "fajlovi/profilna.png";
+                        echo  $red["profilna"];
+                    }
                 }
+            }
+            else{
+                echo "fajlovi/profilna.png";
+            }
             ?>" alt="profilna slika">
         </div>
         <form id="forma_za_sliku" action="ubaci_sliku.php" method="post" enctype="multipart/form-data">
