@@ -15,6 +15,7 @@ if($_SESSION["id"]){
     if(in_array($pravaekstenzija, $dozvoljenje_ekstenzije)){
         if($greska===0){
             if ($velicinaslike<5000000){
+                
                 $novoime= uniqid("", true).".".$pravaekstenzija;
                 $lokacija="ubaceneslike/".$novoime;
                 $sql = "SELECT * FROM korisnici WHERE id=".$_SESSION["id"];
@@ -38,6 +39,7 @@ if($_SESSION["id"]){
                     }
                     else if($tip=="string"){
                         unlink($red["profilna"]);
+                        move_uploaded_file($imesliketmp, $lokacija);
                         $sql = "UPDATE korisnici set profilna=? WHERE id=?";
                         $stmt= mysqli_stmt_init($conn); 
                         if(!mysqli_stmt_prepare($stmt, $sql)){
