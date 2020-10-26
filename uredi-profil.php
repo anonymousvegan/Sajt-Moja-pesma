@@ -13,8 +13,13 @@
         <link rel="stylesheet" href="objava/objava.css">
         <link rel="stylesheet" href="uredi.css">
         <link rel="stylesheet" href="unos.css">
-        <script src="script.js" defer></script>
-        <script src="script-za-uredi.js" defer></script>
+        <!-- ovo su moje custom skripte -->
+        <script src="script/filter.js" defer></script>
+        <script src="script/logout.js" defer></script>
+        <script src="script/prethodna-sledeca.js" defer></script>
+        <script src="script/prikazivise.js" defer></script>
+        <script src="script/promeniboju.js" defer></script>
+        <script src="script/script-za-uredi.js" defer></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

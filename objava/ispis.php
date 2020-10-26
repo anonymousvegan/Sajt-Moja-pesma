@@ -6,25 +6,28 @@ require "vreme.php";
     $sql =  "SELECT * FROM korisnici WHERE ime='". $red["pisac"] ."';";
     $rezultatprofilna= mysqli_query($conn, $sql);
     $brojrezulta=mysqli_num_rows($rezultatprofilna);
-    while ($redprofilna=mysqli_fetch_assoc($rezultatprofilna)){
+    while ($redprofilna = mysqli_fetch_assoc($rezultatprofilna)){
             $tip=gettype($redprofilna["profilna"]);
             if($tip=="null" || $tip=="NULL" || $tip==null){
               $profilna="fajlovi/profile-icon.svg";
             }
-            else if($tip=="string"){
-              $profilna=$redprofilna["profilna"];
+            else if ($tip == "string") {
+              $profilna = $redprofilna["profilna"];
             }
           }
 echo '<div class="card text-center kartica '.$red["boja"].'" id="'.$red["id"].'">';
-echo '<div class="card-header pisac">';
-echo '<div class="profilna-pisca">
-        <a href="profil.php?profil='.$red["pisac"].'">
-          <img src="'.$profilna.'">
-        </a>
-      </div>';
-echo '<a href="profil.php?profil='.$red["pisac"].'">'. $red["pisac"] . '</a>';
-echo '<div class="tacke"><img src="fajlovi/tacke.png"></div>';
-echo '</div><div class="card-body telo-kartice">';
+echo    '<div class="card-header pisac">';
+echo        '<div class="profilna-pisca">
+                <a href="profil.php?profil='.$red["pisac"].'">
+                  	<img src="'.$profilna.'">
+                </a>
+            </div>';
+echo        '<a href="profil.php?profil='.$red["pisac"].'">'. $red["pisac"] . '</a>';
+echo        '<div class="tacke">
+                <img src="fajlovi/tacke.png">
+            </div>';
+echo   '</div> 
+<div class="card-body telo-kartice">';
 echo '<div class="sadrzaj">';
 echo '<h5 class="card-title naslov">'.$red["naslov"].'</h5>';
 echo '<p class="card-text pesma">' .$red["pesma"].'</p></div>';

@@ -11,7 +11,10 @@
         transform: translateY(0%);
     }
 }
-
+#tekst-pesme-preko-celog-ekrana{
+    margin: 20px;
+    width: auto;
+}
 .pesma-preko-celog-ekrana {
     position: fixed;
     top: 0;
