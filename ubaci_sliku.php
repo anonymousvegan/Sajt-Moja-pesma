@@ -15,7 +15,6 @@ if($_SESSION["id"]){
     if(in_array($pravaekstenzija, $dozvoljenje_ekstenzije)){
         if($greska===0){
             if ($velicinaslike<5000000){
-                
                 $novoime= uniqid("", true).".".$pravaekstenzija;
                 $lokacija="ubaceneslike/".$novoime;
                 $sql = "SELECT * FROM korisnici WHERE id=".$_SESSION["id"];
