@@ -10,7 +10,7 @@
                 $brojrezulta=mysqli_num_rows($rezultat);
                 while($red=mysqli_fetch_assoc($rezultat)){
                     $tip= gettype($red["profilna"]);
-                    if($tip=="null" || $tip=="NULL" || $tip==null){
+                    if($tip=="null" || $tip=="NULL" || $tip==null || $red["profilna"]==""){
                         echo "fajlovi/profilna.png";
                     }
                     else if($tip=="string"){
@@ -34,12 +34,37 @@
         </div>
         <div id="podatci">
             <div id="naslov">
-            <div id="korisnickeinformacije">Korisničke informacije</div>
-            <div id="sigurnost">Sigurnost</div>
-            <div id="ime">
-                <div><label for=""></label></div>
-                <div><label for=""></label></div>
-                <div><label for=""></label></div>
+                <div id="korisnickeinformacije">Korisničke informacije</div>
+                <div id="sigurnost">Sigurnost</div>
+            </div>
+            <div id="prvagrupa">
+                <div id="ime">
+                    <div class="naslovpolja">Ime</div>
+                    <div class="form-group">
+                        <input type="text" placeholder=" "  class="form-control" name="ime" id="imeunos" aria-describedby="emailHelp" autocomplete="off" >
+                        <label for="imeunos" id="limeunos">
+                            <span class="label-tekst" id="ime-label-tekst">Unesite ime</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="prezime">
+                    <div class="naslovpolja">Prezime</div>
+                    <div class="form-group">
+                        <input type="text" placeholder=" "  class="form-control" name="prezime" id="prezimeunos" aria-describedby="emailHelp" autocomplete="off" >
+                        <label for="prezimeunos" id="lprezimeunos">
+                            <span class="label-tekst" id="prezime-label-tekst">Unesite ime</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="korisnickoime">
+                    <div class="naslovpolja">Korisničko ime</div>
+                    <div class="form-group">
+                        <input type="text" placeholder=" " class="form-control" name="Korisnickoime" id="korisnickoimeunos" aria-describedby="emailHelp" autocomplete="off" >
+                        <label for="korisnickoimeunos" id="lkorisnickoimeunos">
+                            <span class="label-tekst" id="korisnickoime-label-tekst">Unesite ime</span>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
-</div>
+    </div>

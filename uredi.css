@@ -70,3 +70,94 @@
     display: flex;
     justify-content: space-between;
 }
+.naslovpolja{
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+#ime, #prezime, #korisnickoime {
+    margin-top: 23px;
+}
+#prvagrupa{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* css deo za inpute */
+#podatci  .form-container {
+    padding: 50px 60px;
+    -webkit-box-shadow: -8px 13px 17px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px 13px 17px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px 13px 17px 3px rgba(0, 0, 0, 0.75);
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    border: 0;
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+}
+#podatci .form-group {
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+}
+#podatci label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    border-bottom: 1px solid black;
+    pointer-events: none;
+}
+#podatci input[type="email"],
+#podatci input[type="number"],
+#podatci input[type="text"],
+#podatci input[type="password"] {
+    width: 150px;
+    height: 100%;
+    border: 0 ;
+    outline: 0 ;
+    font-size: 17px ;
+    border-radius: 0px ;
+    box-shadow: none ;
+    font-family: sans-serif;
+    padding-top: 18px;
+    box-sizing: border-box;
+}
+#podatci label::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+    border-bottom: 3px solid var(--plava);
+    transform: translateX(-100%);
+    transition: all 0.3s;
+}
+#podatci .label-tekst {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+    transition: all 0.3s ease;
+}
+#podatci .form-group input:focus + label .label-tekst,
+#podatci input:not(:placeholder-shown) + label .label-tekst {
+    transform: translateY(-90%);
+    color: var(--plava);
+    font-size: 12px;
+}
+#podatci .form-group input:focus + label::after,
+#podatci input:not(:placeholder-shown) + label::after {
+    transform: translateX(0px) !important;
+}
+.form-control{
+    padding: 0px;
+}
