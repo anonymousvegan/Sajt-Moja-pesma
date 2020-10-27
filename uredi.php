@@ -32,5 +32,14 @@
             </div>
         </form>
         </div>
-        <p id="odgovor"></p>
+        <div id="podatci">
+            <div id="naslov">
+            <div id="korisnickeinformacije">Korisničke informacije</div>
+            <div id="sigurnost">Sigurnost</div>
+            <div id="ime">
+                <div><label for=""></label></div>
+                <div><label for=""></label></div>
+                <div><label for=""></label></div>
+            </div>
+        </div>
 </div>

@@ -1,8 +1,8 @@
 #okvir-za-uredjivanje {
     display: flex;
-    width: 80%;
-    height: 600px;
-    margin: 20px 10%;
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
     border: 1px solid gray;
 }
 #za_profilnu {
@@ -55,4 +55,18 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+@font-face {
+    font-family: roboto;
+    src: url(fajlovi/Roboto-Regular.ttf);
+}
+#podatci{
+    font-family: roboto;
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+}
+#naslov{
+    display: flex;
+    justify-content: space-between;
 }
