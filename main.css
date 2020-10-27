@@ -6,6 +6,10 @@
     font-family: prvifont;
     src: url(fajlovi/prvifont.ttf);
 }
+@font-face {
+    font-family: roboto;
+    src: url(fajlovi/Roboto-Regular.ttf);
+}
 html.dark {
     filter: invert(1) hue-rotate(180deg);
 }
