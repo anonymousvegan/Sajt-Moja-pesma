@@ -31,40 +31,20 @@
             <button type="button" onclick="otkazivanje()" class="btn btn-danger" id="otkazi">Otkaži</button>
             </div>
         </form>
-        </div>
-        <div id="podatci">
-            <div id="naslov">
-                <div id="korisnickeinformacije">Korisničke informacije</div>
-                <div id="sigurnost">Sigurnost</div>
-            </div>
-            <div id="prvagrupa">
-                <div id="ime">
-                    <div class="naslovpolja">Ime</div>
-                    <div class="form-group">
-                        <input type="text" placeholder=" "  class="form-control" name="ime" id="imeunos" aria-describedby="emailHelp" autocomplete="off" >
-                        <label for="imeunos" id="limeunos">
-                            <span class="label-tekst" id="ime-label-tekst">Unesite ime</span>
-                        </label>
-                    </div>
-                </div>
-                <div id="prezime">
-                    <div class="naslovpolja">Prezime</div>
-                    <div class="form-group">
-                        <input type="text" placeholder=" "  class="form-control" name="prezime" id="prezimeunos" aria-describedby="emailHelp" autocomplete="off" >
-                        <label for="prezimeunos" id="lprezimeunos">
-                            <span class="label-tekst" id="prezime-label-tekst">Unesite ime</span>
-                        </label>
-                    </div>
-                </div>
-                <div id="korisnickoime">
-                    <div class="naslovpolja">Korisničko ime</div>
-                    <div class="form-group">
-                        <input type="text" placeholder=" " class="form-control" name="Korisnickoime" id="korisnickoimeunos" aria-describedby="emailHelp" autocomplete="off" >
-                        <label for="korisnickoimeunos" id="lkorisnickoimeunos">
-                            <span class="label-tekst" id="korisnickoime-label-tekst">Unesite ime</span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
+    <div id="podatci">
+        <?php
+        if(isset($_GET["tab"])){
+            if($_GET["tab"]=="sigurnost"){
+                require "sigurnost.php";
+            }
+            else{
+                require "korisnickeInformacije.php";
+            }
+        }
+        else{
+            require "korisnickeInformacije.php";
+        }
+        ?>
+    </div>
+</div>

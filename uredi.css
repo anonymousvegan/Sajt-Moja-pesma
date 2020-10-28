@@ -1,7 +1,7 @@
 #okvir-za-uredjivanje {
     display: flex;
     width: 800px;
-    height: 500px;
+    height: 580px;
     margin: 20px auto;
     border: 1px solid gray;
 }
@@ -81,11 +81,26 @@
     display: flex;
     justify-content: space-between;
 }
-
-
-
-
-
+#drugagrupa, #trecagrupa{
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+}
+#cetvrtagrupa{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#submitzapodatke, #otkazizapodatke{
+    width: 50%;
+}
+#submitzapodatke{
+    margin-right: 20px;
+}
+#naslov-grupe{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 /* css deo za inpute */
 #podatci  .form-container {
     padding: 50px 60px;
@@ -116,7 +131,6 @@
     border-bottom: 1px solid black;
     pointer-events: none;
 }
-#podatci input[type="email"],
 #podatci input[type="number"],
 #podatci input[type="text"],
 #podatci input[type="password"] {
@@ -128,7 +142,19 @@
     border-radius: 0px ;
     box-shadow: none ;
     font-family: sans-serif;
-    padding-top: 18px;
+    padding-top: 17px;
+    box-sizing: border-box;
+}
+#podatci input[type="email"] {
+    width: 100%;
+    height: 100%;
+    border: 0 ;
+    outline: 0 ;
+    font-size: 17px ;
+    border-radius: 0px ;
+    box-shadow: none ;
+    font-family: sans-serif;
+    padding-top: 17px;
     box-sizing: border-box;
 }
 #podatci label::after {
@@ -160,4 +186,19 @@
 }
 .form-control{
     padding: 0px;
+}
+#emailunos, #lemailunos{
+    width: 100% !important;
+}
+#biografijaunos{
+    resize: none;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 6px;
+}
+#biografijaunos:focus{
+    outline: none;
+    border: 1px solid var(--plava);
 }
