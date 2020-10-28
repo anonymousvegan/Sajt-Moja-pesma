@@ -2,6 +2,7 @@
     <div id="korisnickeinformacije" class="aktivantab">Korisničke informacije</div>
     <div id="sigurnost">Sigurnost</div>
 </div>
+<form method="post"  action="backend/pozadinske/promeni_informacije.php"> 
 <div id="prvagrupa">
     <div id="ime">
         <div class="naslovpolja">Ime</div>
@@ -24,7 +25,7 @@
     <div id="korisnickoime">
         <div class="naslovpolja">Korisničko ime</div>
         <div class="form-group">
-            <input type="text" placeholder=" " class="form-control" name="Korisnickoime" id="korisnickoimeunos" aria-describedby="emailHelp" autocomplete="off" require>
+            <input type="text" placeholder=" " class="form-control" name="korisnickoime" id="korisnickoimeunos" aria-describedby="emailHelp" autocomplete="off" required>
             <label for="korisnickoimeunos" id="lkorisnickoimeunos">
                 <span class="label-tekst" id="korisnickoime-label-tekst">Unesite korisničko ime...</span>
             </label>
@@ -35,9 +36,18 @@
     <div id="email">
         <div class="naslovpolja">Email</div>
         <div class="form-group">
-            <input type="email" placeholder=" " class="form-control" name="Email" id="emailunos" aria-describedby="emailHelp" autocomplete="off" require >
+            <input type="email" placeholder=" " class="form-control" name="email" id="emailunos" aria-describedby="emailHelp" autocomplete="off" required >
             <label for="emailunos" id="lemailunos">
                 <span class="label-tekst" id="email-label-tekst">Unesite email...</span>
+            </label>
+        </div>
+    </div>
+    <div id="godine">
+        <div class="naslovpolja">Godine</div>
+        <div class="form-group">
+            <input type="number" min="4" max="120" placeholder=" " class="form-control" name="godine" id="godineunos" aria-describedby="emailHelp" autocomplete="off" required >
+            <label for="godineunos" id="lgodineunos">
+                <span class="label-tekst" id="godine-label-tekst">Koliko imate godina...</span>
             </label>
         </div>
     </div>
@@ -49,6 +59,7 @@
     </div>
 </div>
 <div id="cetvrtagrupa">
-    <button type="submit" class="btn btn-primary" id="submitzapodatke" name="submitdugme">Sačuvaj</button>
+    <button type="submit" class="btn btn-primary" id="submitzapodatke" name="submitdugmeinfo">Sačuvaj</button>
     <button type="button" onclick="otkazivanje()" class="btn btn-danger" id="otkazizapodatke">Otkaži</button>
 </div>
+</form>

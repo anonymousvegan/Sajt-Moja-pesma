@@ -81,7 +81,12 @@
     display: flex;
     justify-content: space-between;
 }
-#drugagrupa, #trecagrupa{
+#drugagrupa{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#trecagrupa{
     display: block;
     width: 100%;
     padding-top: 30px;
@@ -188,7 +193,7 @@
     padding: 0px;
 }
 #emailunos, #lemailunos{
-    width: 100% !important;
+    width: 370px !important;
 }
 #biografijaunos{
     resize: none;
