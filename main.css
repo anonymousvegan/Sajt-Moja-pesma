@@ -10,9 +10,6 @@
     font-family: roboto;
     src: url(fajlovi/Roboto-Regular.ttf);
 }
-html.dark {
-    filter: invert(1) hue-rotate(180deg);
-}
 main {
     margin-top: 20px;
 }
