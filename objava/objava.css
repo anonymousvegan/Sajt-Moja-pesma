@@ -171,9 +171,9 @@ div.srce, .ikonicazakomentar{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 75px;
+    width: auto;
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: 0;
     background-color: var(--plava);
     transform: scale(1, 0);
@@ -192,33 +192,17 @@ div.srce, .ikonicazakomentar{
 }
 
 #opcije a {
-    padding: 3.5px;
+    padding:  10px 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
     margin-right: 5px;
     position: relative;
-    transition: ease-in-out 250ms;
+    transition: ease-in-out 450ms;
+
 }
 
 #opcije a:hover {
     color: black;
     cursor: pointer;
-}
-
-#opcije a::after {
-    content: "";
-    display: block;
-    height: 5px;
-    background: black;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-}
-
-#opcije a:hover::after {
-    transform: scale(1, 1);
 }
