@@ -25,7 +25,11 @@ echo        '<div class="profilna-pisca">
 echo        '<a href="profil.php?profil='.$red["pisac"].'">'. $red["pisac"] . '</a>';
 echo        '<div class="tacke">
                 <img src="fajlovi/tacke.png">
-            </div>';
+                <div id="opcije">
+                  <a class="opcija">Obriši</a>
+                  <a class="opcija">Prijavi</a>
+                </div>
+              </div>';
 echo   '</div> 
 <div class="card-body telo-kartice">';
 echo '<div class="sadrzaj">';
