@@ -122,7 +122,7 @@ if(isset($_SESSION["ime"])){
         }
     }
     else{
-         header("location: index.php?greska=nema-pristup");
+        header("location: index.php?greska=nema-pristup");
     }
 }
 else{
