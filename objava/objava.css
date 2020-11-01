@@ -35,6 +35,7 @@
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .kartica .tacke img{
     width: 100%;
@@ -173,36 +174,52 @@ div.srce, .ikonicazakomentar{
     align-items: flex-end;
     width: auto;
     position: absolute;
-    top: 20px;
+    top: 36px;
     right: 0;
-    background-color: var(--plava);
+    background-color: rgba(0, 0, 0, .5);
     transform: scale(1, 0);
     transform-origin: top;
     transition: 250ms ease-in-out;
 }
 
-#opcije a:nth-child(2) {
-    margin-bottom: 5px;
-}
-
-.tacke > img:hover ~ #opcije,
-#opcije:hover {
+.tacke.prikaziopcije  #opcije
+{
     transform: scale(1, 1);
-    top: 30px;
 }
 
 #opcije a {
-    padding:  10px 20px;
+    border-radius: 0;
+    margin-bottom: 5px;
+    width: 100px;
+    box-sizing: border-box;
     text-decoration: none;
-    text-transform: uppercase;
     color: white;
-    margin-right: 5px;
     position: relative;
     transition: ease-in-out 450ms;
-
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+#opcije a:first-child{
+    margin-top: 5px;
+}
+#opcije .btn-warning{
+    color: black;
 }
 
-#opcije a:hover {
+#opcije a.kliktacke {
     color: black;
     cursor: pointer;
+}
+#opcije::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 17px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
 }

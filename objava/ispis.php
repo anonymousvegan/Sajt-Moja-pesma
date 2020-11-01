@@ -23,11 +23,15 @@ echo        '<div class="profilna-pisca">
                 </a>
             </div>';
 echo        '<a href="profil.php?profil='.$red["pisac"].'">'. $red["pisac"] . '</a>';
-echo        '<div class="tacke">
+echo        '<div class="tacke" onclick="prikaziOpcije(this)">
                 <img src="fajlovi/tacke.png">
-                <div id="opcije">
-                  <a class="opcija">Obriši</a>
-                  <a class="opcija">Prijavi</a>
+                <div id="opcije">';
+
+                if($_SESSION["ovlascenje"]=="admin" || $_SESSION["ime"]==$red["pisac"] ){
+                echo'<a onclick="obrisi('.$red["id"].')" class="opcija btn btn-danger">Obriši</a>';
+                }
+                echo '
+                 <a class="opcija btn btn-warning">Prijavi</a>
                 </div>
               </div>';
 echo   '</div> 
