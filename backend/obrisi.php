@@ -1,11 +1,14 @@
 <?php
+echo "ajaks se izvršava";
 session_start();
-$id = $_POST["idpesme"];
+$idpesme = $_POST["idpesme"];
 require "pozadinske/vezasabazom.php";
 if(isset($_SESSION["id"])){
     $idkorisnika=$_SESSION["id"];
     $sql = "SELECT * FROM korisnici where id=". $idkorisnika;
     $rezultat= mysqli_query($conn, $sql);
+    echo "id pesme za brisanje".$idpesme;
+    echo "id korisnika". $idkorisnika;
     $brojrezulta=mysqli_num_rows($rezultat);
     while($red=mysqli_fetch_assoc($rezultat)){
         $korisnickoime = $red["ime"];
@@ -13,17 +16,16 @@ if(isset($_SESSION["id"])){
             $sql = "DELETE FROM pesme WHERE id=?;";
             $stmt=mysqli_stmt_init($conn);
             if(!mysqli_stmt_prepare($stmt, $sql)){
-                echo "greška u brisanju iz baze";
+                echo "greška u brisanju iz baze 1";
                 exit();
             }
             else{
-                mysqli_stmt_bind_param($stmt, "s", $id);
+                mysqli_stmt_bind_param($stmt, "s", $idpesme);
                 mysqli_stmt_execute($stmt);
-                #header("location: ../index.html");
             }
         }
         else{
-            $sql = "SELECT * FROM korisnici where id=".  $id;
+            $sql = "SELECT * FROM pesme where id=".  $idpesme;
             $rezultat= mysqli_query($conn, $sql);
             $brojrezulta=mysqli_num_rows($rezultat);
             while($red=mysqli_fetch_assoc($rezultat)){
@@ -32,11 +34,11 @@ if(isset($_SESSION["id"])){
                     $sql = "DELETE FROM pesme WHERE id=?;";
                     $stmt=mysqli_stmt_init($conn);
                     if(!mysqli_stmt_prepare($stmt, $sql)){
-                        echo "greška u brisanju iz baze";
+                        echo "greška u brisanju iz baze2";
                         exit();
                     }
                     else{
-                        mysqli_stmt_bind_param($stmt, "s", $id);
+                        mysqli_stmt_bind_param($stmt, "s", $idpesme);
                         mysqli_stmt_execute($stmt);
                     }
                 }

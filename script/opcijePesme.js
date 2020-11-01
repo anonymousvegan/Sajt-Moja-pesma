@@ -18,10 +18,11 @@ function obrisi(id){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            console.log("nista");
+            alert(this.responseText)
+            prikazi_jos();
         }
     };
     xhttp.open("POST", "backend/obrisi.php", false);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send("id="+id);
+    xhttp.send("idpesme="+id);
 }
