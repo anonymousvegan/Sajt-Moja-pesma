@@ -1,4 +1,5 @@
 function dodaj(){
+    console.log("radi");
     document.getElementById("unos").classList.add("prikazi-unos");
 }
 function zatvori(){
