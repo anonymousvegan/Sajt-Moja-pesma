@@ -93,9 +93,11 @@
     while ($red=mysqli_fetch_assoc($rezultat)){
       $tip= gettype($red["profilna"]);
             if($tip=="null" || $tip=="NULL" || $tip==null){
+              echo "null";
               $profilna="fajlovi/profile-icon.svg";
             }
             else if($tip=="string"){
+              echo "sring";
               $profilna=$red["profilna"];
             }
           }
@@ -192,9 +194,11 @@
           while ($red=mysqli_fetch_assoc($rezultat)){
             $tip= gettype($red["profilna"]);
                   if($tip=="null" || $tip=="NULL" || $tip==null){
+                    echo "null";
                     $profilna="fajlovi/profile-icon.svg";
                   }
                   else if($tip=="string"){
+                    echo "string";
                     $profilna=$red["profilna"];
                   }
                 }
