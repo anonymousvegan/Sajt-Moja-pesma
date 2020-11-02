@@ -248,6 +248,9 @@
     #prvagrupa input, #prvagrupa label,  #drugagrupa input, #drugagrupa label, #emailunos, #lemailunos{
         width: 100% !important;
     }
+    #podatci{
+        padding-left:  20px;
+    }
 }
 @media only screen and (max-width: 510px){
     #naslov{
