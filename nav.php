@@ -3,8 +3,12 @@ session_start();
 ?>
   <header>
     <div class="logo">
+    <a class="pocetnalink" href="index.php">
       <img class="logo-slika" src="fajlovi/logo.png" alt="logo">
+      </a>   
+      <a href="index.php" class="pocetnalink">
         <h1 class="logo-naziv">Moja pesma</h1>
+      </a>
           </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
