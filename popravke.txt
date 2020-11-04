@@ -1,9 +1,6 @@
 (! => Najveci prioritet, 123... => Prioritet po redosledu, * => Najmanji prioritet)
 
-!  Dodati na logo i ime sajta da kad se klikne ode na pocetnu
-
-1. Uzimanje podataka iz baze samo preko ID-a
-
+1. Uzimanje podataka iz baze samo preko ID-a //najteže  za krajjjjjjjjj
 2. Urediti alerte
 
 3. Header kartice na `prikazi jos` ne prikazuje nikakve informacije
@@ -22,5 +19,7 @@
 9. Pri `dodaj pesmu` ukloniti komentare sa desne strane u footeru
 
 10. Implementirati `prijavi` funkcionalnost
+
+11. Drži me prijavljenog funkcionalnost.
 
 * Dodati autofokus na oba elementa kada google chrome popunjava username i password

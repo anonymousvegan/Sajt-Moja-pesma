@@ -155,6 +155,7 @@ nav a:hover {
     height: 30px;
     width: 30px;
     padding-top: 5px;
+    display: none;
     transition: transform 400ms ease-in-out;
 }
 .profile-icon:hover,
@@ -281,7 +282,9 @@ nav a:hover {
         display: grid;
         grid-template-columns: 1fr minmax(1fr 1.5fr) 0.25fr;
     }
-
+    .arrow{
+        display: flex;
+    }
     .logo {
         grid-column: 1 / 2;
         margin: 0;
