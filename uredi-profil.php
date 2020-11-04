@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="objava/objava.css">
         <link rel="stylesheet" href="uredi.css">
         <link rel="stylesheet" href="unos.css">
+        <link rel="stylesheet" href="pesma-preko-celog-ekrana.css">
         <!-- ovo su moje custom skripte -->
         <script src="script/filter.js" defer></script>
         <script src="script/logout.js" defer></script>

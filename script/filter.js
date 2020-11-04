@@ -42,6 +42,7 @@ function proveriUnos(){
         return false;
     }
     else if(kategorija.value=="neodredjeno"){
+        alert("Molimo vas da odaberete kategoriju")
         return false;
     }
 }
