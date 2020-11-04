@@ -5,11 +5,9 @@
 
 3. Header kartice na `prikazi jos` ne prikazuje nikakve informacije
 
-4. Prikazivanje `unesite komentar` na main page (pri pretrazivanju, itd...)
+4. Prikazivanje `unesite komentar` na main page (pri pretrazivanju, itd...) (srediti bug)
 
 6. Ne dozvoliti `dodaj tekst` kada je korisnik neprijavljen
-
-7. Prikazati korisnicke informacije na klik imena korisnika iz kartice pesme
 
 8. Prikaz komentara, unosenje komentara, dodavanje pesme na google chrome nije 100%
    prikazan, kao da je odsecen donji deo (mobilni prikaz)
@@ -19,5 +17,9 @@
 10. Implementirati `prijavi` funkcionalnost
 
 11. Drži me prijavljenog funkcionalnost.
+
+12. Srediti icon za prikaz sa strelicama.
+
+13. Dodati SEO optimizaciju
 
 * Dodati autofokus na oba elementa kada google chrome popunjava username i password
