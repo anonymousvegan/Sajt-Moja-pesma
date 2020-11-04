@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="izbor.css">
         <link rel="stylesheet" href="unos.css">
         <link rel="stylesheet" href="pesma-preko-celog-ekrana.css">
-        <link rel="stylesheet" href="informaicje/informacije.css">
+        <link rel="stylesheet" href="informacije/informacije.css">
         <!-- ovo su moje custom skripte -->
         <script src="script/filter.js" defer></script>
         <script src="script/komentarisanje.js" defer></script>
@@ -31,7 +31,8 @@
     </head>
     <body>
     <?php include "nav.php" ?>
-    <?php
+    <?php include "informacije/informacije.php" ?>
+    <?php 
         if(isset($_GET["profil"])){
             $profil=$_GET["profil"];
             if(isset($_SESSION["ime"])){
