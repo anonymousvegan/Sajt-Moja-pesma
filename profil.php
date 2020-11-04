@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="izbor.css">
         <link rel="stylesheet" href="unos.css">
         <link rel="stylesheet" href="pesma-preko-celog-ekrana.css">
+        <link rel="stylesheet" href="informaicje/informacije.css">
         <!-- ovo su moje custom skripte -->
         <script src="script/filter.js" defer></script>
         <script src="script/komentarisanje.js" defer></script>

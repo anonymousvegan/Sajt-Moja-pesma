@@ -7,8 +7,6 @@
 
 4. Prikazivanje `unesite komentar` na main page (pri pretrazivanju, itd...)
 
-5. Strelica u mobilnom prikazu (ukloniti)
-
 6. Ne dozvoliti `dodaj tekst` kada je korisnik neprijavljen
 
 7. Prikazati korisnicke informacije na klik imena korisnika iz kartice pesme
