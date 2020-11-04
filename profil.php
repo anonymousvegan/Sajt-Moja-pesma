@@ -31,7 +31,6 @@
     </head>
     <body>
     <?php include "nav.php" ?>
-    <?php include "informacije/informacije.php" ?>
     <?php 
         if(isset($_GET["profil"])){
             $profil=$_GET["profil"];
@@ -61,6 +60,26 @@
             header("location: index.php");
         } 
     ?>
+    <?php
+                require "backend/pozadinske/vezasabazom.php";
+                $sql = "SELECT * FROM korisnici WHERE ime='".$profil."';";
+                $rezultat= mysqli_query($conn, $sql);
+                $brojrezulta=mysqli_num_rows($rezultat);
+                while($red=mysqli_fetch_assoc($rezultat)){
+                    $ime=$red["ime"];
+                    $pravoime=$red["pravoime"];
+                    $prezime=$red["prezime"];
+                    $biografija=$red["biografija"];
+                    $tip= gettype($red["profilna"]);
+                    if($tip=="null" || $tip=="NULL" || $tip==null || $red["profilna"]==""){
+                        $profilna="fajlovi/profilna.png";
+                    }
+                    else if($tip=="string"){
+                        $profilna=$red["profilna"];
+                    }
+                }
+?>
+    <?php include "informacije/informacije.php" ?>
     <?php include "main.php" ?>
     <?php include "foother.php" ?>
         <script>

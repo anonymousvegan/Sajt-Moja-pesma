@@ -55,6 +55,7 @@ h3 {
     border: 1px solid black;
     width: calc(100% - 20px);
     margin: 0 auto;
+    padding: 10px;
 }
 
 @media (max-width: 400px) {
@@ -70,4 +71,13 @@ h3 {
     .informacije-kontejner {
         margin-left: 25px;
     }
+}
+.profilna {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid gray;
+}
+.profilna img{
+    width: 100%;
+    height: auto;
 }
