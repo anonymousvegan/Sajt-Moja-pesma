@@ -15,7 +15,13 @@ session_start();
           <ul>
             <li>
               <a href="index.php">Početna</a></li>
-            <li onclick="dodaj()"><a href="#">Dodaj tekst</a></li>
+            <li <?php if(isset($_SESSION["id"])){
+                        echo 'onclick="dodaj()"';
+                      }
+                      else{
+                        echo 'onclick="dodajneulogovan()"';
+                      }
+            ?>><a href="#">Dodaj tekst</a></li>
             <li>
               <div class="kategorije-container">
                 <a href="#">Kategorije</a>        

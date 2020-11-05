@@ -1,6 +1,8 @@
 function dodaj(){
-    console.log("radi");
     document.getElementById("unos").classList.add("prikazi-unos");
+}
+function dodajneulogovan(){
+    alert("Ulogujete se da bi ste dodali pesmu");
 }
 function zatvori(){
     document.getElementById("unos").classList.remove("prikazi-unos");

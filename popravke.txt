@@ -6,8 +6,6 @@
 
 3. Header kartice na `prikazi jos` ne prikazuje nikakve informacije
 
-4. Ne dozvoliti `dodaj tekst` kada je korisnik neprijavljen
-
 5. Implementirati `prijavi` funkcionalnost
 
 6. Drži me prijavljenog funkcionalnost.
