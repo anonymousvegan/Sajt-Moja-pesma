@@ -20,7 +20,5 @@
 12. Srediti kada klikne icon za prikaz sa strelicama bude sive boje
     a ovo pored njega da nije sivo, kada se vrati u normalu na klasican prikaz
     onda prikaz sa strelicama da nije sive boje a ovo drugo da bude.
-
-13. Dodati SEO optimizaciju
-
+    
 * Dodati autofokus na oba elementa kada google chrome popunjava username i password
