@@ -55,9 +55,6 @@
                 <div class="vreme-tekst">
                     <button type="submit" name="unosdugme" class="btn btn-primary">Objavite</button>
                 </div>
-                <div class="ikonicazakomentarkontejner">
-                    <img class="ikonicazakomentar" src="fajlovi/komentar.svg">
-                </div>
             </div>
         </div>
     </form>

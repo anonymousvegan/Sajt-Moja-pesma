@@ -380,7 +380,7 @@ option:last-of-type {
         color: var(--plava);
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     #unos .kartica {
         width: 100vw;
         height: 100vh;
@@ -434,5 +434,14 @@ option:last-of-type {
 @media screen and (max-width: 300px) {
     .pogodnost-odabir {
         margin-right: 50px;
+    }
+}
+@media only screen and (max-height: 500px){
+    #unos .kartica{
+        height: auto;
+    }
+    #unos textarea{
+        min-height: 150px;
+        height: auto;
     }
 }

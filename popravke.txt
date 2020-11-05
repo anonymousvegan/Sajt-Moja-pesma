@@ -8,17 +8,11 @@
 
 6. Ne dozvoliti `dodaj tekst` kada je korisnik neprijavljen
 
-8. Prikaz komentara, unosenje komentara, dodavanje pesme na google chrome nije 100%
-   prikazan, kao da je odsecen donji deo (mobilni prikaz)
-
-9. Pri `dodaj pesmu` ukloniti komentare sa desne strane u footeru
-
 10. Implementirati `prijavi` funkcionalnost
 
 11. Drži me prijavljenog funkcionalnost.
 
 12. Srediti kada klikne icon za prikaz sa strelicama bude sive boje
     a ovo pored njega da nije sivo, kada se vrati u normalu na klasican prikaz
-    onda prikaz sa strelicama da nije sive boje a ovo drugo da bude.
-    
+    onda prikaz sa strelicama da nije sive boje a ovo drugo da bude
 * Dodati autofokus na oba elementa kada google chrome popunjava username i password
