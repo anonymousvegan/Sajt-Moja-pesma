@@ -28,6 +28,7 @@
     align-items: center;
     transform: translateY(-100%);
     transition: all 0.5s ease-in;
+    overflow: hidden;
 }
 .prikazi-pesmu-na-ceo-ekran {
     animation: gravity-effect forwards 1.5s ease-in-out;

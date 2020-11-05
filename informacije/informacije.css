@@ -58,7 +58,7 @@ h3 {
     padding: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .ceo-info-kontejner {
         align-items: center;
     }

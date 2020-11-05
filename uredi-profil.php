@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="uredi.css">
         <link rel="stylesheet" href="unos.css">
         <link rel="stylesheet" href="pesma-preko-celog-ekrana.css">
+        <link rel="icon" href="fajlovi/logo.png">
         <!-- ovo su moje custom skripte -->
         <script src="script/filter.js" defer></script>
         <script src="script/logout.js" defer></script>

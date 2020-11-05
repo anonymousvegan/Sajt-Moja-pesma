@@ -14,6 +14,7 @@ session_start();
         <link rel="stylesheet" href="izbor.css">
         <link rel="stylesheet" href="unos.css">
         <link rel="stylesheet" href="pesma-preko-celog-ekrana.css">
+        <link rel="icon" href="fajlovi/logo.png">
         <!-- ovo su moje custom skripte -->
         <script src="script/filter.js" defer></script>
         <script src="script/komentarisanje.js" defer></script>

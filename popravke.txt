@@ -5,7 +5,6 @@
 
 3. Header kartice na `prikazi jos` ne prikazuje nikakve informacije
 
-4. Prikazivanje `unesite komentar` na main page (pri pretrazivanju, itd...) (srediti bug)
 
 6. Ne dozvoliti `dodaj tekst` kada je korisnik neprijavljen
 
