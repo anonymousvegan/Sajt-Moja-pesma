@@ -39,6 +39,6 @@
                 echo "<p>Ukoliko ste ovde prvi put i nemate nalog kliknite na <a href='forme/registracija.php'>REGISTRUJ SE </a></p>";
                 echo "<p>Ukoliko već imate nalog kliknite na  <a href='forme/prijava.php'>PRIJAVI SE </a></p>";
             }
-        ?>
+        ?> 
     </body>
 </html>

@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="unos.css">
         <link rel="stylesheet" href="pesma-preko-celog-ekrana.css">
         <link rel="stylesheet" href="informacije/informacije.css">
+        <link rel="stylesheet" href="prijavi.css">
         <link rel="icon" href="fajlovi/logo.png">
         <script data-ad-client="ca-pub-7058729872957014" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- ovo su moje custom skripte -->
@@ -112,5 +113,6 @@
                 }
             });
         </script>
+        <?php include "prijavi.php"?>
     </body>
 </html>
