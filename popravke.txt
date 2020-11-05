@@ -1,10 +1,10 @@
 (! => Najveci prioritet, 123... => Prioritet po redosledu, * => Najmanji prioritet)
 
 1. Uzimanje podataka iz baze samo preko ID-a //najteže  za krajjjjjjjjj
+
 2. Urediti alerte
 
 3. Header kartice na `prikazi jos` ne prikazuje nikakve informacije
-
 
 6. Ne dozvoliti `dodaj tekst` kada je korisnik neprijavljen
 
@@ -17,7 +17,9 @@
 
 11. Drži me prijavljenog funkcionalnost.
 
-12. Srediti icon za prikaz sa strelicama.
+12. Srediti kada klikne icon za prikaz sa strelicama bude sive boje
+    a ovo pored njega da nije sivo, kada se vrati u normalu na klasican prikaz
+    onda prikaz sa strelicama da nije sive boje a ovo drugo da bude.
 
 13. Dodati SEO optimizaciju
 
