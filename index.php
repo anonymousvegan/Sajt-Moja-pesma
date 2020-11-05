@@ -5,6 +5,7 @@ session_start();
 <html lang="sr-RS">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Moja pesma. Napišite svoju životnu pesmu. Na ovom mestu imate prilku da iskažete svoja osećanja ili emocije kroz poeziju, takodje mogućnost deljenja pesama kroz celu platformu sa drugim korisnicima">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Moja pesma</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
