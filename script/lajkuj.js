@@ -49,10 +49,3 @@ xhttp.send("id="+id+"&profil="+profil);
 function lajkujnelogovan(){
     alert("morate se ulogovati da bi mogli da lajkujete!")
 }
-//zatvori na esc 
-document.addEventListener('keydown', function(event){
-	if(event.key === "Escape"){
-        zatvori();
-        zatvori_pesmu_preko_celog_ekrana();
-	}
-});

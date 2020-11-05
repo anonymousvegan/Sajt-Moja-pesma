@@ -78,3 +78,18 @@ function prikazivise(id){
 function zatvori_pesmu_preko_celog_ekrana(){
     document.querySelector(".pesma-preko-celog-ekrana").classList.remove("prikazi-pesmu-na-ceo-ekran");
 }
+function prijavi(id){
+    document.getElementById("prijavi").classList.add("prikazi");
+    document.getElementById("id-pesme-za-prijavu").value=id;
+}
+function zatvoriprijavu(){
+    document.getElementById("prijavi").classList.remove("prikazi")
+}
+//zatvori na esc 
+document.addEventListener('keydown', function(event){
+	if(event.key === "Escape"){
+        zatvori();
+        zatvori_pesmu_preko_celog_ekrana();
+        zatvoriprijavu();
+	}
+});

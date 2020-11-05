@@ -31,7 +31,7 @@ echo        '<div class="tacke" onclick="prikaziOpcije(this)">
                 echo'<a onclick="obrisi('.$red["id"].')" class="opcija btn btn-danger">Obriši</a>';
                 }
                 echo '
-                 <a class="opcija btn btn-warning">Prijavi</a>
+                 <a onclick="prijavi('.$red["id"].')" class="opcija btn btn-warning">Prijavi</a>
                 </div>
               </div>';
 echo   '</div> 
