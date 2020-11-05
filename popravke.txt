@@ -6,13 +6,13 @@
 
 3. Header kartice na `prikazi jos` ne prikazuje nikakve informacije
 
-6. Ne dozvoliti `dodaj tekst` kada je korisnik neprijavljen
+4. Ne dozvoliti `dodaj tekst` kada je korisnik neprijavljen
 
-10. Implementirati `prijavi` funkcionalnost
+5. Implementirati `prijavi` funkcionalnost
 
-11. Drži me prijavljenog funkcionalnost.
+6. Drži me prijavljenog funkcionalnost.
 
-12. Srediti kada klikne icon za prikaz sa strelicama bude sive boje
+7. Srediti kada klikne icon za prikaz sa strelicama bude sive boje
     a ovo pored njega da nije sivo, kada se vrati u normalu na klasican prikaz
     onda prikaz sa strelicama da nije sive boje a ovo drugo da bude
 * Dodati autofokus na oba elementa kada google chrome popunjava username i password
