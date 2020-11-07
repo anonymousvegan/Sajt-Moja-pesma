@@ -81,7 +81,7 @@
 .okvir-za-pesmu {
     overflow: auto;
 }
-.pesma-preko-celog-ekrana a {
+.pesma-preko-celog-ekrana .pisac a {
     font-size: 16px;
     text-decoration: none;
     display: flex;
@@ -300,4 +300,36 @@ unos komentara  i smor kod ....
 }
 .mobilni .okvir-za-pesmu {
     display: none;
+}
+.header-pesme-preko-celog-ekrana{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.header-pesme-preko-celog-ekrana img:first-child{
+width: 45px;
+height: 45px;
+margin-left: 20px;
+border-radius: 50%;
+}
+.header-pesme-preko-celog-ekrana .tacke{
+    width: auto;
+    height: 50px;
+    padding-right: 20px;
+    background-color:rgba(0, 0, 0, 0.05);;
+    cursor: pointer;
+}
+.pesma-preko-celog-ekrana .okvir-za-pesmu h5{
+    background-color: transparent;
+}
+.pesma-preko-celog-ekrana .opcije::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 34px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
 }

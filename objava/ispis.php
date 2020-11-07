@@ -22,10 +22,10 @@ echo        '<div class="profilna-pisca">
                   	<img src="'.$profilna.'">
                 </a>
             </div>';
-echo        '<a href="profil.php?profil='.$red["pisac"].'">'. $red["pisac"] . '</a>';
+echo        '<a class="link-prema-piscu" href="profil.php?profil='.$red["pisac"].'">'. $red["pisac"] . '</a>';
 echo        '<div class="tacke" onclick="prikaziOpcije(this)">
                 <img src="fajlovi/tacke.png">
-                <div id="opcije">';
+                <div class="opcije">';
 
                 if($_SESSION["ovlascenje"]=="admin" || $_SESSION["ime"]==$red["pisac"] ){
                 echo'<a onclick="obrisi('.$red["id"].')" class="opcija btn btn-danger">Obriši</a>';

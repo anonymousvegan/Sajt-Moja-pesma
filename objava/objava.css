@@ -168,7 +168,7 @@ div.srce, .ikonicazakomentar{
     }
 }
 
-#opcije {
+.opcije {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -182,12 +182,12 @@ div.srce, .ikonicazakomentar{
     transition: 250ms ease-in-out;
 }
 
-.tacke.prikaziopcije  #opcije
+.tacke.prikaziopcije  .opcije
 {
     transform: scale(1, 1);
 }
 
-#opcije a {
+.opcije a {
     border-radius: 0;
     margin-bottom: 5px;
     width: 100px;
@@ -203,18 +203,18 @@ div.srce, .ikonicazakomentar{
     margin-right: 5px;
     margin-left: 5px;
 }
-#opcije a:first-child{
+.opcije a:first-child{
     margin-top: 5px;
 }
-#opcije .btn-warning{
+.opcije .btn-warning{
     color: black;
 }
 
-#opcije a.kliktacke {
+.opcije a.kliktacke {
     color: black;
     cursor: pointer;
 }
-#opcije::after {
+.kartica .opcije::after {
     content: "";
     position: absolute;
     bottom: 100%;

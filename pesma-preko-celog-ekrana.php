@@ -2,8 +2,21 @@
     <div onclick="prethodna()" id="leva-strelica" class="strelica">&#x2039;</div>
     <div onclick="sledeca()" id="desna-strelica" class="strelica">&#x203A;</div>
     <div class="okvir-za-pesmu">
-        <div class="pisac">
-            <a href="profil.php?profil=anonymousvegan" id="pisac-preko-celog-ekrana">anonymousvegan</a>
+        <div class="header-pesme-preko-celog-ekrana">
+            <div class="profilna-pisca-ceo-ekran">
+                    <a href="profil.php?profil=kemal">
+                        <img src="fajlovi/profile-icon.svg">
+                    </a>
+            </div>
+            <div class="pisac">
+                <a href="profil.php?profil=anonymousvegan" id="pisac-preko-celog-ekrana">anonymousvegan</a>
+            </div>
+            <div class="tacke" onclick="prikaziOpcije(this)">
+                <img src="fajlovi/tacke.png">
+                <div class="opcije"><a onclick="obrisi(62)" class="opcija btn btn-danger">Obriši</a>
+                 <a onclick="prijavi(62)" class="opcija btn btn-warning">Prijavi</a>
+                </div>
+            </div>
         </div>
         <h5 id="naslov-preko-celog-ekrana">Krvava bajka</h5>
         <p id="tekst-pesme-preko-celog-ekrana"></p>

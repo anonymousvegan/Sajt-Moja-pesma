@@ -13,16 +13,19 @@ function prikazivise(id){
     if(screen.width>=600){
         const kartica = document.getElementById(id);
         let naslov= kartica.querySelector(".naslov").textContent;
-        let pisac = kartica.querySelector("a").textContent;
+        let pisac = kartica.querySelector(".link-prema-piscu").textContent;
         let pesma=kartica.querySelector("p").textContent;
         let vreme= kartica.querySelector(".vreme-tekst").textContent;
         let lajk= kartica.querySelector(".srce");
         let slikalajka= kartica.querySelector(".srce img");
         let brojlajkova= kartica.querySelector("span").textContent;
+        let profilna= kartica.querySelector(".profilna-pisca img")
         const kontejner = document.querySelector(".pesma-preko-celog-ekrana");
         const okvirzapesmu= kontejner.querySelector(".okvir-za-pesmu");
         const okvirzakomentare=kontejner.querySelector(".okvir-za-komentare")
         let pisac_ceo_ekran= kontejner.querySelector("#pisac-preko-celog-ekrana");
+        let profilna_ceo_ekran=kontejner.querySelector(".profilna-pisca-ceo-ekran img");
+        let link_na_profilnoj=kontejner.querySelector(".profilna-pisca-ceo-ekran a")
         let naslov_ceo_ekran= kontejner.querySelector("#naslov-preko-celog-ekrana");
         let pesma_ceo_ekran = kontejner.querySelector("#tekst-pesme-preko-celog-ekrana");
         let vreme_ceo_ekran = kontejner.querySelector("#vreme-preko-celog-ekrana");
@@ -31,8 +34,9 @@ function prikazivise(id){
         let slikalajkaceoekran = kontejner.querySelector("#lajkuj-preko-celog-ekrana img");
         slikalajkaceoekran.setAttribute("src", slikalajka.getAttribute("src"))
         kontejner.classList.remove("mobilni");
-        pisac_ceo_ekran.textContent=pisac;
+        profilna_ceo_ekran.src=profilna.src;
         pisac_ceo_ekran.href="profil.php?profil="+pisac;
+        pisac_ceo_ekran.textContent=pisac;
         pesma_ceo_ekran.textContent=pesma;
         naslov_ceo_ekran.textContent=naslov;
         vreme_ceo_ekran.textContent=vreme;
