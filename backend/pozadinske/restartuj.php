@@ -2,7 +2,7 @@
 if (isset($_POST["restartuj-dugme"])){
     $selektor = bin2hex(random_bytes(8));
     $token = random_bytes(32);
-    $url = "https://tenfold-sundays.000webhostapp.com/pesme/forme/unesite-novu-lozinku.php?selektor=" . $selektor . "&validator=".bin2hex($token);
+    $url = "https://mojapesma.com/forme/unesite-novu-lozinku.php?selektor=" . $selektor . "&validator=".bin2hex($token);
     $vreme = date("U")+1800;
     require "vezasabazom.php";
     $email= $_POST["email"];
@@ -30,14 +30,14 @@ if (isset($_POST["restartuj-dugme"])){
     mysqli_stmt_close($stmt);
     mysqli_close($conn);
     $to = $email;
-    $subject ='Restartujte šifru za pesme.com';
-    $message='<p>zatražili ste novu lozinku za pesme.com?
+    $subject ='Restartujte lozinke za mojapesma.com';
+    $message='<p>zatražili ste novu lozinku za mojapesma.com?
     kliknite na link ispod da bi ste restartovali lozinku, ukoliko 
     to niste bili vi, ignorišite ovaj email</p>';
-    $message .="<p>ovo je link za restartovanje šifre </p>";
+    $message .="<p>ovo je link za restartovanje lozinke </p>";
     $message .='<a href="' . $url . '">' . $url . '</a>';
-    $hendlers ="From: nikola <neki@email.com>\r\n";
-    $hendlers .="Replay-To: neki@email.com\r\n";
+    $hendlers ="From: mojapesma <podrska@mojapesma.com>\r\n";
+    $hendlers .="Replay-To: podrska@mojapesma.com\r\n";
     $hendlers .="Content-type: text/html\r\n";
     mail($to, $subject, $message, $hendlers);
     header("location: ../../forme/zaboravio-sam-lozinku.php?restart=uspesan");
