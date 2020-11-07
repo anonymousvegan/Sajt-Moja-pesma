@@ -15,6 +15,7 @@ if(isset($_SESSION["ime"])){ #zaštita da ne komentariše neulogovan
         if($trenutni_komentari==null){ #kod ukoliko je ovo prvi komentar na toj pesmi.
             $zaunos = new stdClass();
             $zaunos->autor=$autor;
+            $zaunos->idautora=$_SESSION[id];
             $zaunos->komentar=$komentar;
             $zaunos->vreme=$vreme;
             $jsonunos=json_encode($zaunos);
@@ -34,6 +35,7 @@ if(isset($_SESSION["ime"])){ #zaštita da ne komentariše neulogovan
             if ($type=="object"){
                 $novi = new stdClass();
                 $novi->autor=$autor;
+                $novi->idautora=$_SESSION[id];
                 $novi->komentar=$komentar;
                 $novi->vreme=$vreme;
                 $zaunos=array($stari, $novi);
@@ -51,6 +53,7 @@ if(isset($_SESSION["ime"])){ #zaštita da ne komentariše neulogovan
             }else if($type=="array"){
                 $novi = new stdClass();
                 $novi->autor=$autor;
+                $novi->idautora=$_SESSION[id];
                 $novi->komentar=$komentar;
                 $novi->vreme=$vreme;
                 array_push($stari, $novi);

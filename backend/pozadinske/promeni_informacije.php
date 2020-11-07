@@ -135,6 +135,7 @@ if(isset($_SESSION["ime"])){
                                     else{
                                         mysqli_stmt_bind_param($stmt, "ss", $korisnicko_ime, $staro_ime );
                                         mysqli_stmt_execute($stmt);
+                                        $_SESSION["ime"]=$korisnicko_ime;
                                         header("location: ../../uredi-profil.php?uspeh=informacije-promenjene");
                                     }
                                 }
@@ -193,6 +194,7 @@ if(isset($_SESSION["ime"])){
                                             else{
                                                 mysqli_stmt_bind_param($stmt, "ss", $korisnicko_ime, $staro_ime );
                                                 mysqli_stmt_execute($stmt);
+                                                $_SESSION["ime"]=$korisnicko_ime;
                                                 header("location: ../../uredi-profil.php?uspeh=informacije-promenjene");
                                             }
                                         }
