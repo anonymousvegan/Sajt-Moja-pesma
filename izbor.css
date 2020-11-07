@@ -20,7 +20,7 @@
     transition: all 1s;
 }
 #izbor .odabir img {
-    height: 40px;
+    height: 50px;
 }
 #izbor .odabrano {
     background: #cccccc;

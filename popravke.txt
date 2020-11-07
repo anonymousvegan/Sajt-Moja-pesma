@@ -1,12 +1,5 @@
 1. Uzimanje podataka iz baze samo preko ID-a //najteže  za krajjjjjjjjj
 
-2. Urediti alerte -- u toku 
+2. Header kartice na `prikazi jos` ne prikazuje nikakve informacije
 
-3. Header kartice na `prikazi jos` ne prikazuje nikakve informacije
-
-5. Implementirati `prijavi` funkcionalnost
-
-7. Srediti kada klikne icon za prikaz sa strelicama bude sive boje
-    a ovo pored njega da nije sivo, kada se vrati u normalu na klasican prikaz
-    onda prikaz sa strelicama da nije sive boje a ovo drugo da bude
 * Dodati autofokus na oba elementa kada google chrome popunjava username i password

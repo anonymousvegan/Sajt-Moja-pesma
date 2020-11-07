@@ -76,6 +76,7 @@ function prikazivise(id){
     }
 }
 function zatvori_pesmu_preko_celog_ekrana(){
+    grid();
     document.querySelector(".pesma-preko-celog-ekrana").classList.remove("prikazi-pesmu-na-ceo-ekran");
 }
 function prijavi(id){
