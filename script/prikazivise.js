@@ -19,7 +19,8 @@ function prikazivise(id){
         let lajk= kartica.querySelector(".srce");
         let slikalajka= kartica.querySelector(".srce img");
         let brojlajkova= kartica.querySelector("span").textContent;
-        let profilna= kartica.querySelector(".profilna-pisca img")
+        let profilna= kartica.querySelector(".profilna-pisca img");
+        let dostupneopcije=kartica.querySelector(".opcije").innerHTML;
         const kontejner = document.querySelector(".pesma-preko-celog-ekrana");
         const okvirzapesmu= kontejner.querySelector(".okvir-za-pesmu");
         const okvirzakomentare=kontejner.querySelector(".okvir-za-komentare")
@@ -32,11 +33,14 @@ function prikazivise(id){
         let lajk_ceo_ekran=kontejner.querySelector("#lajkuj-preko-celog-ekrana");
         let brojlajkovaceoekran = kontejner.querySelector("#brojlajkovaceoekran");
         let slikalajkaceoekran = kontejner.querySelector("#lajkuj-preko-celog-ekrana img");
+        let opcijeceoekran= kontejner.querySelector(".opcije");
         slikalajkaceoekran.setAttribute("src", slikalajka.getAttribute("src"))
         kontejner.classList.remove("mobilni");
         profilna_ceo_ekran.src=profilna.src;
         pisac_ceo_ekran.href="profil.php?profil="+pisac;
+        link_na_profilnoj.href="profil.php?profil="+pisac;
         pisac_ceo_ekran.textContent=pisac;
+        opcijeceoekran.innerHTML=dostupneopcije;
         pesma_ceo_ekran.textContent=pesma;
         naslov_ceo_ekran.textContent=naslov;
         vreme_ceo_ekran.textContent=vreme;

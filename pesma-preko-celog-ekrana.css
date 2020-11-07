@@ -37,15 +37,19 @@
 .okvir-za-komentare {
     width: 40%;
     height: 500px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
     transition: all 0.3s;
+}
+.okvir-za-komentare{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
 }
 .okvir-za-pesmu {
     border-right: 2px solid #888888;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     position: relative;
+    overflow: hidden;
 }
 .okvir-za-pesmu h5 {
     width: 100%;
@@ -53,13 +57,16 @@
     margin: 0;
     text-align: center;
     position: sticky;
-    top: 50px;
     background-color: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 200;
     font-size: 30px;
+    pointer-events: none;
+    position: sticky;
+    top: 0;
+    background-color: inherit;
 }
 .okvir-za-pesmu .pisac {
     width: 100%;
@@ -78,9 +85,6 @@
     height: auto;
     transition: all 0.5s;
 }
-.okvir-za-pesmu {
-    overflow: auto;
-}
 .pesma-preko-celog-ekrana .pisac a {
     font-size: 16px;
     text-decoration: none;
@@ -89,10 +93,15 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color:rgba(0, 0, 0, 0.05);
 }
 .pesma-preko-celog-ekrana .kartica {
     position: relative;
+}
+.profilna-pisca-ceo-ekran{
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
 }
 ::-webkit-scrollbar {
     background-color: grey;
@@ -305,7 +314,8 @@ unos komentara  i smor kod ....
     display: flex;
     height: 50px;
     width: 100%;
-    position: sticky;
+    position: relative;
+    z-index: 3;
     top: 0;
 }
 .header-pesme-preko-celog-ekrana img:first-child{
@@ -318,11 +328,8 @@ border-radius: 50%;
     width: auto;
     height: 50px;
     padding-right: 20px;
-    background-color:rgba(0, 0, 0, 0.05);;
+    background-color:rgba(0, 0, 0, 0.05);
     cursor: pointer;
-}
-.pesma-preko-celog-ekrana .okvir-za-pesmu h5{
-    background-color: transparent;
 }
 .pesma-preko-celog-ekrana .opcije::after {
     content: "";
@@ -332,4 +339,10 @@ border-radius: 50%;
     border-width: 8px;
     border-style: solid;
     border-color: transparent transparent black transparent;
+}
+#skrol{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: inherit;
 }

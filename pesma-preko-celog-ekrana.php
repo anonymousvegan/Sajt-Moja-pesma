@@ -13,13 +13,14 @@
             </div>
             <div class="tacke" onclick="prikaziOpcije(this)">
                 <img src="fajlovi/tacke.png">
-                <div class="opcije"><a onclick="obrisi(62)" class="opcija btn btn-danger">Obriši</a>
-                 <a onclick="prijavi(62)" class="opcija btn btn-warning">Prijavi</a>
+                <div class="opcije">
                 </div>
             </div>
         </div>
+        <div id="skrol">
         <h5 id="naslov-preko-celog-ekrana">Krvava bajka</h5>
         <p id="tekst-pesme-preko-celog-ekrana"></p>
+        </div>
     </div>
     <div id="okvirzakomentare" class="okvir-za-komentare">
         <div id="okvir-za-vreme-preko-celog-ekrana">
