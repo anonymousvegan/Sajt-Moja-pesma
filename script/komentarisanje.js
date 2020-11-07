@@ -7,7 +7,7 @@ ekomentar.addEventListener('keyup', function (e) {
         autor=document.getElementById("autorkomentara").value;
         pesma=document.getElementById("id-pesme-za-komentarisanje").value;
         if(autor==""){
-            alert("Morate se ulogovati da bi ste komentarisali.")
+            prikazialert("Morate se ulogovati da bi ste komentarisali.")
         }else if(komentar!=""){
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
@@ -29,7 +29,7 @@ ekomentar.addEventListener('keyup', function (e) {
     autor=document.getElementById("autorkomentara").value;
     pesma=document.getElementById("id-pesme-za-komentarisanje").value;
     if(autor==""){
-        alert("Morate se ulogovati da bi ste komentarisali.")
+        prikazialert("Morate se ulogovati da bi ste komentarisali.")
     }else if(komentar!=""){
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {

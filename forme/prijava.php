@@ -57,6 +57,7 @@
                             </div>
                         -->
                 <button type="submit" name="login" class="btn btn-primary btn-block">Prijavi se</button>
+                <a style="display: inline-block; position: relative; top: 10px;" href="zaboravio-sam-lozinku.php">zaboravili ste lozinku? </a>
             </form>
         </div>
     </body>

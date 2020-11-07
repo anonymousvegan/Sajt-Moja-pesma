@@ -1,6 +1,6 @@
 1. Uzimanje podataka iz baze samo preko ID-a //najteže  za krajjjjjjjjj
 
-2. Urediti alerte
+2. Urediti alerte -- u toku 
 
 3. Header kartice na `prikazi jos` ne prikazuje nikakve informacije
 

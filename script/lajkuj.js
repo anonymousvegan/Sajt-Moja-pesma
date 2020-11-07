@@ -47,5 +47,5 @@ xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xhttp.send("id="+id+"&profil="+profil);
 }
 function lajkujnelogovan(){
-    alert("morate se ulogovati da bi mogli da lajkujete!")
+    prikazialert("morate se ulogovati da bi mogli da lajkujete!")
 }
