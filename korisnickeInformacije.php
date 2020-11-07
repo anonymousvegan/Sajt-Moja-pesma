@@ -73,7 +73,7 @@
 <div id="trecagrupa">
     <div id="biografija">
         <div class="naslovpolja">Biografija</div>
-        <textarea maxlenght="500" id="biografijaunos" name="biografija"><?php echo $biografija ?></textarea>
+        <textarea placeholder="Unesite biografiju" maxlenght="500" id="biografijaunos" name="biografija"><?php echo $biografija ?></textarea>
     </div>
 </div>
 <div id="cetvrtagrupa">

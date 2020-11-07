@@ -126,7 +126,17 @@ if(isset($_SESSION["ime"])){
                                 else{
                                     mysqli_stmt_bind_param($stmt, "ssssss", $ime, $prezime, $godine, $biografija, $korisnicko_ime, $_SESSION["id"]);
                                     mysqli_stmt_execute($stmt);
-                                    header("location: ../../uredi-profil.php?uspeh=informacije-promenjene");
+                                    $sql= "UPDATE pesme set pisac=?  WHERE pisac=?;";
+                                    $stmt=mysqli_stmt_init($conn);
+                                    if(!mysqli_stmt_prepare($stmt, $sql)){
+                                        header("location: ../../uredi-profil.php?greska=sqlgreska10");
+                                        exit();
+                                    }
+                                    else{
+                                        mysqli_stmt_bind_param($stmt, "ss", $korisnicko_ime, $staro_ime );
+                                        mysqli_stmt_execute($stmt);
+                                        header("location: ../../uredi-profil.php?uspeh=informacije-promenjene");
+                                    }
                                 }
                             }
                         }
@@ -174,7 +184,17 @@ if(isset($_SESSION["ime"])){
                                         else{
                                             mysqli_stmt_bind_param($stmt, "sssssss", $ime, $prezime, $godine, $biografija, $korisnicko_ime, $email, $_SESSION["id"]);
                                             mysqli_stmt_execute($stmt);
-                                            header("location: ../../uredi-profil.php?uspeh=informacije-promenjene");
+                                            $sql= "UPDATE pesme set pisac=?  WHERE pisac=?;";
+                                            $stmt=mysqli_stmt_init($conn);
+                                            if(!mysqli_stmt_prepare($stmt, $sql)){
+                                                header("location: ../../uredi-profil.php?greska=sqlgreska11");
+                                                exit();
+                                            }
+                                            else{
+                                                mysqli_stmt_bind_param($stmt, "ss", $korisnicko_ime, $staro_ime );
+                                                mysqli_stmt_execute($stmt);
+                                                header("location: ../../uredi-profil.php?uspeh=informacije-promenjene");
+                                            }
                                         }
                                     }
                                 }
