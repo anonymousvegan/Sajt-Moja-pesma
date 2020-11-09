@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     transform: translateY(-100vh);
+    overflow: hidden;
 }
 #prijavi.prikazi{
     animation: gravity-effect forwards 1.5s ease-in-out;
