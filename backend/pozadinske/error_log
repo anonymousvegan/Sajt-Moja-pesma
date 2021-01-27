@@ -1,0 +1,120 @@
+[03-Nov-2020 15:15:01 America/New_York] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'sara'@'localhost' (using password: YES) in /home/mojatqni/public_html/backend/pozadinske/vezasabazom.php on line 7
+[03-Nov-2020 15:37:49 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 20
+[03-Nov-2020 15:37:58 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 20
+[03-Nov-2020 15:47:02 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 20
+[03-Nov-2020 15:51:45 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 20
+[03-Nov-2020 16:03:01 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 20
+[03-Nov-2020 16:11:00 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 16:15:48 America/New_York] PHP Notice:  Undefined variable: stmt in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:15:48 America/New_York] PHP Warning:  mysqli_stmt_init() expects exactly 1 parameter, 2 given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:15:48 America/New_York] PHP Warning:  mysqli_stmt_prepare() expects parameter 1 to be mysqli_stmt, null given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 12
+[03-Nov-2020 16:20:07 America/New_York] PHP Notice:  Undefined variable: stmt in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:20:07 America/New_York] PHP Warning:  mysqli_stmt_init() expects exactly 1 parameter, 2 given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:20:07 America/New_York] PHP Warning:  mysqli_stmt_prepare() expects parameter 1 to be mysqli_stmt, null given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 12
+[03-Nov-2020 16:22:03 America/New_York] PHP Notice:  Undefined variable: stmt in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:22:03 America/New_York] PHP Warning:  mysqli_stmt_init() expects exactly 1 parameter, 2 given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:22:03 America/New_York] PHP Warning:  mysqli_stmt_prepare() expects parameter 1 to be mysqli_stmt, null given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 12
+[03-Nov-2020 16:32:45 America/New_York] PHP Notice:  Undefined variable: stmt in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:32:45 America/New_York] PHP Warning:  mysqli_stmt_init() expects exactly 1 parameter, 2 given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:32:45 America/New_York] PHP Warning:  mysqli_stmt_prepare() expects parameter 1 to be mysqli_stmt, null given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 12
+[03-Nov-2020 16:33:56 America/New_York] PHP Notice:  Undefined variable: stmt in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:33:56 America/New_York] PHP Warning:  mysqli_stmt_init() expects exactly 1 parameter, 2 given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:33:56 America/New_York] PHP Warning:  mysqli_stmt_prepare() expects parameter 1 to be mysqli_stmt, null given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 12
+[03-Nov-2020 16:36:17 America/New_York] PHP Notice:  Undefined variable: stmt in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:36:17 America/New_York] PHP Warning:  mysqli_stmt_init() expects exactly 1 parameter, 2 given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 11
+[03-Nov-2020 16:36:17 America/New_York] PHP Warning:  mysqli_stmt_prepare() expects parameter 1 to be mysqli_stmt, null given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 12
+[03-Nov-2020 16:43:24 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 20
+[03-Nov-2020 16:45:23 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 20
+[03-Nov-2020 16:46:42 America/New_York] PHP Notice:  Undefined variable: conn in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 3
+[03-Nov-2020 16:46:42 America/New_York] PHP Warning:  mysqli_stmt_init() expects parameter 1 to be mysqli, null given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 3
+[03-Nov-2020 16:46:42 America/New_York] PHP Warning:  mysqli_stmt_prepare() expects parameter 1 to be mysqli_stmt, null given in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 4
+[03-Nov-2020 16:53:47 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 13
+[03-Nov-2020 16:55:57 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 16:57:30 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 16:57:34 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 16:59:29 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 17:02:46 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 17:03:12 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 17:09:30 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 17:10:14 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 17:39:32 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 17:40:21 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 17:40:26 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 17:41:16 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mojatqni/public_html/backend/pozadinske/uloguj_se.php on line 15
+[03-Nov-2020 18:31:18 America/New_York] PHP Warning:  Use of undefined constant s - assumed 's' (this will throw an Error in a future version of PHP) in /home/mojatqni/public_html/backend/pozadinske/promeni_informacije.php on line 79
+[03-Nov-2020 18:48:02 America/New_York] PHP Notice:  Undefined variable: i in /home/mojatqni/public_html/ispiskomentara.php on line 107
+[04-Nov-2020 07:31:25 America/New_York] PHP Warning:  Use of undefined constant s - assumed 's' (this will throw an Error in a future version of PHP) in /home/mojatqni/public_html/backend/pozadinske/promeni_informacije.php on line 111
+[04-Nov-2020 07:31:33 America/New_York] PHP Warning:  Use of undefined constant s - assumed 's' (this will throw an Error in a future version of PHP) in /home/mojatqni/public_html/backend/pozadinske/promeni_informacije.php on line 79
+[04-Nov-2020 14:24:09 America/New_York] PHP Notice:  Undefined variable: i in /home/mojatqni/public_html/ispiskomentara.php on line 107
+[06-Nov-2020 17:13:51 America/New_York] PHP Warning:  Use of undefined constant s - assumed 's' (this will throw an Error in a future version of PHP) in /home/mojatqni/public_html/backend/pozadinske/promeni_informacije.php on line 79
+[08-Nov-2020 05:35:02 America/New_York] PHP Warning:  Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) in /home/mojatqni/public_html/backend/pozadinske/dodajkomentar.php on line 18
+[08-Nov-2020 05:35:02 America/New_York] PHP Notice:  Undefined variable: i in /home/mojatqni/public_html/ispiskomentara.php on line 109
+[15-Nov-2020 16:31:50 America/New_York] PHP Warning:  Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) in /home/mojatqni/public_html/backend/pozadinske/dodajkomentar.php on line 18
+[15-Nov-2020 16:31:50 America/New_York] PHP Notice:  Undefined variable: i in /home/mojatqni/public_html/ispiskomentara.php on line 109
+[15-Nov-2020 18:37:49 America/New_York] PHP Warning:  Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) in /home/mojatqni/public_html/backend/pozadinske/dodajkomentar.php on line 18
+[15-Nov-2020 18:37:49 America/New_York] PHP Notice:  Undefined variable: i in /home/mojatqni/public_html/ispiskomentara.php on line 109
+[21-Nov-2020 20:56:58 America/New_York] PHP Warning:  Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) in /home/mojatqni/public_html/backend/pozadinske/dodajkomentar.php on line 38
+[27-Nov-2020 06:02:30 America/New_York] PHP Warning:  Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) in /home/mojatqni/public_html/backend/pozadinske/dodajkomentar.php on line 18
+[27-Nov-2020 06:02:30 America/New_York] PHP Notice:  Undefined variable: i in /home/mojatqni/public_html/ispiskomentara.php on line 109
+[10-Jan-2021 10:18:22 America/New_York] PHP Warning:  Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) in /home/mojatqni/public_html/backend/pozadinske/dodajkomentar.php on line 18
+[10-Jan-2021 10:18:22 America/New_York] PHP Notice:  Undefined variable: i in /home/mojatqni/public_html/ispiskomentara.php on line 109

@@ -1,8 +1,8 @@
 <?php
-$servername="localhost";
-$dBUsername="sara";
-$dBPassword="SHkola.debLinux20.04";
-$dBName="login";
+$servername="server127";
+$dBUsername="mojatqni_anonymousvegan";
+$dBPassword="p@R00t Os";
+$dBName="mojatqni_mojapesma";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 
