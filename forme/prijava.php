@@ -50,12 +50,10 @@
                     <input type="password" name="password" placeholder=" " class="form-control" autocomplete="off" id="exampleInputPassword1" required>
                     <label for="exampleInputPassword1" id="llozinka"><span class="label-tekst">Lozinka</span></label>
                 </div>
-                         <!-- pošto ne znam da napravim još kolačiće, ovo nema još uvek 
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                            </div>
-                        -->
+                    <div id="sacuvaj-kontejner">
+                        <input type="checkbox" name="sacuvaj" id="sacuvaj">
+                        <label for="sacuvaj">Ostani prijavljen</label>
+                    </div>
                 <button type="submit" name="login" class="btn btn-primary btn-block">Prijavi se</button>
                 <a style="display: inline-block; position: relative; top: 10px;" href="zaboravio-sam-lozinku.php">zaboravili ste lozinku? </a>
             </form>

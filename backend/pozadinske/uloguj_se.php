@@ -25,8 +25,21 @@ if(isset($_POST["login"])){
                     exit();  
                 }
                 else if($tacnasifra==true){
-                    ini_set('session.gc_maxlifetime', 3600);
-                    session_set_cookie_params(3600);
+                    if(isset($_POST["sacuvaj"])){
+                        $token= uniqid("", true).random_bytes(32);
+                        $hash_token=password_hash($token, PASSWORD_DEFAULT);
+                        setcookie("login_token", $token, time()+2592000);
+                        $sql="UPDATE korisnici SET token = ? WHERE ime= ? ;";
+                        $stmt= mysqli_stmt_init($conn);
+                        if(!mysqli_stmt_prepare($stmt, $sql)){
+                            header("location: ../../forme/prijava.php?greska=sql_greska");
+                            exit();   
+                        }
+                        else {
+                            mysqli_stmt_bind_param($stmt, "ss", $hash_token, $korisnicko_ime);
+                            mysqli_stmt_execute($stmt);
+                        }
+                    }
                     session_start();
                     $_SESSION["id"]=$row["id"];
                     $_SESSION["ime"]=$row["ime"];
