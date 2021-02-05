@@ -23,8 +23,8 @@ if (isset($_POST["restartuj-dugme"])){
         exit();
     }
     else{
-        $enkriptoovantoken= password_hash($token, PASSWORD_DEFAULT);
-        mysqli_stmt_bind_param($stmt, "ssss", $email, $selektor, $enkriptoovantoken, $vreme);
+        $enkriptovantoken= password_hash($token, PASSWORD_DEFAULT);
+        mysqli_stmt_bind_param($stmt, "ssss", $email, $selektor, $enkriptovantoken, $vreme);
         mysqli_stmt_execute($stmt);
     }
     mysqli_stmt_close($stmt);

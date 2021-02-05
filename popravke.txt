@@ -1,5 +1,0 @@
-1. Uzimanje podataka iz baze samo preko ID-a //najteže  za krajjjjjjjjj
-
-2. Header kartice na `prikazi jos` ne prikazuje nikakve informacije
-
-* Dodati autofokus na oba elementa kada google chrome popunjava username i password
